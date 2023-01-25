@@ -32,7 +32,7 @@ Week 1: Assignment 1 (A1): Visualizing through Sketching
             Comparison:
                 a)what are their strengths and weaknesses? 
                 b)What new directions might you explore (e.g., synthesizing elements from every sketch, or describing why one of them is significantly better than the others?).
-                It is very straight forward to see the population growth from 1900 to 2000 in each age group, especially in adult group. However, the cons for the first design is that it merged all the data into 4 larger groups. In this case, the prototype might be too general and too low-fi. It is hard to distinguish the data for specific age group.  
+                It is very straight forward to see the population growth from 1900 to 2000 in each age group, especially in adult group. However, the cons for the first design is that it merged all the data into 4 larger groups. In this case, the prototype might be too general and too low-fi. The scale of the It is hard to distinguish the data for specific ages.  
                 The second sketch would like to convey the male to female ratio in each year in which we might find some interesting fact that although there are more male at a younger age range, females tend to live longer than male.
 
                 
