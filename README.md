@@ -28,12 +28,12 @@ Week 1: Assignment 1 (A1): Visualizing through Sketching
                 Visulization: Use horizontal histogram to create a pyramid. 
                 As we can see from the sketch, in 1990, it was almost 1:1 in all age groups. In 2000, it was obvious that there were more male before 30, and there are more female after 30, the difference got bigger when age went up higher. It is rational to think that in 2000, the medical conditions were far more better than 1900, the expected life went up a lot. Although there were more man lived longer, women still live longer than man.
                 c)The goal fot the third sketch is to compare 1900 male population vs 2000 male population, 1900 female population vs 2000 female population. 
-                Visualization: Use poly line in different color to represent the population. 
+                Visualization: Use poly line in different color to represent the population. Add a increase percentage under each data point.
             Comparison:
                 a)what are their strengths and weaknesses? 
                 b)What new directions might you explore (e.g., synthesizing elements from every sketch, or describing why one of them is significantly better than the others?).
                 It is very straight forward to see the population growth from 1900 to 2000 in each age group, especially in adult group. However, the cons for the first design is that it merged all the data into 4 larger groups. In this case, the prototype might be too general and too low-fi. It is hard to distinguish the data for specific age group.  
-                The second sketch would like to convey the 
+                The second sketch would like to convey the male to female ratio in each year in which we might find some interesting fact that although there are more male at a younger age range, females tend to live longer than male.
 
                 
 
