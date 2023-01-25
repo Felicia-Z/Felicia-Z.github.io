@@ -51,6 +51,7 @@ p {
     font-weight: 400;
   }
 
+  /* set up img in general */
 img {
     height: 50%;
     width: 50%;
@@ -65,8 +66,3 @@ img {
     width: 100%;
   } 
 
-  svg {
-    /* height: 50%;
-    width: 50%; */
-    display:flex;
-  }
