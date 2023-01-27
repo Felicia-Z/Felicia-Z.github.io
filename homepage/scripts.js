@@ -5,9 +5,9 @@ function parseLOG(d){
 d3.text("file.txt").then(parseLOG);
 
 
-// d3.csv("cities-sm.csv").then(parseLOG);
+d3.csv("cities-sm.csv").then(parseLOG);
 
-// d3.json("countrycode-en.json").then(parseLOG);
+d3.json("countrycode-en.json").then(parseLOG);
 
 // d3.csv();
 
