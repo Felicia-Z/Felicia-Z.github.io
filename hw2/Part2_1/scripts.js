@@ -55,15 +55,15 @@ d3.csv("USPopulation-Dataset-ARTG5430.csv")
             .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
             .attr("fill", "steelblue");
 
-        const points2 = svg.selectAll("rect")
-            .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
-            .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
-            .append("rect")                                                                             /* Create rectangles in each place holder */
-            .attr("x", function(d) { return xScale(d.Age); })
-            .attr("y", function(d) { return yScale(d.Male2000); })
-            .attr("width", xScale.bandwidth())
-            .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
-            .attr("fill", "yellow");
+        // const points2 = svg.selectAll("rect")
+        //     .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+        //     .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+        //     .append("rect")                                                                             /* Create rectangles in each place holder */
+        //     .attr("x", function(d) { return xScale(d.Age); })
+        //     .attr("y", function(d) { return yScale(d.Male2000); })
+        //     .attr("width", xScale.bandwidth())
+        //     .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
+        //     .attr("fill", "yellow");
 
         /* DRAW AXIS LABELS*/
         const xAxisLabel = svg.append("text")
