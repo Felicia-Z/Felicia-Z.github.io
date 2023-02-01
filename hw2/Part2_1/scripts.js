@@ -45,7 +45,7 @@ d3.csv("USPopulation-Dataset-ARTG5430.csv")
             .call(d3.axisLeft().scale(yScale));
 
         /* DRAW*/
-        const points = svg.selectAll("rect")
+        const points1 = svg.selectAll("rect")
             .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
             .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
             .append("rect")                                                                             /* Create rectangles in each place holder */
@@ -55,7 +55,7 @@ d3.csv("USPopulation-Dataset-ARTG5430.csv")
             .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
             .attr("fill", "steelblue");
 
-        const points = svg.selectAll("rect")
+        const points2 = svg.selectAll("rect")
             .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
             .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
             .append("rect")                                                                             /* Create rectangles in each place holder */
