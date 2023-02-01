@@ -44,5 +44,40 @@ d3.csv("USPopulation-Dataset-ARTG5430.csv")
             .attr("transform", `translate(${margin.left},0)`)
             .call(d3.axisLeft().scale(yScale));
 
+        /* DRAW*/
+        const points = svg.selectAll("rect")
+            .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+            .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+            .append("rect")                                                                             /* Create rectangles in each place holder */
+            .attr("x", function(d) { return xScale(d.Age); })
+            .attr("y", function(d) { return yScale(d.Male1900); })
+            .attr("width", xScale.bandwidth())
+            .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
+            .attr("fill", "steelblue");
+
+        const points = svg.selectAll("rect")
+            .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+            .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+            .append("rect")                                                                             /* Create rectangles in each place holder */
+            .attr("x", function(d) { return xScale(d.Age); })
+            .attr("y", function(d) { return yScale(d.Male2000); })
+            .attr("width", xScale.bandwidth())
+            .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
+            .attr("fill", "yellow");
+
+        /* DRAW AXIS LABELS*/
+        const xAxisLabel = svg.append("text")
+            .attr("class","axisLabel")
+            .attr("x", width/2)
+            .attr("y", height-margin.bottom/2)
+            .text("Age");
+
+        const yAxisLabel = svg.append("text")
+            .attr("class","axisLabel")
+            .attr("transform","rotate(-90)")
+            .attr("x",-height/2)
+            .attr("y",margin.left/2)
+            .text("Male Population");
+
     });
     
