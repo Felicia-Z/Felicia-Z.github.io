@@ -171,14 +171,11 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
     QUESTION 5:
         - What does d3.scaleLinear() do?
     
-        Answer: The d3.scaleLinear() method is used to create a visual scale point. 
-                This method is used to transform data values into visual variables.
-
+        Answer: Construct continuous linear scale where input data (domain) maps to specified output range.
+                
         - What does d3.scaleBand() do?
             
-        Answer: The d3.scaleBand() function in D3.js is used to construct a new band scale with the domain specified as an array of values 
-                and the range as the minimum and maximum extents of the bands. 
-                This function splits the range into n bands where n is the number of values in the domain array.
+        Answer: Band scales are like ordinal scales except the output range is continuous and numeric.
 
         - What is the purpose of the .padding() in d3.scaleBand()?
             
@@ -194,7 +191,8 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
         - For each scale below, how many values are in
             the domain and range?
     
-        Answer: 12
+        Answer: xScale : 12
+                yScale : 12
 
     */
 
@@ -220,7 +218,7 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
 
         - What is the purpose of the "transform" attribute being defined?
             
-        Answer: To modify margin to desired location in svg
+        Answer: To modify xAxis and yAxis to desired location in svg
 
         - What do the d3.axisBottom() and d3.axisLeft() methods do?
             
