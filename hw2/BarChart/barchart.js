@@ -1,5 +1,5 @@
 
-d3.csv("gapminder.csv")
+d3.csv("gapminder.csv")                                                                 /*load data set*/
     .then(function(data) {               
 
         /* DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS*/

@@ -304,7 +304,7 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
     how their values are computed to control the rotated
     placement of the label?
 
-    Answer: add text into svg, set attribute class: axisLabel to the text, rotate it -90 degree, 
+    Answer: add text into svg, set attribute class: axisLabel to the text, rotate it -90 degree(counterclockwise), 
             x coordinate = -height/2, y coordinate = margin.left/2, add text "Life Expectancy (Years)"
 
     */
