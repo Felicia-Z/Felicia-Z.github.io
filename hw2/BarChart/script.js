@@ -191,8 +191,8 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
         - For each scale below, how many values are in
             the domain and range?
     
-        Answer: xScale : 12
-                yScale : 12
+        Answer: domain: xScale : 12 ; yScale : [50,78.242]
+                Range: xScale : [margin.left, width-margin.right] ; yScale : [height-margin.bottom, margin.top]
 
     */
 
@@ -214,7 +214,7 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
     The following chunks of code draw 2 axes -- an x- an y-axis.
         - What is the purpose of the "g" element being appended?
             
-        Answer:
+        Answer: Group element holds the corresponding bar and axis together.
 
         - What is the purpose of the "transform" attribute being defined?
             
