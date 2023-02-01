@@ -43,3 +43,10 @@ p {
     margin: 0px;
 }
 
+.axis{
+  stroke-width: 1;
+}
+
+.axisLabel{
+  stroke-width: 1;
+}

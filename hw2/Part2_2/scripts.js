@@ -56,39 +56,39 @@ d3.csv("new.csv").then(function(data) {
         .call(d3.axisLeft().scale(yScale));
 
     /* DRAW BARS*/
-    // const points1900 = svg.selectAll("rect")
-    //     .data(filtered_data_sex_1900)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
-    //     .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
-    //     .append("rect")                                                                             /* Create rectangles in each place holder */
-    //     .attr("x", function(d) { return xScale(d.year); })
-    //     .attr("y", function(d) { return yScale(d.pop1900); })
-    //     .attr("width", xScale.bandwidth())
-    //     .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
-    //     .attr("fill", "orange");
+    const points1900 = svg.selectAll("rect")
+        .data(filtered_data_sex_1900)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+        .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+        .append("rect")                                                                             /* Create rectangles in each place holder */
+        .attr("x", function(d) { return xScale(d.year); })
+        .attr("y", function(d) { return yScale(d.pop1900); })
+        .attr("width", xScale.bandwidth())
+        .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
+        .attr("fill", "orange");
 
-    // // const points2000 = svg.selectAll("rect")
-    // //     .data(filtered_data_sex_2000)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
-    // //     .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
-    // //     .append("rect")                                                                             /* Create rectangles in each place holder */
-    // //     .attr("x", function(d) { return xScale(d.year); })
-    // //     .attr("y", function(d) { return yScale(d.pop2000); })
-    // //     .attr("width", xScale.bandwidth())
-    // //     .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
-    // //     .attr("fill", "steelblue");
+    const points2000 = svg.selectAll("rect")
+        .data(filtered_data_sex_2000)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+        .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+        .append("rect")                                                                             /* Create rectangles in each place holder */
+        .attr("x", function(d) { return xScale(d.year); })
+        .attr("y", function(d) { return yScale(d.pop2000); })
+        .attr("width", xScale.bandwidth())
+        .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
+        .attr("fill", "steelblue");
     
-    // /*DRAW AXIS LABELS*/
-    // const xAxisLabel = svg.append("text")
-    //     .attr("class","axisLabel")
-    //     .attr("x", width/2)
-    //     .attr("y", height-margin.bottom/2)
-    //     .text("Age Group");
+    /*DRAW AXIS LABELS*/
+    const xAxisLabel = svg.append("text")
+        .attr("class","axisLabel")
+        .attr("x", width/2)
+        .attr("y", height-margin.bottom/2)
+        .text("Age Group");
 
-    // const yAxisLabel = svg.append("text")
-    //     .attr("class","axisLabel")
-    //     .attr("transform","rotate(-90)")
-    //     .attr("x",-height/2)
-    //     .attr("y",margin.left/2)
-    //     .text("Population");
+    const yAxisLabel = svg.append("text")
+        .attr("class","axisLabel")
+        .attr("transform","rotate(-90)")
+        .attr("x",-height/2)
+        .attr("y",margin.left/2)
+        .text("Population");
 
 });
 
