@@ -7,5 +7,11 @@ I would like to choose Male population comparison in 1900 and 2000.
 
 I still choose to use the line chart to represent the question. I also like the little arrow chart which represent the positive or negative growth of population in each age group. But I think I will need to explore more in d3 on how to visualizing that. 
 
+I am going to make a line chart based on the exact male population vs year.
+xAxis would be age group. 
+yAxis would be population value.
+There are going to be two lines in the chart. 
+One for 1900 population value, the one for 2000 population value.
+
 Since this new data set has more precise data. And the sex is reported as 1 and 2. So we need to filter all the "1"s from "Sex", and then filter all the "1900"s in the "1"s and all the "2000"s in the "1". 
 The data values are too large to put on the svg canvas, so we have to scale the minimum and maximum value to the scale of the svg size. 
