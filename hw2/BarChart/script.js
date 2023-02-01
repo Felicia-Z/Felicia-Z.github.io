@@ -7,22 +7,22 @@ and discuss the following questions:                                       the o
         inside of the parentheses for d3.csv()                              and provides a reference to the csv file we just loaded to the next method .then()
         referring to?
     
-        Answer:
+        Answer: find gapminder.csv under data folder
 
     - What is the parameter named `data` inside of
         the function expression within .then()
         referring to?
     
-        Answer:
+        Answer: the data elements that is bounded to the csv we just selected
 
     - What kind of JS data structure is `data`?
     
-        Answer:
+        Answer: array list
 
     - Where does the entire d3.csv().then() pattern
         open and close in this document?
     
-        Answer:
+        Answer: line 32 and line 306
 
     You may find it useful to examine the contents
     of `data` with console.log(data)
@@ -37,15 +37,20 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
     QUESTION 2:
         - What is document.querySelector("#chart") doing?
             
-        Answer:
+        Answer: The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
+                Parameter: #chart, select the element with id = "chart"
 
 
         - `clientWidth` and `clientHeight` are properties of
             elements in the DOM (Document Object Model).
             What do these properties measure?
                 
-        Answer:
-
+        Answer: The Element.clientWidth property is zero for inline elements and elements with no CSS; 
+                otherwise, it's the inner width of an element in pixels. 
+                It includes padding but excludes borders, margins, and vertical scrollbars (if present).
+                The Element.clientHeight read-only property is zero for elements with no CSS or inline layout boxes; 
+                otherwise, it's the inner height of an element in pixels. 
+                It includes padding but excludes borders, margins, and horizontal scrollbars (if present).
 
     */
     const width = document.querySelector("#chart").clientWidth;
@@ -73,32 +78,41 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
     - What does this method do/how does this method work?
         (What do we get back from using this method?)
             
-        Answer:
+        Answer: The filter() method creates a shallow copy of a portion of a given array, 
+                filtered down to just the elements from the given array that pass the test implemented by the provided function.
+                If no elements pass the test, an empty array will be returned.
+                In this case, filters country name equal to United States.
 
     - Inside the parentheses for .filter(), there is
         a function expression with a parameter
         named `d`. What is `d` a reference to?
             
-        Answer:
+        Answer: d refers to current data element, in this case, go through all the country data
 
     - Does that parameter *have to be* named `d`?
         Can it be named something else?
             
-        Answer:
+        Answer: No, it doesn't.
+                Yes, it can. 
+                d is a anonymous function call, 
+                it could be replaced with more standard function definitionsand specified the name of the function to be called in the d3 call.
 
     - What is the purpose of the statement inside
         the function expression? What is this doing?
 
         return d.year === '2007';
             
-        Answer:
+        Answer: data() function requires an array;
+                Comparison operators are used in logical statements to determine equality or difference between variables or values.
+                === equal value and type
+                it is comparing all the data in country column and find out which one is equal to United States
 
 
     - Why are we storing the result of data.filter(...)
         inside a variable (filtered_data)?
             
-        Answer:
-
+        Answer: Because a variable is a data storage location that has a value that can change during program execution.
+                A constant has a fixed value that can't change.
 
     */
 
@@ -123,17 +137,19 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
         - What does d3.min() do? What does d3.max() do?
             What are the 2 arguments we supply to d3.min()/d3.max()?
                 
-        Answer:
+        Answer: d3.min(): returns the minimum value from the given iterable of values.
+                d3.max(): returns the maximum value
+                2 arguments: filtered_data, function(d) { return +d.lifeExp; }: find minumum and maximum of lifeExp in the filtered_data
 
         - In the second argument for both d3.min() and d3.max(),
             the function expression has a parameter named `d`.
             What is `d` a reference to?
                 
-        Answer:
+        Answer: data element bounded in filtered_data
 
         - Why is there a plus sign (+) in front of d.lifeExp?
             
-        Answer:
+        Answer: The + operator returns the numeric representation of the object.
 
 
     */
@@ -155,25 +171,30 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
     QUESTION 5:
         - What does d3.scaleLinear() do?
     
-        Answer:
+        Answer: The d3.scaleLinear() method is used to create a visual scale point. 
+                This method is used to transform data values into visual variables.
 
         - What does d3.scaleBand() do?
             
-        Answer:
+        Answer: The d3.scaleBand() function in D3.js is used to construct a new band scale with the domain specified as an array of values 
+                and the range as the minimum and maximum extents of the bands. 
+                This function splits the range into n bands where n is the number of values in the domain array.
 
         - What is the purpose of the .padding() in d3.scaleBand()?
             
-        Answer:
+        Answer: The padding function allows you to set padding between the bands, and above and below. 
+                band.padding: setting the inner and outer padding to the same padding vale.
 
         - For each scale below, what does the domain
             represent, and what does the range represent?
                 
-        Answer:
+        Answer: Domain denotes minimum and maximum values of your input data.
+                Range is the output range that you would like your input values to map to
 
         - For each scale below, how many values are in
             the domain and range?
     
-        Answer:
+        Answer: 12
 
     */
 
@@ -199,11 +220,12 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
 
         - What is the purpose of the "transform" attribute being defined?
             
-        Answer:
+        Answer: To modify margin to desired location in svg
 
         - What do the d3.axisBottom() and d3.axisLeft() methods do?
             
-        Answer:
+        Answer: d3.axisBottom() : Creates bottom horizontal axis.
+                d3.axisLeft() : Creates left vertical axis.
 
     */
     const xAxis = svg.append("g")
@@ -229,28 +251,37 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
     The following chunk of code is the standard D3 data join pattern.
         - What is the purpose of the pattern svg.selectAll().data().enter().append()?
             
-        Answer:
+        Answer: svg.selectAll().data().enter().append()
+                svg.selectAll() : returns all the matching elements in svg based on specified selector in () which is rectangle in this case 
+                .data() : Joins data to the selected elements 
+                .enter() : Creates a selection with placeholder references for missing elements
+                .append() : Adds an element inside the selected element but just before the end of the selected element
 
         - Each attribute defined below is defined using things called
             "accessor functions." In each accessor function, what is
             the parameter named `d` a reference to?
                 
-        Answer:
+        Answer: for each rectangle element, 
+                set "x" to be the result of calling xScale on the data element d.year;
+                set "y" to be the result of calling yScale on the data element d.lifeExp;
+                set "width" to be the result of calling xScale on the data element bandwidth;
+                set "height" to be the result of (height - margin.bottom - calling yScale on the data element d.lifeExp));
+                set "fill" to be steelblue.
 
         - Inside each accessor function, what is the purpose of
             each "return ___;" statement?
                 
-        Answer:
+        Answer: use the data already bounded to it
 
         - What does xScale.bandwidth() compute? How is that value being used here?
             
-        Answer:
+        Answer: The width of the bars.
 
         - What is going on with the calculation for the "height" attribute?
             Explain how the expression inside the accessor function for this
             attribute works.
     
-        Answer:
+        Answer: the height of the SVG minus the bottom margin minus the corresponding y-value of the bar from the y-scale. 
 
     */
     const points = svg.selectAll("rect")
