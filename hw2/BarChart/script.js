@@ -1,34 +1,52 @@
-
 /*
 QUESTION 1:
-
-Examine the d3.csv().then() pattern below
-and discuss the following questions:
-    - What is the "./data/gapminder.csv" inside of
-        inside of the parentheses for d3.csv()
+                                                           Personal note section:
+Examine the d3.csv().then() pattern below                  . chain syntax: d3 use . to chain all the methods together, 
+and discuss the following questions:                                       the output of the first method is passes as an input to the next method in the chain
+    - What is the "./data/gapminder.csv" inside of         d3.csv().then(): the first method .csv() filters out the csv file we target, 
+        inside of the parentheses for d3.csv()                              and provides a reference to the csv file we just loaded to the next method .then()
         referring to?
+    
+        Answer:
+
     - What is the parameter named `data` inside of
         the function expression within .then()
         referring to?
+    
+        Answer:
+
     - What kind of JS data structure is `data`?
+    
+        Answer:
+
     - Where does the entire d3.csv().then() pattern
         open and close in this document?
+    
+        Answer:
 
     You may find it useful to examine the contents
     of `data` with console.log(data)
 
 */
-
-d3.csv("./data/gapminder.csv").then(function(data) {
-
+                                                            /* this chained method could also written in a more readable format by writing each method on a new line */
+d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/gapminder.csv") */          
+                                                            /*   .then(function(data) {....} */
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
 
     QUESTION 2:
         - What is document.querySelector("#chart") doing?
+            
+        Answer:
+
+
         - `clientWidth` and `clientHeight` are properties of
             elements in the DOM (Document Object Model).
             What do these properties measure?
+                
+        Answer:
+
+
     */
     const width = document.querySelector("#chart").clientWidth;
     const height = document.querySelector("#chart").clientHeight;
@@ -54,18 +72,33 @@ d3.csv("./data/gapminder.csv").then(function(data) {
     `.filter()` is a JavaScript array method.
     - What does this method do/how does this method work?
         (What do we get back from using this method?)
+            
+        Answer:
+
     - Inside the parentheses for .filter(), there is
         a function expression with a parameter
         named `d`. What is `d` a reference to?
+            
+        Answer:
+
     - Does that parameter *have to be* named `d`?
         Can it be named something else?
+            
+        Answer:
+
     - What is the purpose of the statement inside
         the function expression? What is this doing?
 
         return d.year === '2007';
+            
+        Answer:
+
 
     - Why are we storing the result of data.filter(...)
         inside a variable (filtered_data)?
+            
+        Answer:
+
 
     */
 
@@ -89,10 +122,19 @@ d3.csv("./data/gapminder.csv").then(function(data) {
     QUESTION 4:
         - What does d3.min() do? What does d3.max() do?
             What are the 2 arguments we supply to d3.min()/d3.max()?
+                
+        Answer:
+
         - In the second argument for both d3.min() and d3.max(),
             the function expression has a parameter named `d`.
             What is `d` a reference to?
+                
+        Answer:
+
         - Why is there a plus sign (+) in front of d.lifeExp?
+            
+        Answer:
+
 
     */
 
@@ -112,13 +154,26 @@ d3.csv("./data/gapminder.csv").then(function(data) {
 
     QUESTION 5:
         - What does d3.scaleLinear() do?
+    
+        Answer:
+
         - What does d3.scaleBand() do?
+            
+        Answer:
+
         - What is the purpose of the .padding() in d3.scaleBand()?
+            
+        Answer:
+
         - For each scale below, what does the domain
             represent, and what does the range represent?
+                
+        Answer:
+
         - For each scale below, how many values are in
             the domain and range?
-
+    
+        Answer:
 
     */
 
@@ -139,8 +194,16 @@ d3.csv("./data/gapminder.csv").then(function(data) {
     
     The following chunks of code draw 2 axes -- an x- an y-axis.
         - What is the purpose of the "g" element being appended?
+            
+        Answer:
+
         - What is the purpose of the "transform" attribute being defined?
+            
+        Answer:
+
         - What do the d3.axisBottom() and d3.axisLeft() methods do?
+            
+        Answer:
 
     */
     const xAxis = svg.append("g")
@@ -165,15 +228,29 @@ d3.csv("./data/gapminder.csv").then(function(data) {
 
     The following chunk of code is the standard D3 data join pattern.
         - What is the purpose of the pattern svg.selectAll().data().enter().append()?
+            
+        Answer:
+
         - Each attribute defined below is defined using things called
             "accessor functions." In each accessor function, what is
             the parameter named `d` a reference to?
+                
+        Answer:
+
         - Inside each accessor function, what is the purpose of
             each "return ___;" statement?
+                
+        Answer:
+
         - What does xScale.bandwidth() compute? How is that value being used here?
+            
+        Answer:
+
         - What is going on with the calculation for the "height" attribute?
             Explain how the expression inside the accessor function for this
             attribute works.
+    
+        Answer:
 
     */
     const points = svg.selectAll("rect")
