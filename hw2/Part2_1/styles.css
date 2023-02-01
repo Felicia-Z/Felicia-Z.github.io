@@ -37,7 +37,16 @@ p {
     font-weight: 400;
   }
 
+#chart {
+    width:1000px;
+    height:800px;
+    margin: 0px;
+}
 
 .bar {
     fill: steelblue;
+}
+
+.axis{
+    stroke-width: 1;
 }

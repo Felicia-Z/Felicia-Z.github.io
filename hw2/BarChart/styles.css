@@ -46,3 +46,7 @@ p {
     height:800px;
     margin: 0px;
 }
+
+.axis{
+  stroke-width: 1;
+}
