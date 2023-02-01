@@ -1,3 +1,4 @@
+Homework description
 Assignment 2 (A2): Visualization Design
 Part 1 Demonstrations and QA
 Choose one of the two demonstrations given under Files -> Demonstrations -> gapminder_demonstrations.zip (scatter plot or bar chart). Only a .js file is provided for each demonstration, and each file uses the gapminder.csv dataset that is under Files -> Datasets. Throughout the two JavaScript files, you'll find a series of conceptual questions that ask you to explain what is happening in the code. 

@@ -13,7 +13,11 @@
         <script src="https://d3js.org/d3.v7.min.js"></script>
         
     </head>
-    
+    <style>
+        .error {
+            color: red
+        }
+    </style>
     <body>
         <!-- this is the start of content -->
 
@@ -21,14 +25,10 @@
             Assignment 2 Part 1 - Limin 
         </h1>
 
-        <p>First paragraph</p>
-        <p>Second paragraph</p>
-        
-        <script>
-            d3.select("p").style("color", "red");
-        </script>
-
-        <!-- <script src="script.js" ></script> -->
+        <p>Error1: This is dummy error.</p>
+    <script>
+        d3.select("p").attr("class","error");
+    </script>
 
     </body>
 </html>
