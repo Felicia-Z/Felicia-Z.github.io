@@ -7,7 +7,7 @@ and discuss the following questions:                                       the o
         inside of the parentheses for d3.csv()                              and provides a reference to the csv file we just loaded to the next method .then()
         referring to?
     
-        Answer: find gapminder.csv under data folder
+        Answer: load gapminder.csv under data folder and executes callback function with parsed csv data objects.
 
     - What is the parameter named `data` inside of
         the function expression within .then()
@@ -102,7 +102,7 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
 
         return d.year === '2007';
             
-        Answer: data() function requires an array;
+        Answer: data() function requires an array or a function;
                 Comparison operators are used in logical statements to determine equality or difference between variables or values.
                 === equal value and type
                 it is comparing all the data in country column and find out which one is equal to United States
@@ -285,9 +285,9 @@ d3.csv("./data/gapminder.csv").then(function(data) {        /* d3.csv("./data/ga
 
     */
     const points = svg.selectAll("rect")
-        .data(filtered_data)
-        .enter()
-        .append("rect")
+        .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+        .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+        .append("rect")                                                                             /* Create rectangles in each place holder */
             .attr("x", function(d) { return xScale(d.year); })
             .attr("y", function(d) { return yScale(d.lifeExp); })
             .attr("width", xScale.bandwidth())
