@@ -251,6 +251,41 @@ d3.csv("./data/gapminder.csv").then(function(data) {
         points.attr("opacity",1)
         })
 
+        //ledgend for scatter plot
+const legendWidth = document.querySelector("#legend").clientWidth;
+const legendHeight = 150;
+const legendMargin = 20;
+const legendSpacing =100;
+
+const colorLegend = d3.select("#legend")
+        .append("svg")
+        .attr("height",legendHeight)
+        .attr("width",legendWidth)
+
+// colorLegend.append("rect")
+// .attr
+// .attr
+// .attr
+// .attr
+
+const continents = ["Asia","Europe","Africa","America","Oceania"];
+
+const fillScale = d3.scaleOrdinal()
+
+continents.forEach(function(continent, i){
+    colorLegend.append("circle")
+        .attr("cx",30+legendMargin + i*legendSpacing)
+        .attr("cy", legendMargin)
+        .attr("r",10)
+        .attr("fill",fillScale(continent))
+
+    colorLegend.append("text")
+        .attr("class","legend--label")
+        .attr("x",30+legendMargin + i*legendSpacing)
+        .attr("y",legendMargin + 25)
+        .text(continent)
+
+});
 
 
 });
