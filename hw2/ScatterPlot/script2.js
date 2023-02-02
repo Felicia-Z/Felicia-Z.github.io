@@ -18,7 +18,7 @@ and discuss the following questions:
 
 */
 
-d3.csv("./data/gapminder.csv").then(function(data) {
+d3.csv("gapminder.csv").then(function(data) {
 
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
@@ -225,67 +225,77 @@ d3.csv("./data/gapminder.csv").then(function(data) {
         .text("Life Expectancy (Years)");
 
 
-  // tool tip for scatter plot
-    const tooltip = d3.select("#chart")
-        .append("div")
-        .attr("class","tooltip");
+//   // tool tip for scatter plot
+//     const tooltip = d3.select("#chart")
+//         .append("div")
+//         .attr("class","tooltip");
 
-    points.on("mouseover",function(e,d){                    //e:error
-        let x = +d3.select(this).attr("cx");
-        let y = +d3.select(this).attr("cy");
+//     points.on("mouseover",function(e,d){                    //e:error
+//         let x = +d3.select(this).attr("cx");
+//         let y = +d3.select(this).attr("cy");
 
-        let displayValue = d3.format(",")(d.pop);
+//         let displayValue = d3.format(",")(d.pop);
     
-        tooltip.style("visibility","visible")
-            .style("top",'${y}px')
-            .style("left",'${x}px')
-            .html('<p><b>${d.country}</b><br><em>${d.country}</em><br>#:${displayValue}</p>')
+//         tooltip.style("visibility","visible")
+//             .style("top",'${y}px')
+//             .style("left",'${x}px')
+//             .html('<p><b>${d.country}</b><br><em>${d.country}</em><br>#:${displayValue}</p>')
 
-        points.attr("opacity",0.1);
-        d3.select(this).attr("opacity",1).rais();
+//         points.attr("opacity",0.1);
+//         d3.select(this).attr("opacity",1).rais();
 
-    }).on("mouseout", function(){
+//     }).on("mouseout", function(){
 
-        tooltip.style("visibility","visible");
+//         tooltip.style("visibility","visible");
 
-        points.attr("opacity",1)
-        })
+//         points.attr("opacity",1)
+//         })
 
-        //ledgend for scatter plot
-        const legendWidth = document.querySelector("#legend").clientWidth;
-        const legendHeight = 150;
-        const legendMargin = 20;
-        const legendSpacing =100;
+//         //ledgend for scatter plot
+//         const legendWidth = document.querySelector("#legend").clientWidth;
+//         const legendHeight = 150;
+//         const legendMargin = 20;
+//         const legendSpacing =100;
 
-        const colorLegend = d3.select("#legend")
-                .append("svg")
-                .attr("height",legendHeight)
-                .attr("width",legendWidth)
+//         const colorLegend = d3.select("#legend")
+//                 .append("svg")
+//                 .attr("height",legendHeight)
+//                 .attr("width",legendWidth)
 
-        // colorLegend.append("rect")
-        // .attr
-        // .attr
-        // .attr
-        // .attr
+//         // colorLegend.append("rect")
+//         // .attr
+//         // .attr
+//         // .attr
+//         // .attr
 
-        const continents = ["Asia","Europe","Africa","America","Oceania"];
+//         const continents = ["Asia","Europe","Africa","America","Oceania"];
 
-       // const fillScale = d3.scaleOrdinal()
+//        // const fillScale = d3.scaleOrdinal()
 
-        continents.forEach(function(continent, i){
-            colorLegend.append("circle")
-                .attr("cx",30+legendMargin + i*legendSpacing)
-                .attr("cy", legendMargin)
-                .attr("r",10)
-                .attr("fill",fillScale(continent))
+//         continents.forEach(function(continent, i){
+//             colorLegend.append("circle")
+//                 .attr("cx",30+legendMargin + i*legendSpacing)
+//                 .attr("cy", legendMargin)
+//                 .attr("r",10)
+//                 .attr("fill",fillScale(continent))
 
-            colorLegend.append("text")
-                .attr("class","legend--label")
-                .attr("x",30+legendMargin + i*legendSpacing)
-                .attr("y",legendMargin + 25)
-                .text(continent)
+//             colorLegend.append("text")
+//                 .attr("class","legend--label")
+//                 .attr("x",30+legendMargin + i*legendSpacing)
+//                 .attr("y",legendMargin + 25)
+//                 .text(continent)
 
+// });
+
+const allCategories = data.map(function(d){
+    return d.continent;
 });
+
+
+console.log(allCategories);
+
+const uniqueCategories = [...new Set(allCategories)];
+console.log(uniqueCategories);
 
 
 });
