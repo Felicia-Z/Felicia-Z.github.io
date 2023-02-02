@@ -90,6 +90,9 @@ d3.csv("new.csv").then(function(data) {
         .attr("y",margin.left/2)
         .text("Population");
 
+        //tooltip
+        const tooltip = d3.selet(#chart)
+
 });
 
 

@@ -43,6 +43,7 @@ p {
     width:1000px;
     height:800px;
     margin: 0px;
+    position: relative;
 }
 
 .axis{
@@ -51,4 +52,11 @@ p {
 
 .axisLabel{
   stroke-width: 1;
+}
+
+.tooltip{
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  left: 0px;
 }

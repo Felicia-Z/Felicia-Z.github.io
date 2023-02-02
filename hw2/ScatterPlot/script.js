@@ -224,4 +224,33 @@ d3.csv("./data/gapminder.csv").then(function(data) {
         .attr("y",margin.left/2)
         .text("Life Expectancy (Years)");
 
+
+  // tool tip for scatter plot
+    const tooltip = d3.select("#chart")
+        .append("div")
+        .attr("class","tooltip");
+
+    points.on("mouseover",function(e,d){                    //e:error
+        let x = +d3.select(this).attr("cx");
+        let y = +d3.select(this).attr("cy");
+
+        let displayValue = d3.format(",")(d.pop);
+    
+        tooltip.style("visibility","visible")
+            .style("top",'${y}px')
+            .style("left",'${x}px')
+            .html('<p><b>${d.country}</b><br><em>${d.country}</em><br>#:${displayValue}</p>')
+
+        points.attr("opacity",0.1);
+        d3.select(this).attr("opacity",1).rais();
+
+    }).on("mouseout", function(){
+
+        tooltip.style("visibility","visible");
+
+        points.attr("opacity",1)
+        })
+
+
+
 });
