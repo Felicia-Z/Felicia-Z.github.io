@@ -6,6 +6,12 @@ Choose a topic area of interest to you and find a dataset that can provide insig
 
 three different questions you’d like to investigate in relation to the topic and dataset
 
+1.
+
+2.
+
+3.
+
 STEP 2
 
 Use any visualization tool/method you are most comfortable with (digital or physical, or both) to explore your dataset. 
@@ -15,6 +21,7 @@ Use any visualization tool/method you are most comfortable with (digital or phys
      - Who collected/produced this dataset and why? Is it recent, is it being frequently updated?     
 
      - Are there any data quality issues? For example, is there anything missing?
+    
 
      - What variables does the dataset contain? What do they stand for? Can you tell how the variables are distributed?
      
@@ -36,4 +43,3 @@ Each visualization image should be a screenshot exported from a visualization to
 
  Your “insights” can include important surprises or issues (such as data quality problems affecting your analysis) as well as responses to your analysis questions.
 
- 
