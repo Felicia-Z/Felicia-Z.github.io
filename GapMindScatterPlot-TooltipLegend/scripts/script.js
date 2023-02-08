@@ -18,7 +18,7 @@ and discuss the following questions:
 
 */
 
-d3.csv("./data/gapminder.csv").then(function(data) {
+d3.csv("data/gapminder.csv").then(function(data) {
 
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS

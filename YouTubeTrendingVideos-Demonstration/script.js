@@ -75,15 +75,30 @@ construct a NEW object that will represent each individual row.
 
 
 function parseCsv(d) {
-
-	// Your Code here
+   // Your Code here
+    if(d.likes>1000000){                                    //filter rows to only the number of likes is at least 1,000,000 likes
+        return{
+            video_id: d.video_id,
+            title: d.title,
+            trending_date: d.trending_date,
+            //channelTitle: d.channelTitle,                 //remove  the channelTitle column
+            category: d.category,
+            views: +d.view_count,                           //change column name from view_count to views, converts string to numbers 
+            comments: +d.comment_count,                     //change column name from comment_count to comments, converts string to numbers
+            likes: +d.likes,                                //converts string to numbers
+            dislikes: +d.dislikes,                          //converts string to numbers
+        }
+  	
+    }
 
 }
 
-
-d3.csv('Your path to the dataset', parseCsv).then(function(data) {
+d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parseCsv).then(function(data) {
 
     console.log(data);
+
+    //console.log(data.likes);                              // why not working?
+    
 
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
@@ -123,6 +138,8 @@ d3.csv('Your path to the dataset', parseCsv).then(function(data) {
         max: d3.max(data, function(d) { return d.likes; })
     };
 
+    //console.log(likes);
+
     const comments = {
         min: d3.min(data, function(d) { return d.comments; }),
         max: d3.max(data, function(d) { return d.comments; })
@@ -154,6 +171,7 @@ d3.csv('Your path to the dataset', parseCsv).then(function(data) {
     */
 
     const categories = ["Gaming", "Entertainment", "Music"];
+    //console.log(categories);
 
     /*
 
@@ -179,6 +197,14 @@ d3.csv('Your path to the dataset', parseCsv).then(function(data) {
 
     */
 
+    // const allCategories = data.map(function(d) {
+    //     return d.category;
+    // });
+    // console.log(allCategories);
+
+    // The variable allCategories store after the above computation are each element in the category. "Gaming", "Entertainment", "Music" are repeated multiple times and match the sequence of each row. 
+    // Because map() call the function for each element in an array. It keeps iterating through each element. That's why we are getting duplicated elements.
+
     /*
 
     TASK 2
@@ -188,6 +214,7 @@ d3.csv('Your path to the dataset', parseCsv).then(function(data) {
     the array containing the unique categories in a constant variable:
    
     */
+
 
     // Your Code here
 
