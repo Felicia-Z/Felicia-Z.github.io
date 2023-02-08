@@ -145,7 +145,7 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
         max: d3.max(data, function(d) { return d.comments; })
     };
 
-    // console.log(comments);
+     console.log(comments);
 
     const views = {
         min: d3.min(data, function(d) { return d.views; }),
@@ -309,7 +309,8 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     - What is the purpose of `return fillScale(d.category)`?
 
     ANSWER 4: d is refering to each row in our filtered 'data' array, d3.csv(), in line 96
-              to apply the function we defined in line 279 to stroke
+            the purpose of `return fillScale(d.category)`to apply the function we defined in line 279 to stroke and fill, 
+            so the circles can have a corresponding color
 
     */
 
@@ -386,6 +387,7 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     ANSWER 5: "mouseover" event occurs when the mouse pointer enters an element.
               "mouseout" event occurs when the mouse pointer leaves the element.
               'd' becomes equal to each objects created by this function
+              'points' is referring to the circles we created in line 317, it is holding all rows of pbjects from the data array
 
     */
 
@@ -398,7 +400,7 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
         tooltip.style("visibility", "visible")
             .style("top", `${y}px`)
             .style("left", `${x}px`)
-            .html(`<p><b>Title: ${d.title}</b><br><em>Category: ${categories}</em><br>Likes: ${displayValue}</p>`);
+            .html(`<p><b>Title: ${d.title}</b><br><em>Category: ${d.category}</em><br>Likes: ${displayValue}</p>`);       //display 3 pieces of information: line 1: title; line 2: category; line 3: number of likes
         points.attr("opacity", 0.1);
         d3.select(this).attr("opacity", 1).raise();
 
@@ -438,7 +440,17 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
 
     // Your Code here
 
+    const legendWidth = document.querySelector("#legend").clientWidth;
+    const legendHeight = 150;
+    const legendMargin = 20;
+    const legendSpacing = 100;
 
+    const colorLegend = d3.select("#legend")
+        .append("svg")
+        .attr("height", legendHeight)
+        .attr("width", legendWidth);
+
+    //console.log(legendWidth);
     /*
 
     -> Next, iterate over each of the values for which
@@ -452,7 +464,20 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
 
     // Your Code here
 
+    categories.forEach(function(categories,i){
+        colorLegend.append("circle")
+            .attr("cx", -10+legendMargin + i*legendSpacing)
+            .attr("cy", legendMargin)
+            .attr("r", 10)
+            .attr("fill", fillScale(categories));
 
+        colorLegend.append("text")
+            .attr("class", "legend--label")
+            .attr("x", -20+legendMargin + i*legendSpacing)
+            .attr("y", legendMargin + 25)
+            .text(categories);
+    });
+  
     /* 
     
     TASK 5 (Optional): ADDING LEGENDS FOR NUMERICAL VARIABLES
@@ -469,6 +494,32 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     */
 
     // Your Code here
+
+//     const sizeLegend = d3.select("#legend")
+//         .append("svg")
+//         .attr("height", legendHeight)
+//         .attr("width", legendWidth);
+
+//     const commentSize = [d3.min.comments, (d3.min.comments+d3.max.comments)/2, d3.max.comments];
+//     const commentText = ["1 K","3 M","6 M"];
+
+//     commentSize.forEach(function(commentSize,i){
+//         sizeLegend.append("circle")
+//             .attr("cx", -10+legendMargin + i*legendSpacing)
+//             .attr("cy", legendMargin)
+//             .attr("r",10)
+//             // .attr("r", function(d) { return d.commentSize})    
+//             .attr("fill", '#ffffff')
+//             .attr("stroke", '#00000');
+
+// console.log(1)
+
+//         sizeLegend.append("text")
+//             .attr("class", "legend--label")
+//             .attr("x", -20+legendMargin + i*legendSpacing)
+//             .attr("y", legendMargin + 25)
+//             .text(commentText);
+//     });  
 
 
     /* 
