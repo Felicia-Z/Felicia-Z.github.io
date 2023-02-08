@@ -363,7 +363,10 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
 
 
     // Your Code here
-
+    
+    const tooltip = d3.select("#chart")                         // create a new div element inside #chart container
+        .append("div")
+        .attr("class", "tooltip");                              // gve it a class 'tooltip'
 
     /*
 
@@ -380,18 +383,30 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     - What is the meaning of the input variable `d`? 
     - What is the variable `points` referring to? What does it "hold"?
 
-    ANSWER 5: 
+    ANSWER 5: "mouseover" event occurs when the mouse pointer enters an element.
+              "mouseout" event occurs when the mouse pointer leaves the element.
+              'd' becomes equal to each objects created by this function
 
     */
 
     points.on("mouseover", function(e, d) {
 
         // Your Code here
+        let x = +d3.select(this).attr("cx");
+        let y = +d3.select(this).attr("cy");
+        let displayValue = d3.format(",")(d.likes);                      //number of likes of a video, formatted with comma (,) notation
+        tooltip.style("visibility", "visible")
+            .style("top", `${y}px`)
+            .style("left", `${x}px`)
+            .html(`<p><b>Title: ${d.title}</b><br><em>Category: ${categories}</em><br>Likes: ${displayValue}</p>`);
+        points.attr("opacity", 0.1);
+        d3.select(this).attr("opacity", 1).raise();
 
     }).on("mouseout", function() {
 
         // Your Code here
-
+        tooltip.style("visibility", "hidden");
+        points.attr("opacity", 1);
     });
 
 
