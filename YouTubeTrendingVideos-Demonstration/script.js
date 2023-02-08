@@ -81,7 +81,7 @@ function parseCsv(d) {
             video_id: d.video_id,
             title: d.title,
             trending_date: d.trending_date,
-            //channelTitle: d.channelTitle,                 //remove  the channelTitle column
+            //channelTitle: d.channelTitle,                 //comment out or remove this line to remove the channelTitle column
             category: d.category,
             views: +d.view_count,                           //change column name from view_count to views, converts string to numbers 
             comments: +d.comment_count,                     //change column name from comment_count to comments, converts string to numbers
@@ -138,17 +138,21 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
         max: d3.max(data, function(d) { return d.likes; })
     };
 
-    //console.log(likes);
+    // console.log(likes);
 
     const comments = {
         min: d3.min(data, function(d) { return d.comments; }),
         max: d3.max(data, function(d) { return d.comments; })
     };
 
+    // console.log(comments);
+
     const views = {
         min: d3.min(data, function(d) { return d.views; }),
         max: d3.max(data, function(d) { return d.views; })
     };
+
+    // console.log(views);
 
     /* 
 
@@ -171,6 +175,7 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     */
 
     const categories = ["Gaming", "Entertainment", "Music"];
+    
     //console.log(categories);
 
     /*
@@ -200,7 +205,9 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     // const allCategories = data.map(function(d) {
     //     return d.category;
     // });
+   
     // console.log(allCategories);
+    
 
     // The variable allCategories store after the above computation are each element in the category. "Gaming", "Entertainment", "Music" are repeated multiple times and match the sequence of each row. 
     // Because map() call the function for each element in an array. It keeps iterating through each element. That's why we are getting duplicated elements.
@@ -215,9 +222,17 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
    
     */
 
-
     // Your Code here
+    // Set is a collection of unique balue
+    // convert the list to set can remove duplicates
+    // then convert the set back to a list
+    // ... spread operator allows us to quickly copy all or part of an existing array or object into another array or object
 
+    // const uniqueCategories = [...new Set(allCategories)]        
+   
+    // console.log(uniqueCategories);
+
+    //console.log(uniqueCategory);          
 
     /*
     CREATE SCALES
@@ -232,12 +247,21 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     QUESTION 2: Notice below the variables `likes`, `views`, and `comments`.
                 What do these variables represent? What values do they store?
 
-    ANSWER 2:
+    ANSWER 2: likes: represent the constant variable we created in line 136, 
+                     it stores the minimum and maximum number of likes from the csv after filtered elements with likes greater than 1,000,000, 
+                     the value it stores is min likes : 1,003,441, max likes : 16,021,534
+              views: represent the constant variable we created in line 136, 
+                     it stores the minimum and maximum number of likes from the csv after filtered elements with likes greater than 1,000,000, 
+                     the value it stores is min views : 1,134, max views : 6,738,537
+              comments: represent the constant variable we created in line 150, 
+                     it stores the minimum and maximum number of comments from the csv after filtered elements with likes greater than 1,000,000, 
+                     the value it stores is min comments : 4,754,154, max comments : 264,407,389
 
     QUESTION 3: Notice the variable `fillScale`. What does it store? In which
 		cases in this demonstration is this variable being used?
 
-    ANSWER 2:
+    ANSWER 3: 'fillScale' store the RBG color, it is assigning color to categories respectively, 
+              "Gaming" - '#1b9e77' - a greenish color, "Entertainment" - '#d95f02' - a orangeish color, "Music" - '#7570b3' - a blueish color
 
     */
 
@@ -256,7 +280,6 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     const fillScale = d3.scaleOrdinal()
         .domain(categories)
         .range(['#1b9e77','#d95f02','#7570b3']);
-
 
 
     /*
@@ -285,7 +308,8 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     - What is the parameter `d` referring to?
     - What is the purpose of `return fillScale(d.category)`?
 
-    ANSWER 4:
+    ANSWER 4: d is refering to each row in our filtered 'data' array, d3.csv(), in line 96
+              to apply the function we defined in line 279 to stroke
 
     */
 
