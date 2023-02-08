@@ -24,7 +24,6 @@ d3.csv("new.csv").then(function(data) {
     const pop1900 = {
         min: d3.min(filtered_data_sex_1900, function(d) { return +d.People; }),
         max: d3.max(filtered_data_sex_1900, function(d) { return +d.People; }),
-       
     };
     //console.log(pop1900)
     
@@ -55,6 +54,8 @@ d3.csv("new.csv").then(function(data) {
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft().scale(yScale));
 
+    console.log(yScale(pop1900));
+
     /* DRAW BARS*/
     const points1900 = svg.selectAll("rect")
         .data(filtered_data_sex_1900)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
@@ -63,18 +64,18 @@ d3.csv("new.csv").then(function(data) {
         .attr("x", function(d) { return xScale(d.year); })
         .attr("y", function(d) { return yScale(d.pop1900); })
         .attr("width", xScale.bandwidth())
-        .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
+        .attr("height", function(d) { return height - margin.bottom - yScale(d.pop1900); })
         .attr("fill", "orange");
 
-    const points2000 = svg.selectAll("rect")
-        .data(filtered_data_sex_2000)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
-        .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
-        .append("rect")                                                                             /* Create rectangles in each place holder */
-        .attr("x", function(d) { return xScale(d.year); })
-        .attr("y", function(d) { return yScale(d.pop2000); })
-        .attr("width", xScale.bandwidth())
-        .attr("height", function(d) { return height - margin.bottom - yScale(d.lifeExp); })
-        .attr("fill", "steelblue");
+    // const points2000 = svg.selectAll("rect")
+    //     .data(filtered_data_sex_2000)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+    //     .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+    //     .append("rect")                                                                             /* Create rectangles in each place holder */
+    //     .attr("x", function(d) { return xScale(d.year); })
+    //     .attr("y", function(d) { return yScale(d.pop2000); })
+    //     .attr("width", xScale.bandwidth())
+    //     .attr("height", function(d) { return height - margin.bottom - yScale(d.pop2000); })
+    //     .attr("fill", "steelblue");
     
     /*DRAW AXIS LABELS*/
     const xAxisLabel = svg.append("text")
@@ -91,7 +92,7 @@ d3.csv("new.csv").then(function(data) {
         .text("Population");
 
         //tooltip
-        const tooltip = d3.selet(#chart)
+       // const tooltip = d3.selet(#chart)
 
 });
 
