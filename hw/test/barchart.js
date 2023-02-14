@@ -93,7 +93,7 @@ d3.csv("gapminder.csv")                                                         
             tooltip.style("visibility","visible")
                 .style("top",'${y}px')
                 .style("left",'${x}px')
-                .html('<p><b>${d.country}</b><br><em>${d.country}</em><br>#:${displayValue}</p>')
+                .html('<p><b>country:${d.country}</b><br><em>${d.country}</em><br>Population:${displayValue}</p>')
 
             points.attr("opacity",0.1);
             d3.select(this).attr("opacity",1).rais();

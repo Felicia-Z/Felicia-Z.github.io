@@ -97,7 +97,7 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
 
     console.log(data);
 
-    //console.log(data.likes);                              // why not working?
+    //console.log(data.likes);                             
     
 
     /*
@@ -110,9 +110,11 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
 
     const svg = d3.select("#chart")
         .append("svg")
-        .attr("width", width)
-        .attr("height", height);
-    
+        //instead of assigning a fixed dimension for SVG canvas, use viewBox and preserveAspectRatio
+        // .attr("width", width)              
+        // .attr("height", height);
+        .attr("viewBox", `0 0 ${width} ${height}`)             //${} template literal, to inset the computed width and height variables above 
+        .attr("preserveAspectRatio", "xMidYMid meet");         //The value xMidYMid meet means “scale the SVG uniformly in the x- and ydirection as the viewport changes size”
     /*
     
     DETERMINE MIN AND MAX VALUES OF VARIABLES
@@ -145,7 +147,7 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
         max: d3.max(data, function(d) { return d.comments; })
     };
 
-     console.log(comments);
+    // console.log(comments);
 
     const views = {
         min: d3.min(data, function(d) { return d.views; }),
@@ -369,6 +371,10 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
         .append("div")
         .attr("class", "tooltip");                              // gve it a class 'tooltip'
 
+    let tw = svg.node().clientWidth;
+    let th = svg.node().clientHeight;
+    let sx = tw / width;
+    let sy = th / height;
     /*
 
     -> Then, you must implement user interactivity which determines when 
@@ -394,8 +400,8 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     points.on("mouseover", function(e, d) {
 
         // Your Code here
-        let x = +d3.select(this).attr("cx");
-        let y = +d3.select(this).attr("cy");
+        let x = sx*(+d3.select(this).attr("cx"))+20;
+        let y = sy*(+d3.select(this).attr("cy"))-10;
         let displayValue = d3.format(",")(d.likes);                      //number of likes of a video, formatted with comma (,) notation
         tooltip.style("visibility", "visible")
             .style("top", `${y}px`)
@@ -478,6 +484,13 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
             .text(categories);
     });
   
+    d3.select(window).on("resize", function(e) {
+
+        let tw = svg.node().clientWidth;
+        let th = svg.node().clientHeight;
+        sx = tw / width;
+        sy = th / height;
+    });
     /* 
     
     TASK 5 (Optional): ADDING LEGENDS FOR NUMERICAL VARIABLES
@@ -559,7 +572,7 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
     
     */
 
-    d3.selectAll(".category--option").on("click", function() {
+    //d3.selectAll(".category--option").on("click", function() {
 
         /* 
         -> For the checkbox that has just been clicked,
@@ -610,6 +623,6 @@ d3.csv('data/2021-youtube-trending-videos_entertainment-gaming-music.csv', parse
 
         // Your code here
 
-    });
+    //});
 
 });

@@ -71,18 +71,18 @@ Media type key words:
   */
   
 /* first one
-for mobile devices, width < 425px
+for mobile devices, width < 600px
 use "max-width": if the width of the screen is smaller than a maximum of ___ px
 */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
 
   h1 {
-    color:black;
+    color:rgb(26, 26, 26);
     font-size: 14pt;
   }
 
   h2 {
-    color:black;
+    color:rgb(26, 26, 26);
     font-size: 10pt;
   }
 
@@ -98,10 +98,6 @@ use "max-width": if the width of the screen is smaller than a maximum of ___ px
     width: 100%;
   }
 
-  #legend h2 {
-    flex: 1 0 100%;
-  }
-
   #legend {
     width: 100%;
     padding-left: 40px;
@@ -114,16 +110,23 @@ use "max-width": if the width of the screen is smaller than a maximum of ___ px
     max-width: 200px;
   }
 
+  #legend h2 {
+    flex: 1 0 100%;
+  }
+
+  .tooltip {
+    font-size: 10pt;
+  }
+  
+
 }
 
 /* second one 
-for tablets, width > 425px and < 1024px
+for tablets, width > 600px and < 992px
 */
 
-@media only screen and (width > 425px) and (width < 1024px) {
-  #legend svg {
-    max-width: 150px;
-  }
+@media only screen and (width > 600px) and (width < 992px) {
+
   h1 {
     color:grey;
     font-size: 18pt;
@@ -138,16 +141,34 @@ for tablets, width > 425px and < 1024px
     background-color: aquamarine;
   }
 
+  #legend {
+    width: 100%;
+    padding-left: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #legend svg {
+    max-width: 150px;
+  }
+
+  #legend h2 {
+    flex: 1 0 100%;
+  }
+
+  .tooltip {
+    font-size: 11pt;
+  }
 } 
 
 
 
 /* third one 
-for laptops, width > 1024px, 
+for laptops, width > 992px, 
 use "min-width": if the width of the screen is bigger than a minimum of ___ px
 */
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 992px){
   #legend svg {
     max-width: 150px;
   }
@@ -161,6 +182,18 @@ use "min-width": if the width of the screen is bigger than a minimum of ___ px
     font-size: 16pt;
   }
 
+  #legend {
+    width: 100%;
+    padding-left: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #legend svg {
+    display: inline-block;
+    max-width: 200px;
+  }
+
   #legend h2 {
     flex: 1 0 100%;
   }
@@ -169,24 +202,8 @@ use "min-width": if the width of the screen is bigger than a minimum of ___ px
     background-color: lightblue;
   }
 
+  .tooltip {
+    font-size: 14pt;
+  }
+
 }
-
-
-
-
-/* 
-1. What are the conditions used to define these media queries? 
-   What breakpoints do they correspond to, in terms of breakpoints in screen sizes?
-
-2.Examine the first media query (max-width: 800px). 
-  Inside this media query, something specific is happening to the flex layout of the page. 
-  What is happening, and how does this relate to the visual layout of the page when you resize the window?
-
-Examine the second media query (max-width: 500px). 
-What is happening in this media query? 
-Why does this media query come after the first one (max-width: 800px)? 
-Does the order of the media queries matter?
-
-TASK: Add 1 more media query to this CSS file, using a breakpoint of your own choice. 
-Inside your media query, modify at least 2 different CSS rules for elements in the page. 
-One of these modifications should change the font size of text in the tooltip at different screen sizes. */
