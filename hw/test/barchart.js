@@ -1,3 +1,13 @@
+function parseCsv(d) {
+    return{
+        country: d.country,
+        continent: d.continent,
+        year:+d.year,
+        lifeExp:+d.lifeExp,
+        pop:+d.pop,
+        gdpPercap:+d.gdpPercap,
+    } 
+}
 
 d3.csv("gapminder.csv")                                                                 /*load data set*/
     .then(function(data) {               
@@ -47,7 +57,8 @@ d3.csv("gapminder.csv")                                                         
     
         /* DRAW BARS*/
         const points = svg.selectAll("rect")
-            .data(filtered_data)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+            //.data(filtered_data)   
+            .data(data)                                                                     /* Joins data to the selected elements which is all the rectangles in this case */
             .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
             .append("rect")                                                                             /* Create rectangles in each place holder */
             .attr("x", function(d) { return xScale(d.year); })
@@ -76,9 +87,9 @@ d3.csv("gapminder.csv")                                                         
             .attr("class","tooltip");
 
         points.on("mouseover",function(e,d){                    //e:error
-            let x = +d3.select(this).attr("cx");
-            let y = +d3.select(this).attr("cy");
-            let displayValue = d3.format(",")(d.pop);
+            let x = +d3.select(this).attr("x");
+            let y = +d3.select(this).attr("y");
+            let displayValue = d3.format(",")(+d.pop);
             tooltip.style("visibility","visible")
                 .style("top",'${y}px')
                 .style("left",'${x}px')

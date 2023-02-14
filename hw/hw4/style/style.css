@@ -64,16 +64,32 @@ h1 {
 }
 
 /* MEDIA QUERIES */
-
-
-/* @media only screen and (max-width: 800px) {
+/* 
+Media type key words: 
+  all: all media types;
+  screen: phone, computer,tablet screens;
+  printer: printers;
+  speech: screen readers;
+  */
+  
+/* first one
+for mobile devices, width < 425px
+use "max-width": if the width of the screen is smaller than a maximum of ___ px
+*/
+@media only screen and (max-width: 425px) {
 
 h1 {
-  color:green;
+  color:black;
+  font-size: 14pt;
+}
+
+h2 {
+  color:black;
+  font-size: 10pt;
 }
 
 body {
-  background-color: rgb(110, 82, 47);
+  background-color: rgb(74, 234, 98);
 }
 
   #chart--container {
@@ -101,25 +117,59 @@ body {
     max-width: 200px;
   }
 
-  h2 {
-    font-size: 14pt;
-  }
+}
 
+/* second one 
+for tablets, width > 425px and < 1024px
+*/
 
-} */
-
-
-@media only screen and (max-width: 500px) {
+@media only screen and (width > 425px) and (width < 1024px) {
   #legend svg {
     max-width: 150px;
   }
   h1 {
-    color:rgb(43, 7, 163);
+    color:grey;
+    font-size: 18pt;
   }
+  
+  h2 {
+    color:grey;
+    font-size: 12pt;
+  }
+
   body {
-    background-color: red;
+    background-color: aquamarine;
+  }
+} 
+
+
+
+/* third one 
+for laptops, width > 1024px, 
+use "min-width": if the width of the screen is bigger than a minimum of ___ px
+*/
+
+@media only screen and (min-width: 1024px){
+  #legend svg {
+    max-width: 150px;
+  }
+  h1 {
+    color:whitesmoke;
+    font-size: 22pt;
+  }
+
+  h2 {
+    color:whitesmoke;
+    font-size: 16pt;
+  }
+
+  body {
+    background-color: lightblue;
   }
 }
+
+
+
 
 /* 
 1. What are the conditions used to define these media queries? 
