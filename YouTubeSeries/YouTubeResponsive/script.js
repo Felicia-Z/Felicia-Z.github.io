@@ -1,4 +1,4 @@
-S/* 
+/* 
 PRE-PROCESSING THE DATA
 
 In this pre-processing, we do the following:

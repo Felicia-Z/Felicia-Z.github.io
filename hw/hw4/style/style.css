@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 html, body {
   margin: 0px;
   padding: 0px;
@@ -11,7 +10,6 @@ html, body {
 
 h1 {
   text-align: center;
-  /* font-size: 50pt; */
 }
 
 #chart--container {
@@ -78,23 +76,22 @@ use "max-width": if the width of the screen is smaller than a maximum of ___ px
 */
 @media only screen and (max-width: 425px) {
 
-h1 {
-  color:black;
-  font-size: 14pt;
-}
+  h1 {
+    color:black;
+    font-size: 14pt;
+  }
 
-h2 {
-  color:black;
-  font-size: 10pt;
-}
+  h2 {
+    color:black;
+    font-size: 10pt;
+  }
 
-body {
-  background-color: rgb(74, 234, 98);
-}
+  body {
+    background-color: rgb(74, 234, 98);
+  }
 
   #chart--container {
     flex-direction: column;
-    
   }
 
   #chart {
@@ -140,6 +137,7 @@ for tablets, width > 425px and < 1024px
   body {
     background-color: aquamarine;
   }
+
 } 
 
 
@@ -163,9 +161,14 @@ use "min-width": if the width of the screen is bigger than a minimum of ___ px
     font-size: 16pt;
   }
 
+  #legend h2 {
+    flex: 1 0 100%;
+  }
+
   body {
     background-color: lightblue;
   }
+
 }
 
 
