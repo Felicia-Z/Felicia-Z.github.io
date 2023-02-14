@@ -6,7 +6,7 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  font-family: "Helvetica Neue"S,Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h1 {
@@ -126,6 +126,11 @@ body {
   Inside this media query, something specific is happening to the flex layout of the page. 
   What is happening, and how does this relate to the visual layout of the page when you resize the window?
 
-Examine the second media query (max-width: 500px). What is happening in this media query? Why does this media query come after the first one (max-width: 800px)? Does the order of the media queries matter?
+Examine the second media query (max-width: 500px). 
+What is happening in this media query? 
+Why does this media query come after the first one (max-width: 800px)? 
+Does the order of the media queries matter?
 
-TASK: Add 1 more media query to this CSS file, using a breakpoint of your own choice. Inside your media query, modify at least 2 different CSS rules for elements in the page. One of these modifications should change the font size of text in the tooltip at different screen sizes. */
+TASK: Add 1 more media query to this CSS file, using a breakpoint of your own choice. 
+Inside your media query, modify at least 2 different CSS rules for elements in the page. 
+One of these modifications should change the font size of text in the tooltip at different screen sizes. */
