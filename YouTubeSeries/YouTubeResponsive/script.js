@@ -1,4 +1,4 @@
-/* 
+S/* 
 PRE-PROCESSING THE DATA
 
 In this pre-processing, we do the following:
@@ -6,7 +6,7 @@ In this pre-processing, we do the following:
         in the data loading
     - Rename some of the columns
     - Coerce some of the values to Number types
-    - Filter the rows to only include videos
+    - Filter the rows to only include videosS
         where the number of likes is at least
         1,000,000 likes
 */
