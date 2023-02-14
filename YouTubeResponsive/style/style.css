@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#chart--container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#chart {
+  width: 80%;
+  flex: 1 0 80%;
+  max-height: 80vh;
+  position: relative;
+}
+
+#legend {
+  width: 20%;
+  flex: 1 0 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend--label {
+  font-size: 12pt;
+  dominant-baseline: central;
+}
+
+.axis--label{
+  font-size: 16pt;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.axis {
+  font-size: 10pt;
+}
+
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+
+  padding: 2px;
+  background-color: rgba(255,255,255,0.8);
+  font-size: 11pt;
+}
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 800px) {
+
+h1 {
+  color:green;
+}
+
+body {
+  background-color: rgb(110, 82, 47);
+}
+
+  #chart--container {
+    flex-direction: column;
+    
+  }
+
+  #chart {
+    width: 100%;
+  }
+
+  #legend h2 {
+    flex: 1 0 100%;
+  }
+
+  #legend {
+    width: 100%;
+    padding-left: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #legend svg {
+    display: inline-block;
+    max-width: 200px;
+  }
+
+  h2 {
+    font-size: 14pt;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  #legend svg {
+    max-width: 150px;
+  }
+  /* h1 {
+    color:rgb(43, 7, 163);
+  }
+  body {
+    background-color: red;
+  } */
+}
+
+/* 
+1. What are the conditions used to define these media queries? 
+   What breakpoints do they correspond to, in terms of breakpoints in screen sizes?
+
+2.Examine the first media query (max-width: 800px). 
+  Inside this media query, something specific is happening to the flex layout of the page. 
+  What is happening, and how does this relate to the visual layout of the page when you resize the window?
+
+Examine the second media query (max-width: 500px). What is happening in this media query? Why does this media query come after the first one (max-width: 800px)? Does the order of the media queries matter?
+
+TASK: Add 1 more media query to this CSS file, using a breakpoint of your own choice. Inside your media query, modify at least 2 different CSS rules for elements in the page. One of these modifications should change the font size of text in the tooltip at different screen sizes. */

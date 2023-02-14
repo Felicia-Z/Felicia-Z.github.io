@@ -17,9 +17,9 @@ and discuss the following questions:
     of `data` with console.log(data)
 
 */
-
+//GapMindScatterPlot-TooltipLegend\data\gapminder.csv
 d3.csv("data/gapminder.csv").then(function(data) {
-
+console.log(data)
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
 
