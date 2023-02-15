@@ -56,7 +56,15 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     /*
     4. CREATE SCALES
     */
+    const xScale = d3.scaleBand()
+        .domain(["Low income","Lower middle income","Upper middle income","High income"])
+        .range([margin.left, width-margin.right])
+        .padding(0.5);
 
+
+    const yScale = d3.scaleLinear()
+        .domain([20, forestAreaPercent.max])
+        .range([height-margin.bottom, margin.top]);
 
     /*
     Adding Legends
