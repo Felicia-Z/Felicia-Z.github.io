@@ -52,7 +52,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     console.log(forestAreaPercent.max);
 
     const incomeGroups = ["Low income","Lower middle income","Upper middle income","High income","General"];
-
+    
     const regions = ["East Asia & Pacific", "Europe & Central Asia", "Latin America & Caribbean","Middle East & North Africa","North America","South Asia","Sub-Saharan Africa","General"];
 
     /*

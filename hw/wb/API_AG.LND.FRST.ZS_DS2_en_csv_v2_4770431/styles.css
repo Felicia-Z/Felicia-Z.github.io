@@ -73,12 +73,12 @@
   
     h1 {
       color:whitesmoke;
-      font-size: 14pt;
+      font-size: 18pt;
     }
   
     h2 {
       color:whitesmoke;
-      font-size: 10pt;
+      font-size: 16pt;
     }
   
     body {
@@ -110,15 +110,19 @@
     }
   
     .tooltip {
-      font-size: 8pt;
+      font-size: 10pt;
     }
 
+    .axis {
+        font-size: 16pt;
+      }
+
     .axis--label{
-        font-size: 10pt;
+        font-size: 20pt;
     }
 
     .legend--label {
-        font-size: 8pt;
+        font-size: 12pt;
     }
   }
   
