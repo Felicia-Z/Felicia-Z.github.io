@@ -54,7 +54,7 @@
     left: 0px;
     pointer-events: none;
     padding: 2px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.5);
     font-size: 11pt;
   }
   
@@ -74,12 +74,12 @@
   @media only screen and (max-width: 600px) {
   
     h1 {
-      color:rgb(26, 26, 26);
+      color:whitesmoke;
       font-size: 14pt;
     }
   
     h2 {
-      color:rgb(26, 26, 26);
+      color:whitesmoke;
       font-size: 10pt;
     }
   
@@ -97,7 +97,7 @@
   
     #legend {
       width: 100%;
-      padding-left: 40px;
+      padding-left: 10px;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -112,7 +112,7 @@
     }
   
     .tooltip {
-      font-size: 10pt;
+      font-size: 8pt;
     }
 
     .axis--label{
@@ -159,7 +159,7 @@
     }
   
     .tooltip {
-      font-size: 11pt;
+      font-size: 10pt;
     }
 
     .axis--label{
@@ -181,12 +181,12 @@
       max-width: 150px;
     }
     h1 {
-      color:whitesmoke;
+      color:rgb(26, 26, 26);
       font-size: 22pt;
     }
   
     h2 {
-      color:whitesmoke;
+      color:rgb(26, 26, 26);
       font-size: 16pt;
     }
   

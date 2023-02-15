@@ -190,17 +190,17 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
             .text(region);
     });
 
-    // const sizeLegend = d3.select("#legend")
-    //     .append("svg")
-    //     // .attr("width", legendWidth)
-    //     // .attr("height", 300);
-    //     .attr("viewBox", `0 0 ${legendWidth} ${legendHeight}`)
-    //     .attr("preserveAspectRatio", "xMidYMid meet");
+    const sizeLegend = d3.select("#legend")
+        .append("svg")
+        // .attr("width", legendWidth)
+        // .attr("height", 300);
+        .attr("viewBox", `0 0 ${legendWidth} ${legendHeight}`)
+        .attr("preserveAspectRatio", "xMidYMid meet");
 
 
-    // const commentLevels = [comments.min, (comments.max-comments.min)/2, comments.max];
+    const forestPercentLevel = [forestAreaPercent.min, (forestAreaPercent.max-forestAreaPercent.min)/2, forestAreaPercent.max];
 
-    // commentLevels.forEach(function(commentCount, i) {
+    commentLevels.forEach(function(commentCount, i) {
 
     //     let displayCount = d3.format(",")(Math.round(commentCount));
 
@@ -215,6 +215,6 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     //         .attr("x", legendMargin + 25)
     //         .attr("y", legendMargin + i*legendSpacing)
     //         .text(`${displayCount} Comments`);
-    // });
+    });
 
 });
