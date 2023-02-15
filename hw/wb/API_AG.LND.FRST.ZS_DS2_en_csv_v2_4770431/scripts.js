@@ -200,21 +200,21 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
 
     const forestPercentLevel = [forestAreaPercent.min, (forestAreaPercent.max-forestAreaPercent.min)/2, forestAreaPercent.max];
 
-    commentLevels.forEach(function(commentCount, i) {
+    forestPercentLevel.forEach(function(forestPercentCalculate, i) {
 
-    //     let displayCount = d3.format(",")(Math.round(commentCount));
+        let displayCount = d3.format(",")(Math.round(forestPercentCalculate));
 
-    //     sizeLegend.append("circle")
-    //         .attr("cx", legendMargin)
-    //         .attr("cy", legendMargin + i*legendSpacing)
-    //         .attr("r", rScale(commentCount))
-    //         .attr("fill", "#CCCCCC");
+        sizeLegend.append("circle")
+            .attr("cx", legendMargin)
+            .attr("cy", legendMargin + i*legendSpacing)
+            .attr("r", rScale(forestPercentCalculate))
+            .attr("fill", "#b1b1b1");
 
-    //     sizeLegend.append("text")
-    //         .attr("class", "legend--label")
-    //         .attr("x", legendMargin + 25)
-    //         .attr("y", legendMargin + i*legendSpacing)
-    //         .text(`${displayCount} Comments`);
+        sizeLegend.append("text")
+            .attr("class", "legend--label")
+            .attr("x", legendMargin + 25)
+            .attr("y", legendMargin + i*legendSpacing)
+            .text(`${displayCount} %`);
     });
 
 });
