@@ -26,7 +26,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     console.log(data);
 
     /*
-    DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
+    2. DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
     */
     // const width = document.querySelector("#chart").clientWidth;
     // const height = document.querySelector("#chart").clientHeight;
@@ -41,14 +41,25 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     .attr("viewBox", `0 0 ${width} ${height}`)
     .attr("preserveAspectRatio", "xMidYMid meet"); 
 
+    /*
+    3. DETERMINE MIN AND MAX VALUES OF VARIABLES
+    */
+    const forestAreaPercent = {
+        min: d3.min(data,function(d){return d.forestArea2020}),
+        max: d3.max(data,function(d){return d.forestArea2020})
+    };
+
+    const incomeGroups = ["Low income","Lower middle income","Upper middle income","High income"];
 
     const regions = ["East Asia & Pacific", "Europe & Central Asia", "Latin America & Caribbean","Middle East & North Africa","North America","South Asia","Sub-Saharan Africa"];
 
+    /*
+    4. CREATE SCALES
+    */
+
 
     /*
-
     Adding Legends
-
     */
 
     // const legendWidth = 300;
