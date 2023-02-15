@@ -164,7 +164,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
 
     // const legendWidth = document.querySelector("#legend").clientWidth;
     const legendWidth = 300;
-    const legendHeight = 200;
+    const legendHeight = 400;
     const legendMargin = 25;
     const legendSpacing = 50;
 
@@ -216,5 +216,6 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
             .attr("y", legendMargin + i*legendSpacing)
             .text(`${displayCount} %`);
     });
+console.log(1302);
 
 });

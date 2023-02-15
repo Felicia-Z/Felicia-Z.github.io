@@ -33,12 +33,10 @@
   }
   
   .legend--label {
-    font-size: 12pt;
     dominant-baseline: central;
   }
   
   .axis--label{
-    font-size: 16pt;
     font-weight: bold;
     text-anchor: middle;
   }
@@ -117,10 +115,11 @@
 
     .axis--label{
         font-size: 10pt;
-        font-weight: bold;
-        text-anchor: middle;
-      }
-  
+    }
+
+    .legend--label {
+        font-size: 8pt;
+    }
   }
   
   /* second one 
@@ -164,8 +163,10 @@
 
     .axis--label{
         font-size: 12pt;
-        font-weight: bold;
-        text-anchor: middle;
+      }
+
+      .legend--label {
+        font-size: 12pt;
       }
   } 
   
@@ -216,8 +217,10 @@
 
     .axis--label{
         font-size: 16pt;
-        font-weight: bold;
-        text-anchor: middle;
     }
+
+    .legend--label {
+        font-size: 16pt;
+      }
   }
   
