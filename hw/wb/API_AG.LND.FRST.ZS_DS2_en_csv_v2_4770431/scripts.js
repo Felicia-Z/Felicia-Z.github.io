@@ -48,19 +48,21 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
         min: d3.min(data,function(d){return d.forestArea2020}),
         max: d3.max(data,function(d){return d.forestArea2020})
     };
+    console.log(forestAreaPercent.min);
+    console.log(forestAreaPercent.max);
 
-    const incomeGroups = ["Low income","Lower middle income","Upper middle income","High income"];
+    const incomeGroups = ["Low income","Lower middle income","Upper middle income","High income","General"];
 
-    const regions = ["East Asia & Pacific", "Europe & Central Asia", "Latin America & Caribbean","Middle East & North Africa","North America","South Asia","Sub-Saharan Africa"];
+    const regions = ["East Asia & Pacific", "Europe & Central Asia", "Latin America & Caribbean","Middle East & North Africa","North America","South Asia","Sub-Saharan Africa","General"];
 
     /*
     4. CREATE SCALES
     */
     //scale x axis by income group
     const xScale = d3.scaleBand()
-        .domain(["Low income","Lower middle income","Upper middle income","High income"])
+        .domain(["Low income","Lower middle income","Upper middle income","High income","General"])
         .range([margin.left, width-margin.right])
-        .padding(0.5);
+        .padding(1);
 
     //scale y axis by forest%
     const yScale = d3.scaleLinear()
@@ -75,7 +77,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     //scale fill cole by regions
     const fillScale = d3.scaleOrdinal()
         .domain(regions)
-        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef','#a278e9']);
+        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef',,'#f9b1ff']);
 
     /*
     DRAW AXES
@@ -105,6 +107,21 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
             .attr("stroke-width", 1.5)
             .attr("fill", function(d) { return fillScale(d.region); });
 
+    /*
+    DRAW AXIS LABELS
+    */
+    const xAxisLabel = svg.append("text")
+        .attr("class","axis--label")
+        .attr("x", width/2)
+        .attr("y", height-margin.bottom/2)
+        .text("Income Groups");
+
+    const yAxisLabel = svg.append("text")
+        .attr("class","axis--label")
+        .attr("transform","rotate(-90)")
+        .attr("x",-height/2)
+        .attr("y",margin.left/3)
+        .text("Forest Area % of Land Area");
 
     /*
     Adding Legends

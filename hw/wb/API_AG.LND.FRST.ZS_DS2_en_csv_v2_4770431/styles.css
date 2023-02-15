@@ -114,7 +114,12 @@
     .tooltip {
       font-size: 10pt;
     }
-    
+
+    .axis--label{
+        font-size: 10pt;
+        font-weight: bold;
+        text-anchor: middle;
+      }
   
   }
   
@@ -156,6 +161,12 @@
     .tooltip {
       font-size: 11pt;
     }
+
+    .axis--label{
+        font-size: 12pt;
+        font-weight: bold;
+        text-anchor: middle;
+      }
   } 
   
   
@@ -202,6 +213,11 @@
     .tooltip {
       font-size: 14pt;
     }
-  
+
+    .axis--label{
+        font-size: 16pt;
+        font-weight: bold;
+        text-anchor: middle;
+    }
   }
   
