@@ -80,7 +80,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
         .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef',,'#f9b1ff']);
 
     /*
-    DRAW AXES
+    5. DRAW AXES
     */
     const xAxis = svg.append("g")
         .attr("class","axis")
@@ -93,7 +93,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
         .call(d3.axisLeft().scale(yScale).ticks(5).tickFormat(d3.format("~s")));
 
     /*
-    DRAW POINTS
+    6. DRAW POINTS
     */
     const points = svg.selectAll("circle")
         .data(data)
@@ -108,7 +108,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
             .attr("fill", function(d) { return fillScale(d.region); });
 
     /*
-    DRAW AXIS LABELS
+    7. DRAW AXIS LABELS
     */
     const xAxisLabel = svg.append("text")
         .attr("class","axis--label")
@@ -123,25 +123,61 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
         .attr("y",margin.left/3)
         .text("Forest Area % of Land Area");
 
+    /* 
+    8. TOOLTIP 
+    */
+    const tooltip = d3.select("#chart")
+        .append("div")
+        .attr("class", "tooltip");
+
+    /* 
+    9. CREATING SCALE FACTORS
+    */
+    let tw = svg.node().clientWidth;
+    let th = svg.node().clientHeight;
+    let sx = tw / width;
+    let sy = th / height;
+
+    points.on("mouseover", function(e,d) {
+
+        let x = sx*(+d3.select(this).attr("cx")) + 20;
+        let y = sy*(+d3.select(this).attr("cy")) - 10;
+
+        let displayValue = d3.format(",")(d.forestArea2020);
+
+         tooltip.style("visibility", "visible")
+            .style("top", `${y}px`)
+            .style("left", `${x}px`)
+            .html(`<b>${d.countryName}</b><br>${displayValue} %`);
+
+        points.attr("opacity", 0.1);
+        d3.select(this).attr("opacity", 1).raise();
+
+    }).on("mouseout", function() {
+        tooltip.style("visibility", "hidden");
+        points.attr("opacity", 1);
+    });
+
     /*
-    Adding Legends
+    10. Adding Legends
     */
 
-    // const legendWidth = 300;
-    // const legendHeight = 200;
-    // const legendMargin = 25;
-    // const legendSpacing = 50;
+    // const legendWidth = document.querySelector("#legend").clientWidth;
+    const legendWidth = 300;
+    const legendHeight = 200;
+    const legendMargin = 25;
+    const legendSpacing = 50;
 
-    // const colorLegend = d3.select("#legend")
-    //     .append("svg")
-    //     // .attr("width", legendWidth)
-    //     // .attr("height", 300);
-    //     .attr("viewBox", `0 0 ${legendWidth} ${legendHeight}`)
-    //     .attr("preserveAspectRatio", "xMidYMid meet");
+    const colorLegend = d3.select("#legend")
+        .append("svg")
+        // .attr("width", legendWidth)
+        // .attr("height", 300);
+        .attr("viewBox", `0 0 ${legendWidth} ${legendHeight}`)
+        .attr("preserveAspectRatio", "xMidYMid meet");
 
-    // regions.forEach(function(region, i) {
-
-    //     colorLegend.append("circle")
+    regions.forEach(function(region, i) {
+        
+        colorLegend.append("circle")
     //         .attr("cx", legendMargin)
     //         .attr("cy", legendMargin + i*legendSpacing)
     //         .attr("r", 10)
@@ -152,7 +188,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     //         .attr("x", legendMargin + 25)
     //         .attr("y", legendMargin + i*legendSpacing)
     //         .text(region);
-    // });
+    });
 
     // const sizeLegend = d3.select("#legend")
     //     .append("svg")
