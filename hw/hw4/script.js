@@ -86,7 +86,7 @@ function parseCsv(d) {
             views: +d.view_count,                           //change column name from view_count to views, converts string to numbers 
             comments: +d.comment_count,                     //change column name from comment_count to comments, converts string to numbers
             likes: +d.likes,                                //converts string to numbers
-            dislikes: +d.dislikes,                          //converts string to numbers
+            dislikes: +d.dislikes                           //converts string to numbers
         }
   	
     }
