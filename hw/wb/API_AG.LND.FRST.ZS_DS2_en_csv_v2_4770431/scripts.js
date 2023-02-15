@@ -83,13 +83,27 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     const xAxis = svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(0,${height-margin.bottom})`)
-        .call(d3.axisBottom().scale(xScale).ticks(5).tickFormat(d3.format("~s")));
+        .call(d3.axisBottom().scale(xScale));
 
     const yAxis = svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft().scale(yScale).ticks(5).tickFormat(d3.format("~s")));
 
+    /*
+    DRAW POINTS
+    */
+    const points = svg.selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+            .attr("cx", function(d) { return xScale(d.incomeGroup); })
+            .attr("cy", function(d) { return yScale(d.forestArea2020); })
+            .attr("r", function(d) { return rScale(d.forestArea2020)})
+            .attr("fill-opacity", 0.2)
+            .attr("stroke", function(d) { return fillScale(d.region); })
+            .attr("stroke-width", 1.5)
+            .attr("fill", function(d) { return fillScale(d.region); });
 
 
     /*
