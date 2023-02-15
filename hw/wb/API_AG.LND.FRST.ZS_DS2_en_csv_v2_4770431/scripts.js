@@ -56,15 +56,41 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     /*
     4. CREATE SCALES
     */
+    //scale x axis by income group
     const xScale = d3.scaleBand()
         .domain(["Low income","Lower middle income","Upper middle income","High income"])
         .range([margin.left, width-margin.right])
         .padding(0.5);
 
-
+    //scale y axis by forest%
     const yScale = d3.scaleLinear()
         .domain([20, forestAreaPercent.max])
         .range([height-margin.bottom, margin.top]);
+
+    //scale the dots by forest%    
+    const rScale = d3.scaleSqrt()
+        .domain([forestAreaPercent.min, forestAreaPercent.max])
+        .range([2, 10]);
+    
+    //scale fill cole by regions
+    const fillScale = d3.scaleOrdinal()
+        .domain(regions)
+        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef','#a278e9']);
+
+    /*
+    DRAW AXES
+    */
+    const xAxis = svg.append("g")
+        .attr("class","axis")
+        .attr("transform", `translate(0,${height-margin.bottom})`)
+        .call(d3.axisBottom().scale(xScale).ticks(5).tickFormat(d3.format("~s")));
+
+    const yAxis = svg.append("g")
+        .attr("class","axis")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft().scale(yScale).ticks(5).tickFormat(d3.format("~s")));
+
+
 
     /*
     Adding Legends
