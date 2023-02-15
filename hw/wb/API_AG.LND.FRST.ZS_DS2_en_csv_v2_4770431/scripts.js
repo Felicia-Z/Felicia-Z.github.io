@@ -72,12 +72,12 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     //scale the dots by forest%    
     const rScale = d3.scaleSqrt()
         .domain([forestAreaPercent.min, forestAreaPercent.max])
-        .range([2, 10]);
+        .range([3, 10]);
     
     //scale fill cole by regions
     const fillScale = d3.scaleOrdinal()
         .domain(regions)
-        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef',,'#f9b1ff']);
+        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef','#a770f6','#f9b1ff']);
 
     /*
     5. DRAW AXES
@@ -102,7 +102,7 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
             .attr("cx", function(d) { return xScale(d.incomeGroup); })
             .attr("cy", function(d) { return yScale(d.forestArea2020); })
             .attr("r", function(d) { return rScale(d.forestArea2020)})
-            .attr("fill-opacity", 0.2)
+            .attr("fill-opacity", 0.5)
             .attr("stroke", function(d) { return fillScale(d.region); })
             .attr("stroke-width", 1.5)
             .attr("fill", function(d) { return fillScale(d.region); });
@@ -178,16 +178,16 @@ d3.csv("API_AG.LND.FRST.ZS_DS2_en_csv_v2_4770431.csv", parseCsv).then(function(d
     regions.forEach(function(region, i) {
         
         colorLegend.append("circle")
-    //         .attr("cx", legendMargin)
-    //         .attr("cy", legendMargin + i*legendSpacing)
-    //         .attr("r", 10)
-    //         .attr("fill", fillScale(region));
+            .attr("cx", legendMargin)
+            .attr("cy", legendMargin + i*legendSpacing)
+            .attr("r", 10)
+            .attr("fill", fillScale(region));
 
-    //     colorLegend.append("text")
-    //         .attr("class", "legend--label")
-    //         .attr("x", legendMargin + 25)
-    //         .attr("y", legendMargin + i*legendSpacing)
-    //         .text(region);
+        colorLegend.append("text")
+            .attr("class", "legend--label")
+            .attr("x", legendMargin + 25)
+            .attr("y", legendMargin + i*legendSpacing)
+            .text(region);
     });
 
     // const sizeLegend = d3.select("#legend")
