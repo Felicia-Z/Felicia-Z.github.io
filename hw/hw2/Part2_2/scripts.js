@@ -92,10 +92,9 @@ d3.csv("new.csv").then(function(data) {
         .attr("x",-height/2)
         .attr("y",margin.left/2)
         .text("Population");
-}
 
 
-
+});
 
 
 
