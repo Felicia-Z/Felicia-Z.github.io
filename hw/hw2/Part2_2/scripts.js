@@ -63,21 +63,21 @@ d3.csv("new.csv").then(function(data) {
         .data(filtered_data_sex_1900)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
         .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
         .append("rect")                                                                             /* Create rectangles in each place holder */
-        .attr("x", function(d) { return xScale(d.Year); })
+        .attr("x", function(d) { return xScale(+.Year); })
         .attr("y", function(d) { return yScale(+d.People) }); })
         .attr("width", xScale.bandwidth())
         .attr("height", function(d) { return height - margin.bottom - yScale(+d.People); })
         .attr("fill", "orange");
 
-    // const points2000 = svg.selectAll("rect")
-    //     .data(filtered_data_sex_2000)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
-    //     .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
-    //     .append("rect")                                                                             /* Create rectangles in each place holder */
-    //     .attr("x", function(d) { return xScale(d.Year); })
-    //     .attr("y", function(d) { return yScale(d.People); })
-    //     .attr("width", xScale.bandwidth())
-    //     .attr("height", function(d) { return height - margin.bottom - yScale(d.People); })
-    //     .attr("fill", "steelblue");
+    const points2000 = svg.selectAll("rect")
+        .data(filtered_data_sex_2000)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+        .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+        .append("rect")                                                                             /* Create rectangles in each place holder */
+        .attr("x", function(d) { return xScale(+d.Year); })
+        .attr("y", function(d) { return yScale(+d.People); })
+        .attr("width", xScale.bandwidth())
+        .attr("height", function(d) { return height - margin.bottom - yScale(+d.People); })
+        .attr("fill", "steelblue");
     
     /*DRAW AXIS LABELS*/
     const xAxisLabel = svg.append("text")
