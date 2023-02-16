@@ -1,5 +1,3 @@
-console.log(2);
-
 d3.csv("new.csv").then(function(data) {
 
     /*DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS*/
@@ -18,6 +16,11 @@ d3.csv("new.csv").then(function(data) {
         return d.Sex === '1' && d.Year === '1900';
     });
     console.log(filtered_data_sex_1900);
+    
+    // let pop1900Num = data.(function(d){
+    //     return d.People;
+    // });
+    // console.log(pop1900Num);
 
     let filtered_data_sex_2000 = data.filter(function(d) {
         return d.Sex === '1' && d.Year === '2000';  
@@ -60,15 +63,15 @@ d3.csv("new.csv").then(function(data) {
         .call(d3.axisLeft().scale(yScale));
 
     /* DRAW BARS*/
-    const points1900 = svg.selectAll("rect")
-        .data(filtered_data_sex_1900)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
-        .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
-        .append("rect")                                                                             /* Create rectangles in each place holder */
-        .attr("x", function(d) { return xScale(d.year); })
-        .attr("y", function(d) { return yScale(d.filtered_data_sex_1900); })
-        .attr("width", xScale.bandwidth())
-        .attr("height", function(d) { return height - margin.bottom - yScale(d.filtered_data_sex_1900); })
-        .attr("fill", "orange");
+    // const points1900 = svg.selectAll("rect")
+    //     .data(filtered_data_sex_1900)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
+    //     .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
+    //     .append("rect")                                                                             /* Create rectangles in each place holder */
+    //     .attr("x", function(d) { return xScale(d.year); })
+    //     .attr("y", function(d) { return yScale(filtered_data_sex_1900, function(d) { return +d.People; }); })
+    //     .attr("width", xScale.bandwidth())
+    //     .attr("height", function(d) { return height - margin.bottom - yScale(filtered_data_sex_1900, function(d) { return +d.People; }); })
+    //     .attr("fill", "orange");
 
     // const points2000 = svg.selectAll("rect")
     //     .data(filtered_data_sex_2000)                                                                        /* Joins data to the selected elements which is all the rectangles in this case */
