@@ -1,3 +1,5 @@
+console.log(2);
+
 d3.csv("new.csv").then(function(data) {
 
     /*DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS*/
@@ -15,6 +17,7 @@ d3.csv("new.csv").then(function(data) {
     let filtered_data_sex_1900 = data.filter(function(d) {
         return d.Sex === '1' && d.Year === '1900';
     });
+    console.log(filtered_data_sex_1900);
 
     let filtered_data_sex_2000 = data.filter(function(d) {
         return d.Sex === '1' && d.Year === '2000';  
@@ -25,7 +28,7 @@ d3.csv("new.csv").then(function(data) {
         min: d3.min(filtered_data_sex_1900, function(d) { return +d.People; }),
         max: d3.max(filtered_data_sex_1900, function(d) { return +d.People; }),
     };
-    //console.log(pop1900)
+    console.log(pop1900);
     
     const pop2000 = {
         min: d3.min(filtered_data_sex_2000, function(d) { return +d.People; }),
@@ -43,6 +46,8 @@ d3.csv("new.csv").then(function(data) {
         .domain([pop1900.min, pop1900.max])
         .range([height-margin.bottom, margin.top]);
 
+    //console.log(yScale(filtered_data_sex_1900));  
+
     /*DRAW AXES*/
     const xAxis = svg.append("g")
         .attr("class","axis")
@@ -53,8 +58,6 @@ d3.csv("new.csv").then(function(data) {
         .attr("class","axis")
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft().scale(yScale));
-
-    console.log(yScale(pop1900));
 
     /* DRAW BARS*/
     const points1900 = svg.selectAll("rect")
