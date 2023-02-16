@@ -40,7 +40,7 @@ d3.csv("new.csv").then(function(data) {
         .padding(0.5);
 
     const yScale = d3.scaleLinear()
-        .domain([0, pop2000.max])
+        .domain([pop1900.min, pop1900.max])
         .range([height-margin.bottom, margin.top]);
 
     /*DRAW AXES*/
@@ -62,9 +62,9 @@ d3.csv("new.csv").then(function(data) {
         .enter()                                                                                    /* Creates a selection with placeholder references for missing elements */
         .append("rect")                                                                             /* Create rectangles in each place holder */
         .attr("x", function(d) { return xScale(d.year); })
-        .attr("y", function(d) { return yScale(d.pop1900); })
+        .attr("y", function(d) { return yScale(d.filtered_data_sex_1900); })
         .attr("width", xScale.bandwidth())
-        .attr("height", function(d) { return height - margin.bottom - yScale(d.pop1900); })
+        .attr("height", function(d) { return height - margin.bottom - yScale(d.filtered_data_sex_1900); })
         .attr("fill", "orange");
 
     // const points2000 = svg.selectAll("rect")
@@ -214,4 +214,3 @@ d3.csv("new.csv").then(function(data) {
         //     .text("Male Population");
 
     // });
-    
