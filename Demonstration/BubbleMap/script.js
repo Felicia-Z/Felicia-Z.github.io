@@ -114,16 +114,21 @@ function drawMap(geo, data) {
         })
         .attr("r", function (d) {
             // Change the `scale` parameter to increase/decrease radius
+            //take  the magnitude of the fire, and pass in rScale function
+            //d.mag --> [0.1,20]
             return rScale(d.mag)*scale;
         })// Tooltip
         .on('mouseover', function (e, d) {
             // TO DO
+
         })
         .on('mousemove', function (e, d) {
             // TO DO
+
         })
         .on('mouseout', function () {
             // TO DO
+            
         });
 
     // Draw the graticule grid line on the map
@@ -142,7 +147,19 @@ function drawMap(geo, data) {
         .attr("stroke-width", "1px");
     
     // create a zoom function
-    var zoom = d3.zoom();
+    function zoomed(e){
+        g.attr("transform",e.transform);
+        g.selectAll("circle")
+            .attr("r",function(d){
+
+            })
+    }
+
+    var zoom = d3.zoom()
+        .atranslateExtent([[0,0],[windowWidth,windowHeight]])
+        .scaleExten([1,15])
+        .om("zoom",zoomed);
+    
 
     // call zoom so it is "listening" for an event on our SVG
     svg.call(zoom);
