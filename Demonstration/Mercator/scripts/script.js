@@ -8,6 +8,7 @@ const width = window.innerWidth, height = window.innerHeight;
 
 // const width = document.querySelector("#viz").clientWidth;
 // const height = document.querySelector("#viz").clientHeight;
+// if we use this, we will get svg canvas default width and height,default value is very small, because we did not define the corresponding svg in html, sth like 350 x 150
 
 // 2. We initialize variables for the svg container that holds all
 // of our visualization elements. And we also initialize a variable
@@ -158,10 +159,10 @@ d3.json("data/world-alpha3.json").then(function(world) {
         // <event>.transform.k means:
         // https://github.com/d3/d3-zoom#zoom-transforms
 
-        // map.selectAll("circle")
-        //     .attr("r", function(d){
-        //         return circleRadius/e.transform.k;
-        //     });
+        map.selectAll("circle")
+            .attr("r", function(d){
+                return circleRadius/e.transform.k;
+            });
     };
 
     // Calling d3.zoom() creates a zoom behavior. Note, the .zoom() method 
