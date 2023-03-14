@@ -11,7 +11,7 @@ let projectionScale = 250;
 
 // define the settings for map projection
 const projection = d3.geoOrthographic()
-    .translate([window.innerWidth / 2, window.innerHeight / 2])
+    .translate([window.innerWidth / 2, window.innerHeight / 2])  //so that the globe is located in the center of screen
     // .rotate([-33, -20, 0]) // Africa side
     .scale(projectionScale)
     .center([0, 0]);
@@ -22,6 +22,7 @@ let geoPathGenerator = d3.geoPath().projection(projection);
 // will be used later for grid lines
 const graticule = d3.geoGraticule();
 
+// there is no local data in this case, all use online data 
 // maps use multiple file types. we can store the "type" of each file along with the URL for easy loading!
 var files = [
     { "type": "json", "file": "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson" },
@@ -48,7 +49,7 @@ function drawMap(geo, data) {
     console.log("dataset: ", data)
 
     var colorScale = d3.scaleLinear()
-        .domain(d3.extent(data, function (d) { return +d.pop }))
+        .domain(d3.extent(data, function (d) { return +d.pop }))    //d3.extent : get min and max of d.pop an map it with color 
         .range(["white", "#9c1c25"])
         .nice();
 
