@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500.86 243.77">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        stroke-linecap: square;
+      }
+
+      .cls-3 {
+        fill: #231f20;
+        font-family: NHaasGroteskDSPro-55Rg, 'Neue Haas Grotesk Display Pro';
+        font-size: 72px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-2" points="778.11 140.13 916.05 140.13 916.05 3.02 777.89 3.08 778.11 140.13"/>
+  <polygon class="cls-2" points="392.02 3.22 392.02 140.14 527.94 140.14 527.88 3 392.02 3.22"/>
+  <polygon class="cls-2" points="197.73 140.13 335.67 140.13 335.67 3.02 197.51 3.08 197.73 140.13"/>
+  <polygon class="cls-2" points="3.22 140.13 141.16 140.13 141.16 3.02 3 3.08 3.22 140.13"/>
+  <polygon class="cls-2" points="972.42 140.47 1110.36 140.47 1110.36 3.36 972.2 3.42 972.42 140.47"/>
+  <polygon class="cls-2" points="1166.73 140.75 1304.66 140.75 1304.66 3.64 1166.51 3.7 1166.73 140.75"/>
+  <polygon class="cls-2" points="1361.93 4.08 1361.93 141 1497.86 141 1497.8 3.86 1361.93 4.08"/>
+  <polygon class="cls-2" points="584.06 140.47 722 140.47 722 3.36 583.84 3.42 584.06 140.47"/>
+  <line class="cls-1" x1="1109.97" y1="72.66" x2="971.95" y2="72.66"/>
+  <line class="cls-1" x1="778.81" y1="74.08" x2="846.97" y2="5.91"/>
+  <line class="cls-1" x1="915.66" y1="72.32" x2="846.82" y2="3.48"/>
+  <line class="cls-1" x1="583.95" y1="72.37" x2="652.92" y2="3.81"/>
+  <line class="cls-1" x1="722" y1="72.37" x2="652.92" y2="3.81"/>
+  <line class="cls-1" x1="722" y1="72.37" x2="652.92" y2="140.92"/>
+  <line class="cls-1" x1="583.95" y1="72.37" x2="652.92" y2="140.92"/>
+  <line class="cls-1" x1="335.67" y1="3.48" x2="197.73" y2="140.59"/>
+  <line class="cls-1" x1="1242.28" y1="4.67" x2="1166.86" y2="79.63"/>
+  <line class="cls-1" x1="462.96" y1="3.6" x2="392.02" y2="73.48"/>
+  <line class="cls-1" x1="460.91" y1="140.6" x2="527.92" y2="73.57"/>
+  <line class="cls-1" x1="427.96" y1="38.08" x2="494.84" y2="106.66"/>
+  <line class="cls-1" x1="1432.87" y1="4.45" x2="1361.93" y2="74.34"/>
+  <line class="cls-1" x1="1430.82" y1="141.45" x2="1497.83" y2="74.42"/>
+  <text class="cls-3" transform="translate(48.75 227.35)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-3" transform="translate(243.51 227.35)"><tspan x="0" y="0">B</tspan></text>
+  <text class="cls-3" transform="translate(434.46 227.35)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-3" transform="translate(628.3 227.35)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-3" transform="translate(824.58 227.35)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(1019.66 227.35)"><tspan x="0" y="0">F</tspan></text>
+  <text class="cls-3" transform="translate(1207.25 227.35)"><tspan x="0" y="0">G</tspan></text>
+  <text class="cls-3" transform="translate(1404.84 227.35)"><tspan x="0" y="0">H</tspan></text>
+</svg>

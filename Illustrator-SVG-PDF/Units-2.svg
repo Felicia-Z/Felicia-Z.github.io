@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 951.36 376.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        font-family: NHaasGroteskDSPro-55Rg, 'Neue Haas Grotesk Display Pro';
+        font-size: 72px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="3" y1="270.21" x2="136.74" y2="270.16"/>
+  <line class="cls-1" x1="3" y1="3" x2="3" y2="270.21"/>
+  <line class="cls-1" x1="136.63" y1="3.82" x2="3.34" y2="3"/>
+  <line class="cls-1" x1="136.74" y1="136.49" x2="3" y2="136.55"/>
+  <line class="cls-1" x1="137.03" y1="3" x2="137.03" y2="270.15"/>
+  <text class="cls-3" transform="translate(45.33 360.19)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-3" transform="translate(451.88 360.19)"><tspan x="0" y="0">B</tspan></text>
+  <text class="cls-3" transform="translate(855.82 360.19)"><tspan x="0" y="0">C</tspan></text>
+  <rect class="cls-2" x="3" y="1.97" width="133.53" height="133.53"/>
+  <line class="cls-1" x1="408.05" y1="270.21" x2="541.79" y2="270.16"/>
+  <line class="cls-1" x1="408.05" y1="3" x2="408.05" y2="270.21"/>
+  <line class="cls-1" x1="541.68" y1="3.82" x2="408.39" y2="3"/>
+  <line class="cls-1" x1="542.08" y1="270.15" x2="408.05" y2="3.82"/>
+  <line class="cls-1" x1="542.08" y1="3" x2="542.08" y2="270.15"/>
+  <line class="cls-1" x1="814.33" y1="270.21" x2="948.07" y2="270.16"/>
+  <line class="cls-1" x1="814.33" y1="3" x2="814.33" y2="270.21"/>
+  <line class="cls-1" x1="947.96" y1="3.82" x2="814.67" y2="3"/>
+  <line class="cls-1" x1="948.07" y1="136.49" x2="814.33" y2="136.55"/>
+  <line class="cls-1" x1="948.36" y1="3" x2="948.36" y2="270.15"/>
+  <circle class="cls-2" cx="881.34" cy="203.35" r="19"/>
+</svg>

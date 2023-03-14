@@ -9,8 +9,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    visibility: hidden; 
-    /*so the tooltip will not be visible all the time*/
+    visibility: hidden;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 16pt;

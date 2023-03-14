@@ -120,7 +120,11 @@ function drawMap(geo, data) {
         })// Tooltip
         .on('mouseover', function (e, d) {
             // TO DO
-
+            let x =e.offsexX;
+            let y = e.offsetY;
+            tooltip.style("left",x+20+"px")
+                    .style()
+                    .html(d.place+"/p")
         })
         .on('mousemove', function (e, d) {
             // TO DO
@@ -128,7 +132,7 @@ function drawMap(geo, data) {
         })
         .on('mouseout', function () {
             // TO DO
-            
+
         });
 
     // Draw the graticule grid line on the map
