@@ -43,21 +43,6 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     console.log(price);
 
-    // const brand = {
-    //     data,function(d){return d.brand;}
-    // };
-    // console.log(brand);
-
-    // const comments = {
-    //     min: d3.min(data, function(d) { return d.comments; }),
-    //     max: d3.max(data, function(d) { return d.comments; })
-    // };
-
-    // const views = {
-    //     min: d3.min(data, function(d) { return d.views; }),
-    //     max: d3.max(data, function(d) { return d.views; })
-    // };
-
     /* 
     SIDE NOTE: Unique values for a categorical variable
     */
@@ -118,7 +103,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
             .attr("stroke-width", 1.5)
             .attr("fill", function(d) { return fillScale(d.profile); });
 
-    console.log(2222222);
+
     /*
     DRAW AXIS LABELS
     */
