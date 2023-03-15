@@ -23,7 +23,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     */
     const width = document.querySelector("#chart").clientWidth;
     const height = document.querySelector("#chart").clientHeight;
-    const margin = {top: 100, left: 200, right: 150, bottom: 20};
+    const margin = {top: 100, left: 150, right: 150, bottom: 20};
 
     const svg = d3.select("#chart")
         .append("svg")
@@ -78,7 +78,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .domain(["Alloy","Arbor","Bataleon","Borealish","Burton","Capita","Cardiff","DC","Decathlon","Dinosaurs","Elevated","Endeavor","Gentemstick","Gilson","Gnu","Jones","K2","Korua","Lib Tech","Loaded","Lobster","Moss","Never Summer","Niche","Nidecker","Nitro","Osin","Prior","Ride","Rome","Rossignol","Salomon","Season","Sims","Slash","SnoPlanks","Soul","Stone","Tahoe","Telos","Weston","Yes"])
         .range([margin.left, width-margin.right])
         .padding(0.5); 
-    console.log(93939);
+
 
     // const rScale = d3.scaleBand()
     //     .dmain("Poor","Average","Good","Great","Excellent")
@@ -224,21 +224,12 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     d3.selectAll(".powder--performance").on("click", function() {
 
-        /* 
-        */
-       
         let isChecked = d3.select(this).property("checked");
         let thisPerformance = d3.select(this).property("value");
-
-        /*
-        */
 
         let selection = points.filter(function(d) {
             return d.powder_performance === thisPerformance;
         });
-
-        /*
-        */
 
         if (isChecked == true) {
 
@@ -252,11 +243,27 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
         }
 
-        /*
-        */
-
     });
 
+    /*
+    D3 Zoom and Pan
+     */
+
+    function zoomed(e) {
+        svg.attr("transform", e.transform);
+
+        svg.selectAll("circle")
+            .attr("r", function(d){
+                return circleRadius/e.transform.k;
+            });```````````` 
+    };
+
+    let zoom = d3.zoom()
+        .translateExtent([[0, 0], [width, height]])
+        .scaleExtent([1, 15])
+        .on("zoom", zoomed);
+
+    svg.call(zoom);
 
 
 });
