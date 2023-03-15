@@ -5,7 +5,7 @@ function parseCsv(d) {
             model: d.Model,
             riding_style: d.Riding_Style,
             shape: d.Shape,
-            profile: +d.Camber_Profile, 
+            profile: d.Camber_Profile, 
             stance: d.Stance, 
             flex: d.Flex,
             price: +d.Price_USD,
@@ -27,8 +27,10 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     const svg = d3.select("#chart")
         .append("svg")
-        .attr("width", width)
-        .attr("height", height);
+        .attr("viewBox", `0 0 ${width} ${height}`)             //${} template literal, to inset the computed width and height variables above 
+        .attr("preserveAspectRatio", "xMidYMid meet");         //The value xMidYMid meet means “scale the SVG uniformly in the x- and ydirection as the viewport changes size”
+        // .attr("width", width)
+        // .attr("height", height);
 
     /*  
     DETERMINE MIN AND MAX VALUES OF VARIABLES
@@ -77,13 +79,6 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .range([margin.left, width-margin.right])
         .padding(0.5); 
     console.log(93939);
-    // const yScale = d3.scaleLinear()
-    //     .domain([views.min, views.max])
-    //     .range([height-margin.bottom, margin.top]);
-
-    // const rScale = d3.scaleSqrt()
-    //     .domain([comments.min, comments.max])
-    //     .range([2, 10]);
 
     // const rScale = d3.scaleBand()
     //     .dmain("Poor","Average","Good","Great","Excellent")
@@ -91,7 +86,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     const fillScale = d3.scaleOrdinal()
         .domain(profiles)
-        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef','#a770f6','#f9b1ff']);
+        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef','#a770f6']);
 
     /*
     DRAW AXES
@@ -180,6 +175,48 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     });
 
+
+    /* 
+    ADD LEGENDS
+    */
+    // const legendWidth = document.querySelector("#legend").clientWidth;
+    const legendWidth = 300;
+    const legendHeight = 400;
+    const legendMargin = 25;
+    const legendSpacing = 50;
+
+    const colorLegend = d3.select("#legend")
+        .append("svg")
+        .attr("viewBox", `0 0 ${legendWidth} ${legendHeight}`)
+        .attr("preserveAspectRatio", "xMidYMid meet");
+        // .attr("height", legendHeight)
+        // .attr("width", legendWidth);
+
+    profiles.forEach(function(profiles,i){
+        colorLegend.append("circle")
+            .attr("cx", legendMargin)
+            .attr("cy", legendMargin + i*legendSpacing)
+            // .attr("cx", -10+legendMargin + i*legendSpacing)
+            // .attr("cy", legendMargin)
+            .attr("r", 10)
+            .attr("fill", fillScale(profiles));
+
+        colorLegend.append("text")
+            .attr("class", "legend--label")
+            .attr("x", legendMargin + 25)
+            .attr("y", legendMargin + i*legendSpacing)
+            // .attr("x", -20+legendMargin + i*legendSpacing)
+            // .attr("y", legendMargin + 25)
+            .text(profiles);
+    });
+  
+    d3.select(window).on("resize", function(e) {
+
+        let tw = svg.node().clientWidth;
+        let th = svg.node().clientHeight;
+        sx = tw / width;
+        sy = th / height;
+    });
 
     /* 
     FILTER BY CHECKBOX  
