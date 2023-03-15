@@ -1,366 +1,246 @@
 Brand,Model,Riding_Style,Riding_Level,Shape,Camber_Profile,Stance,Flex,Price_USD,Powder
-Nidecker,Beta,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,479,Great
-K2,Instrument,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,529,Great
-Ride,Peace Seeker,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,599,Good
-K2,Alchemist,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,699,Good
-Salomon,Wolle Nyvelt Fish,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,650,Excellent
-Never Summer, Proto Ultra,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Stiff,684,Average
-Yes,Warca,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium,599,Average
-Capita,Mega Merc,All Mountain,Intermediate-Expert,Twinish,Hybrid Camber,Setback -12.5mm,Medium,799,Average
-Yes,Standard Uninc,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,649,Good
-Ride,Shadowban,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,499,Good
-Capita,Indoor Survival,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Setback -12.5mm,Medium,549,Average
-Nidecker,Mellow,Alternative Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,499,Great
-Cardiff,Lynx,All Mountain,Beginner-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium,560,Good
-Yes,PYL Uninc,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,649,Great
-Jones,Mind Expander,Alternative Freeride,Advanced-Expert,Tapered Directional,Continuous Rocker,Centered,Medium,599,Great
-Burton ,Custom X Camber,All Mountain,Expert,Directional,Traditional Camber,Setback -12.5mm,Medium/Stiff,1549,Poor
-Burton ,Custom Camber,All Mountain,Intermediate-Expert,Twinish,Traditional Camber,Setback -12.5mm,Medium,659,Average
-Gnu,Antigravity,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Soft,479,Average
-Burton ,First Cut,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,559,Good
-Burton ,Deep Thinker,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Soft,629,Good
-Burton ,Territory Manager,All Mountain,Advanced-Expert,Tapered Directional,Directional Camber,Setback -12.5mm,Medium/Stiff,659,Good
 Alloy,B-Bomb,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium,549,Average
-Tahoe,Labs Directional,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,749,Good
-Soul,Pitch Wing,Snowsurf,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium,649,Great
-Osin,4807,Powder,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Excellent
-Never Summer, Snowtrooper,All Mountain,Beginner-Expert,Twinish,Hybrid Rocker,Setback -15mm,Medium/Soft,599,Good
-Elevated,Surf Craft Whiskey Jack,Snowsurf,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,849,Great
-Elevated,Surf Craft Megafish,Snowsurf,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,849,Excellent
-Capita,Spring Break Powder Pill,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,899,Excellent
-Capita,Spring Break Powder Glider,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium,899,Excellent
+Alloy,Outkome,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Setback -20mm,Medium,499,Average
+Alloy,Sniper,All Mountain,Advanced-Expert,Directional,Traditional Camber,Setback -20mm,Medium/Stiff,649,Average
+Alloy,Kwang Ki,All Mountain,Advanced-Expert,Directional Twin,Traditional Camber,Setback -10mm,Medium,549,Poor
+Alloy,D.O Carbon,Freestyle,Beginner-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Stiff,999,Poor
+Arbor,Formula,All Mountain Freestyle,Beginner-Intermediate,Directional Twin,Continuous Rocker,Centered,Medium,359,Average
 Arbor,Westmark Camber,Freestyle,Intermediate-Expert,True Twin,Mostly Camber,Centered,Medium,449,Poor
-Nitro,Quiver Fusion,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,529,Good
-Nitro,Highlander,All Mountain,Advanced-Expert,Tapered Directional,Traditional Camber,Setback -15mm,Medium/Stiff,549,Average
-Nitro,Dropout,All Mountain,Advanced-Expert,Directional,Mostly Camber,Setback -15mm,Medium,499,Good
-Gnu,Essential Service,All Mountain,Beginner-Expert,Twinish,Hybrid Rocker,Setback -12.5mm,Medium,499,Average
-Gnu,RC C3,All Mountain Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium,659,Poor
-Lib Tech,BRD,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,629,Great
-Rossignol,XV,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,649,Great
-Rossignol,Jibsaw,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,499,Average
-Rossignol,Juggernaut,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Stiff,549,Poor
-Rossignol,Resurgence,All Mountain,Beginner-Expert,Twinish,Hybrid Camber,Setback -20mm,Medium,519,Good
-Rossignol,Revenant,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -12.5mm,Medium/Stiff,499,Average
-Rossignol,One,All Mountain,Beginner-Expert,Twinish,Hybrid Camber,Setback -12.5mm,Medium,549,Good
-Salomon,Dancehaul,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium,479,Great
-Cardiff,Goat,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium,750,Good
-Rome,Freaker,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,459,Poor
-Prior,Khyber,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,739,Good
-Korua,Transition Finder,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,499,Great
-Ride,Twinpig,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Camber,Centered,Medium/Soft,499,Average
-Ride,Mtnpig,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,599,Good
-Ride,Berzerker,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,529,Good
-Ride,Warpig,Alternative Freeride,Intermediate-Expert,Tapered Directional,Flat to Rocker,Centered,Medium,529,Good
-Ride,Superpig,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium,589,Good
-Ride,Smokescreen,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Stiff,479,Good
-Ride,Commissioner,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Stiff,799,Good
-Ride,Psychocandy,Alternative Freeride,Beginner-Expert,Tapered Directional,Flat to Rocker,Setback -20mm,Medium,519,Great
-Soul,Blowe,Powder,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,649,Excellent
-Soul,Shift,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,649,Great
-Rome,Warden,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,399,Average
-Rome,Service Dog,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,399,Great
-Rome ,Ravine Select,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,629,Good
-Rome,Ravine,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium,529,Good
-Rome,Agent,All Mountain Freestyle,Advanced-Expert,Twinish,Traditional Camber,Centered,Medium,499,Poor
-Rome,Stale Crewzer,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,499,Poor
-Rome ,National,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,599,Average
-Lib Tech,Orca,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,649,Great
-Rome,Stale Fish,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,449,Great
-Lib Tech,Golden Orca,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,749,Good
-Lib Tech,Apex Orca,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,999,Great
-Telos,BackSlash,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,595,Good
-Gnu,Banked Country,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,529,Good
 Arbor,Coda Camber,All Mountain,Beginner-Expert,Directional Twin,Mostly Camber,Centered,Medium,549,Poor
 Arbor,Clovis,Freeride,Beginner-Expert,Tapered Directional,Mostly Camber,Centered,Medium,549,Good
 Arbor,Single,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,529,Great
-Cardiff,Swell Enduro Split,Alternative Freeride,Advanced-Expert,Directional,Hybrid Camber,Setback -10mm,Medium/Stiff,900,Great
-Never Summer, Ripper,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Setback -12.5mm,Medium,579,Average
-Never Summer, Hammer,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,629,Good
-Never Summer, Proto Fr,Freeride,Advanced-Expert,Tapered Directional,Hybrid Rocker,Setback -20mm,Medium/Stiff,619,Good
-Burton ,Skeleton Key,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,549,Great
-Burton ,Hometown Hero,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,629,Good
-Gnu,Gremlin,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,499,Good
-Burton ,Cartographer,All Mountain,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,469,Good
-Burton ,3D Daily Driver,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,629,Good
-Burton ,Instigator,Freeride,Beginner-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,419,Good
-Burton ,Wave Tracer,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,629,Great
-Burton ,3D Double Dog,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,629,Good
-Burton ,Show Stopper,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,579,Great
-Weston,Ridgeline,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,599,Good
-Burton ,3D Fish,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium,629,Excellent
-Stone,Graham,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Stiff,399,Poor
-Decathlon,Dreamspace,All Mountain,Beginner-Intermediate,Directional Twin,Continuous Rocker,Setback -15mm,Medium/Soft,199,Average
-Jones,Storm Chaser,Powder,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback -12.5mm,Medium/Stiff,599,Excellent
-Jones,Project X,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,1699,Great
-Jones,Mind Expander Twin,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,549,Good
-Jones,Aviator 2.0,All Mountain,Advanced-Expert,Twinish,Traditional Camber,Setback -20mm,Medium/Stiff,599,Average
-Jones,Storm Wolf,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Stiff,599,Great
-Cardiff,Powgoda Endura Split,Alternative Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -5mm,Medium,950,Excellent
-Yes,The Y,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,449,Great
-Yes,Greats,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Camber,Centered,Medium,549,Average
-Yes,Jackpot,Freestyle,Beginner-Expert,True Twin,Traditional Camber,Centered,Medium/Soft,479,Poor
-Yes,Dicey,Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,429,Average
-Yes,Standard,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,499,Good
-Yes,Ghost,All Mountain,Advanced-Expert,Directional Twin,Hybrid Camber,Centered,Medium,549,Average
-Yes,Basic Uninc,All Mountain,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,549,Good
-Yes,Basic,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,399,Average
-Yes,2020,Powder,Advanced-Expert,True Twin,Hybrid Camber,Centered,Medium,699,Great
-Yes,420 PH,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -15mm,Medium/Stiff,699,Excellent
-Borealish,Tundra,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -12.5mm,Medium,579,Good
-Borealish,Marauder,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,649,Great
-Borealish,Drakkar,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,209,Good
-Cardiff,Crane,All Mountain,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,749,Good
-Cardiff,Swell,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,749,Great
-Cardiff,Bonsai,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Stiff,749,Great
-Cardiff,Powgoda,Alternative Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,749,Great
-Season,Forma,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Stiff,549,Great
-Season,Aero,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium,549,Good
-Ride,Wild Life,All Mountain,Intermediate-Expert,Directional,Directional Camber,Setback -20mm,Medium,429,Good
-Capita,Navigator,Powder,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,449,Good
-Capita,Spring Break,Powder,Beginner-Expert,Tapered Directional,Flat to Rocker,Centered,Soft,729,Excellent
-Yes,Globe,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,699,Good
-Tahoe,Labs Directional Twin,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium/Stiff,699,Good
-Korua,Tugboat,Powder,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Stiff,609,Excellent
-Korua,Otto Plus,All Mountain,Advanced-Expert,Directional,Directional Camber,Setback -5mm,Medium,849,Good
-Prior,Fissle,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,649,Great
-Weston,Hatchet,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,649,Great
-Weston,Japow,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Excellent
-Yes,Pick Your Line,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -10mm,Medium/Stiff,599,Good
-Capita,Spring Break Powder,Powder,Advanced-Expert,True Twin,Hybrid Camber,Centered,Medium/Stiff,479,Great
-Prior,Spearhead,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,699,Great
-Yes,Hybrid,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,549,Great
-Yes,PRO20,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium/Stiff,669,Excellent
-Yes,420,Powder,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium/Stiff,499,Excellent
-Jones,Flagship,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,649,Great
-Jones,Ultra Mind Expander,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Stiff,699,Great
-Jones,Lone Wolf,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,699,Great
-Jones,Ultra Flagship,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Stiff,999,Great
-Jones,Ultra Mountain Twin,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium/Stiff,599,Average
-Jones,Mountain Twin,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Centered,Medium,499,Average
-Jones,Ultracraft,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,649,Excellent
-Jones,Hovercraft,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,549,Excellent
-Arbor,Wasteland Camber,All Mountain Freestyle,Beginner-Expert,Directional Twin,Traditional Camber,Centered,Medium/Stiff,649,Poor
 Arbor,Bryan Iguchi Pro Camber,All Mountain,Intermediate-Expert,Tapered Directional,Mostly Camber,Centered,Medium/Stiff,599,Average
-Arbor,Formula,All Mountain Freestyle,Beginner-Intermediate,Directional Twin,Continuous Rocker,Centered,Medium,359,Average
 Arbor,Element Camber,All Mountain Freestyle,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,449,Poor
 Arbor,Crosscut Camber,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -10mm,Medium/Stiff,499,Good
 Arbor,Annex,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -10mm,Stiff,699,Good
-Never Summer, West Bound,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,589,Good
-Never Summer, Shaper Twin,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Rocker,Centered,Medium,529,Good
-Never Summer, Proto,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium,599,Average
-Never Summer, Harpoon,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,569,Great
-Never Summer, Proto Synthesis,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium,599,Average
-Burton ,Straight Chuter,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,749,Great
-Burton ,Sensei,Freeride,Advanced-Expert,Directional,Traditional Camber,Setback -20mm,Medium/Stiff,649,Good
-Burton ,Pow Wrench,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback -20mm,Medium,529,Great
-Burton ,Killroy Twin Camber,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium,399,Poor
-Burton ,3D Killroy Camber,All Mountain,Intermediate-Expert,Directional,Hybrid Camber,Setback -12.5mm,Medium/Soft,469,Average
-Burton ,Killroy Pow Camber,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,449,Great
-Burton ,Big Gulp,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -12.5mm,Medium/Stiff,549,Great
-Lib Tech,MC Snake Kink,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,599,Good
-Lib Tech,Short Wide,Alternative Freeride,Beginner-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,549,Good
-Lib Tech,Lost Retro Ripper,Snowsurf,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Stiff,699,Great
-Lib Tech,Lost Quiver Killer,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,599,Good
-Gnu,Nuzoid,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,599,Good
-Gnu,Head Space,Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium/Soft,459,Poor
-Gnu,Billy Goat,All Mountain,Advanced-Expert,Directional,Mostly Camber,Setback -20mm,Medium,619,Good
-Soul,Frequent Flyer,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Good
-Soul,Snow Wave,Powder,Advanced-Expert,Tapered Directional,Continuous Rocker,Setback over 20mm,Medium,649,Excellent
-Soul,Pocket Rocket,Powder,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Soft,649,Great
-Elevated,Surf Craft Step-Up,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,820,Good
-Elevated,Surf Craft Shortboard,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,820,Good
-Decathlon,Endzone 500,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Medium/Soft,299,Average
-Decathlon,Endzone Park and Ride,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,299,Good
-Decathlon,Bullwhip 700,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,399,Good
-Decathlon,Bullwhip 300 Evo,Freeride,Advanced-Expert,Directional Twin,Traditional Camber,Centered,Medium,199,Poor
-Decathlon,All Road 500,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,299,Good
-Korua,Bullet Train,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium/Stiff,699,Good
-Alloy,Sniper,All Mountain,Advanced-Expert,Directional,Traditional Camber,Setback -20mm,Medium/Stiff,649,Average
-Alloy,Outkome,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Setback -20mm,Medium,499,Average
-Jones,Stratos,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,599,Great
-Alloy,Kwang Ki,All Mountain,Advanced-Expert,Directional Twin,Traditional Camber,Setback -10mm,Medium,549,Poor
-Alloy,D.O Carbon,Freestyle,Beginner-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Stiff,999,Poor
-Burton ,Super Bueno,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Good
-Gnu,Fun Guy,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Great
-Korua,Cafe' Racer,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Stiff,549,Great
-Stone,Topo,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,329,Good
-Stone,Natural,Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback -20mm,Medium/Stiff,329,Good
-Stone,Barrel,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,299,Good
-Capita,Super DOA,All Mountain Freestyle,Advanced-Expert,True Twin,Hybrid Camber,Centered,Medium,649,Poor
-Capita,Asymulator,All Mountain Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium,499,Poor
-Ride,Algorhythm,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,599,Good
-SnoPlanks,SnoBlunt,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Camber,Centered,Medium,799,Average
-SnoPlanks,Model A,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,799,Good
-SnoPlanks,Asym Fish,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,799,Great
-Stone,Dirty Fish,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,399,Great
-Stone,Mini-Gun,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,399,Great
-Lib Tech,Terrain Wrecker,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,519,Average
-Nidecker,The  Mosquito,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Great
-K2,Simple Pleasures,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,559,Great
-K2,Overboard,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,479,Great
-K2,Joy Driver,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,599,Good
-K2,Afterblack,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Stiff,429,Poor
-Gilson,Pioneer,All Mountain,Intermediate-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,519,Average
-Gilson,Fly,Snowsurf,Intermediate-Expert,Directional,Directional Camber,Setback over 20mm,Medium/Soft,799,Great
-Rossignol,XV Sashimi,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Great
-Rossignol,XV Sushi,Snowsurf,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium,499,Good
-Niche,Maelstorm,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,549,Good
-Moss,Snowstick 58 Swallow,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,980,Excellent
-Moss,Snowstick Wing Smallow,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,1040,Great
-Moss,Snowstick Jellyfish,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,1080,Great
-Moss,Snowstick C3,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Soft,1240,Great
-Niche,Story,All Mountain,Beginner-Expert,Directional,Hybrid Rocker,Setback -20mm,Medium/Stiff,569,Good
-Niche,Wraith,Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,449,Poor
-Niche,Crux,All Mountain Freestyle,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,499,Poor
-Niche,Pyre,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,549,Good
-Niche,Aether,All Mountain Freestyle,Beginner-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,529,Average
+Arbor,Cask,Alternative Freeride,Intermediate-Expert,Tapered Directional,Mostly Camber,Centered,Medium/Stiff,499,Good
+Arbor,A-Frame,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -10mm,Stiff,649,Good
+Arbor,Wasteland Camber,All Mountain Freestyle,Beginner-Expert,Directional Twin,Traditional Camber,Centered,Medium/Stiff,649,Poor
 Bataleon,Surfer LTD,Snowsurf,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,1199,Excellent
 Bataleon,Party Wave,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,399,Great
-Lobster,Halldor Pro,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
-Lobster,Aaron Schwartz Artist Edition,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Soft,429,Great
 Bataleon,Goliath,All Mountain,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
 Bataleon,Evil Twin,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
-Stone,Message,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium,349,Poor
-Soul,Samurai,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium,649,Average
-Salomon,Huck Knife Pro,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,549,Poor
-Salomon,HPS x Asmo,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,799,Excellent
-Prior,Wildcard,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,479,Average
-Prior,Slasher,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,619,Excellent
-Nitro,Team,All Mountain,Advanced-Expert,Directional Twin,Traditional Camber,Setback -15mm,Medium,499,Poor
-Prior,Legacy,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Centered,Medium/Stiff,540,Great
-Nitro,Cinema,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Setback -15mm,Medium/Soft,399,Average
-Nitro,Santoku,All Mountain Freestyle,Intermediate-Expert,True Twin,Traditional Camber,Centered,Medium,499,Average
-Nitro,Quiver Cannon 173,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium/Stiff,519,Great
-Nitro,Quiver Cannon 203,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,519,Excellent
-Weston,Logger,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Medium/Soft,499,Poor
-Weston,Range,All Mountain,Advanced-Expert,Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,499,Average
-Weston,Backwoods,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -10mm,Medium/Stiff,599,Great
-Ride,Burnout,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
+Borealish,Marauder,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,649,Great
+Borealish,Tundra,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -12.5mm,Medium,579,Good
+Borealish,Drakkar,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,209,Good
+Burton,Speed Date,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,650,Good
+Burton,Kilroy Process,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium,399,Poor
+Burton,Kilroy Custom ,All Mountain Freestyle,Advanced-Expert,Directional,Traditional Camber,Centered,Medium/Stiff,449,Poor
+Burton,Free Thinker,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Stiff,579,Poor
+Burton,First Cut,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,559,Good
+Burton,Deep Thinker,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Soft,629,Good
+Burton,Territory Manager,All Mountain,Advanced-Expert,Tapered Directional,Directional Camber,Setback -12.5mm,Medium/Stiff,659,Good
+Burton,Skeleton Key,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,549,Great
+Burton,Hometown Hero,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,629,Good
+Burton,Cartographer,All Mountain,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,469,Good
+Burton,3D Daily Driver,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,629,Good
+Burton,3D Double Dog,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,629,Good
+Burton,Show Stopper,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,579,Great
+Burton,Straight Chuter,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,749,Great
+Burton,Killroy Pow Camber,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,449,Great
+Burton,Big Gulp,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -12.5mm,Medium/Stiff,549,Great
+Burton,Super Bueno,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Good
+Burton,Leader Board,Freeride,Beginner-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Stiff,549,Good
+Burton,One-Hitter,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,499,Good
+Burton,Flight Attendant,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,609,Good
+Burton,Stun Gun,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Great
+Burton,Instigator,Freeride,Beginner-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,419,Good
+Burton,3D Fish,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium,629,Excellent
+Burton,Pow Wrench,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback -20mm,Medium,529,Great
+Burton,3D Killroy Camber,All Mountain,Intermediate-Expert,Directional,Hybrid Camber,Setback -12.5mm,Medium/Soft,469,Average
+Burton,Wave Tracer,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,629,Great
+Burton,Custom X Flying V,All Mountain,Intermediate-Expert,Directional,Hybrid Rocker,Setback -12.5mm,Medium/Stiff,749,Average
+Burton,Trick Pilot,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium,549,Average
+Burton,Custom X Camber,All Mountain,Expert,Directional,Traditional Camber,Setback -12.5mm,Medium/Stiff,1549,Poor
+Burton,Custom Camber,All Mountain,Intermediate-Expert,Twinish,Traditional Camber,Setback -12.5mm,Medium,659,Average
+Burton,Sensei,Freeride,Advanced-Expert,Directional,Traditional Camber,Setback -20mm,Medium/Stiff,649,Good
+Burton,Killroy Twin Camber,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium,399,Poor
+Capita,Navigator,Powder,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,449,Good
 Capita,Warpspeed,All Mountain,Advanced-Expert,Directional,Directional Camber,Setback -12.5mm,Medium/Stiff,599,Good
 Capita,Supernova,All Mountain,Advanced-Expert,Directional,Directional Camber,Setback -12.5mm,Medium,499,Average
+Capita,Kazu Kokubo Pro,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -12.5mm,Medium/Stiff,559,Average
+Capita,Spring Break Powder Pill,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,899,Excellent
+Capita,Spring Break Powder Glider,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium,899,Excellent
+Capita,Spring Break,Powder,Beginner-Expert,Tapered Directional,Flat to Rocker,Centered,Soft,729,Excellent
 Capita,Spring Break Slush Slasher,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium,379,Great
 Capita,Spring Break Powder Racer,Powder,Beginner-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Soft,499,Great
 Capita,Spring Break Powder Drifter,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Soft,719,Great
 Capita,Spring Break Powder 167 Night Hawk,Powder,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,719,Excellent
 Capita,Spring Break Powder 151 Mini Tree Hunter,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium,719,Great
-Capita,Outsiders,Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium,579,Poor
+Capita,Spring Break Powder 161 Tree Hunter,Powder,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,749,Excellent
+Capita,Ultrafear,Freestyle,Intermediate-Expert,True Twin,Flat to Rocker,Centered,Soft,489,Poor
+Capita,Scott Stevens Pro,Freestyle,Intermediate-Expert,True Twin,Flat to Rocker,Centered,Soft,529,Poor
+Capita,Horroscope,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Soft,379,Poor
+Capita,Mega Merc,All Mountain,Intermediate-Expert,Twinish,Hybrid Camber,Setback -12.5mm,Medium,799,Average
+Capita,Spring Break Powder,Powder,Advanced-Expert,True Twin,Hybrid Camber,Centered,Medium/Stiff,479,Great
+Capita,Super DOA,All Mountain Freestyle,Advanced-Expert,True Twin,Hybrid Camber,Centered,Medium,649,Poor
 Capita,Outerspace Living,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium,399,Average
 Capita,Defenders Of Awesome,All Mountain Freestyle,Advanced-Expert,True Twin,Hybrid Camber,Centered,Medium,459,Poor
-Endeavor,Live,All Mountain Freestyle,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,489,Poor
-Endeavor,Clout,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,579,Average
-Endeavor,BOD,All Mountain Freestyle,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,499,Average
-Endeavor,Ranger,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,459,Good
-Endeavor,Pioneer,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,559,Good
+Capita,Mercury,All Mountain,Intermediate-Expert,Directional,Hybrid Camber,Setback -12.5mm,Medium,549,Average
+Capita,Indoor Survival,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Setback -12.5mm,Medium,549,Average
+Capita,Asymulator,All Mountain Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium,499,Poor
+Capita,Outsiders,Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium,579,Poor
+Cardiff,Powgoda Endura Split,Alternative Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -5mm,Medium,950,Excellent
+Cardiff,Bonsai,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Stiff,749,Great
+Cardiff,Powgoda,Alternative Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,749,Great
+Cardiff,Lynx,All Mountain,Beginner-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium,560,Good
+Cardiff,Goat,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium,750,Good
+Cardiff,Swell Enduro Split,Alternative Freeride,Advanced-Expert,Directional,Hybrid Camber,Setback -10mm,Medium/Stiff,900,Great
+Cardiff,Crane,All Mountain,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,749,Good
+Cardiff,Swell,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,749,Great
+DC,Supernatant,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -10mm,Medium/Stiff,499,Good
+DC,HR,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,599,Great
+DC,Mega,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Stiff,499,Poor
+DC,The 156,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Soft,499,Poor
+Decathlon,Dreamspace,All Mountain,Beginner-Intermediate,Directional Twin,Continuous Rocker,Setback -15mm,Medium/Soft,199,Average
+Decathlon,Endzone 500,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Medium/Soft,299,Average
+Decathlon,Endzone Park and Ride,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,299,Good
+Decathlon,Bullwhip 700,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,399,Good
+Decathlon,All Road 500,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,299,Good
+Decathlon,Bullwhip 300 Evo,Freeride,Advanced-Expert,Directional Twin,Traditional Camber,Centered,Medium,199,Poor
+Dinosaurs,Will Die Rat,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Medium/Soft,399,Poor
+Elevated,Surf Craft Megafish,Snowsurf,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,849,Excellent
+Elevated,Surf Craft Redtail Hawk,Snowsurf,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,820,Great
+Elevated,Surf Craft Whiskey Jack,Snowsurf,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,849,Great
+Elevated,Surf Craft Step-Up,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,820,Good
+Elevated,Surf Craft Shortboard,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,820,Good
 Endeavor,Maverick,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,539,Good
 Endeavor,Scout,Alternative Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Centered,Medium,519,Good
 Endeavor,Archetype,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Good
+Endeavor,Ranger,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,459,Good
+Endeavor,Pioneer,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,559,Good
 Endeavor,Alpha,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,599,Poor
+Endeavor,Live,All Mountain Freestyle,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,489,Poor
+Endeavor,Clout,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,579,Average
+Endeavor,BOD,All Mountain Freestyle,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,499,Average
+Gentemstick,Chaser HP,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Centered,Medium/Stiff,1010,Great
+Gentemstick,Mantaray 156,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,980,Great
+Gentemstick,Spoonfish,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,830,Great
+Gentemstick,Hornet,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,1000,Great
+Gentemstick,XY,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,980,Great
 Gentemstick,Rocket Fish HP,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,1000,Excellent
 Gentemstick,Rocket Fish,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,1000,Excellent
-Gentemstick,Chaser HP,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Centered,Medium/Stiff,1010,Great
 Gentemstick,Chaser,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,1010,Great
 Gentemstick,Barracuda HP,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,1010,Excellent
-Gentemstick,Mantaray 156,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,980,Great
-Never Summer, East,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Stiff,699,Poor
-Never Summer, Dipstick,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,539,Average
-Never Summer, Swift,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,619,Great
-Burton ,Leader Board,Freeride,Beginner-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Stiff,549,Good
-Burton ,One-Hitter,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,499,Good
+Gentemstick,Stingray,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,1040,Good
+Gilson,Fly,Snowsurf,Intermediate-Expert,Directional,Directional Camber,Setback over 20mm,Medium/Soft,799,Great
+Gilson,Pioneer,All Mountain,Intermediate-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,519,Average
+Gnu,Carbon Credit Asym,Freestyle,Beginner-Expert,Asymmetrical Twin,Continuous Rocker,Centered,Medium/Soft,419,Average
+Gnu,Gremlin,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,499,Good
+Gnu,Mullair,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Good
+Gnu,Hyperkyarve,Freeride,Beginner-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,519,Good
+Gnu,Essential Service,All Mountain,Beginner-Expert,Twinish,Hybrid Rocker,Setback -12.5mm,Medium,499,Average
+Gnu,Nuzoid,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,599,Good
+Gnu,Riders Choice,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Rocker,Centered,Medium,569,Average
+Gnu,T2B,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,479,Average
+Gnu,Space Case,Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Rocker,Centered,Medium,579,Average
+Gnu,Money,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Setback -12.5mm,Medium,349,Average
+Gnu,Antigravity,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Soft,479,Average
+Gnu,RC C3,All Mountain Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium,659,Poor
+Gnu,Banked Country,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,529,Good
+Gnu,Head Space,Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium/Soft,459,Poor
+Gnu,Billy Goat,All Mountain,Advanced-Expert,Directional,Mostly Camber,Setback -20mm,Medium,619,Good
+Gnu,Fun Guy,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Great
+Gnu,4,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Average
+Gnu,SPASYM,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Good
+Gnu,Super Progressive Air Machine,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Good
+Jones,Mind Expander,Alternative Freeride,Advanced-Expert,Tapered Directional,Continuous Rocker,Centered,Medium,599,Great
+Jones,Project X,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,1699,Great
+Jones,Lone Wolf,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,699,Great
+Jones,Storm Chaser,Powder,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback -12.5mm,Medium/Stiff,599,Excellent
+Jones,Mind Expander Twin,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,549,Good
+Jones,Flagship,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,649,Great
+Jones,Ultra Mind Expander,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Stiff,699,Great
+Jones,Ultra Flagship,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Stiff,999,Great
+Jones,Ultra Mountain Twin,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium/Stiff,599,Average
+Jones,Mountain Twin,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Centered,Medium,499,Average
+Jones,Ultracraft,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,649,Excellent
+Jones,Hovercraft,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,549,Excellent
+Jones,Stratos,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,599,Great
 Jones,Carbon Flagship,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Stiff,999,Good
 Jones,Frontier,All Mountain,Beginner-Expert,Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,489,Good
-Gnu,Mullair,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Good
-Lib Tech,Lost Rocket,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,549,Good
+Jones,Explorer,All Mountain,Beginner-Expert,Directional,Hybrid Camber,Setback over 20mm,Medium,449,Good
+Jones,Storm Wolf,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Stiff,599,Great
+Jones,Aviator 2.0,All Mountain,Advanced-Expert,Twinish,Traditional Camber,Setback -20mm,Medium/Stiff,599,Average
+K2,Instrument,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,529,Great
+K2,Alchemist,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,699,Good
+K2,Simple Pleasures,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,559,Great
+K2,Overboard,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,479,Great
+K2,Eighty Seven,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium,549,Great
+K2,Raygun,All Mountain,Beginner-Expert,Directional Twin,Flat to Rocker,Setback -20mm,Medium,399,Average
+K2,Party Platter,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,449,Great
+K2,Cool Bean,Powder,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,469,Excellent
+K2,Joy Driver,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,599,Good
+K2,Manifest,All Mountain,Intermediate-Expert,Twinish,Hybrid Camber,Setback -20mm,Medium/Stiff,529,Good
+K2,Broadcast,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,449,Good
+K2,Afterblack,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Stiff,429,Poor
+Korua,Transition Finder,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,499,Great
+Korua,Otto Plus,All Mountain,Advanced-Expert,Directional,Directional Camber,Setback -5mm,Medium,849,Good
+Korua,Pencil Plus,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,799,Great
+Korua,Tranny Finder Plus,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium,799,Good
+Korua,Stealth,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,499,Great
+Korua,Dart,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,549,Excellent
+Korua,Pencil,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,509,Great
+Korua,Otto Classic,All Mountain,Advanced-Expert,Directional,Directional Camber,Setback -10mm,Medium/Stiff,499,Good
+Korua,Tugboat,Powder,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Stiff,609,Excellent
+Korua,Bullet Train,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium/Stiff,699,Good
+Korua,Cafe' Racer,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Stiff,549,Great
+Lib Tech,Box Scratcher,Freestyle,Beginner-Expert,True Twin,Continuous Rocker,Centered,Medium/Soft,479,Poor
+Lib Tech,BRD,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,629,Great
+Lib Tech,Box Knife,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,479,Average
+Lib Tech,Orca,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,649,Great
+Lib Tech,Golden Orca,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,749,Good
+Lib Tech,Apex Orca,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,999,Great
+Lib Tech,Terrain Wrecker,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,519,Average
 Lib Tech,TRS HP ,All Mountain Freestyle,Beginner-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,599,Poor
-Lib Tech,Swiss Knife,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium/Stiff,599,Average
 Lib Tech,Stump Ape,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,619,Good
 Lib Tech,MC Wayfinder,Snowsurf,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,559,Great
 Lib Tech,Jamie Lynn Dagmar,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,579,Good
 Lib Tech,Cold Brew,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,459,Good
-Lib Tech,Box Knife,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,479,Average
 Lib Tech,T Ras,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium/Stiff,599,Average
-Lib Tech,Jamie Lynn Titty Fish,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Good
 Lib Tech,Magic BM,All Mountain,Beginner-Expert,Directional,Hybrid Rocker,Setback over 20mm,Medium,699,Good
-Gnu,4,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Average
-Lib Tech,Dynamo,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,489,Good
-Yes,Typo,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -5mm,Medium,499,Average
-Yes,Globe NSB,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,679,Good
-Korua,Pencil Plus,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,799,Great
-Korua,Tranny Finder Plus,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium,799,Good
-Elevated,Surf Craft Redtail Hawk,Snowsurf,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,820,Great
-Dinosaurs,Will Die Rat,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Medium/Soft,399,Poor
-Soul,Scrambler,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,649,Great
-Nitro,Fury Quiver,All Mountain Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium/Stiff,499,Poor
-Salomon,Taka X Wolle,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,649,Good
-Korua,Stealth,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,499,Great
-Korua,Dart,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,549,Excellent
-Soul,Flashback,Alternative Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium,649,Good
-Korua,Pencil,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,509,Great
-Capita,Spring Break Powder 161 Tree Hunter,Powder,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,749,Excellent
-Gentemstick,Spoonfish,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,830,Great
-Burton ,Flight Attendant,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,609,Good
-Arbor,Cask,Alternative Freeride,Intermediate-Expert,Tapered Directional,Mostly Camber,Centered,Medium/Stiff,499,Good
 Lib Tech,Lost Round Nose Fish,Freeride,Advanced-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,649,Good
-Arbor,A-Frame,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -10mm,Stiff,649,Good
-Nidecker,The Donuts,Alternative Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Stiff,649,Good
-Nidecker,Area,Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Stiff,399,Good
-Niche,Theme,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Soft,519,Poor
-Nitro,Slash,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,599,Good
-Slash,ATV,All Mountain,Advanced-Expert,Directional Twin,Traditional Camber,Setback -20mm,Medium/Stiff,499,Poor
-Slash,Happy Place,Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,399,Average
-Slash,Floater Narwal,Freeride,Advanced-Expert,Directional,Flat to Rocker,Centered,Medium/Stiff,499,Good
-Slash,Straight Narwal,Freeride,Beginner-Expert,Directional,Hybrid Camber,Setback -20mm,Medium,499,Good
-Sims,Tom Sims,All Mountain,Intermediate-Expert,Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,599,Good
-Slash,Brain Storm,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,449,Average
-Sims,Terry Kidwell RT2,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium/Stiff,509,Good
-Gentemstick,Stingray,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,1040,Good
-Gentemstick,Hornet,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,1000,Great
-Gentemstick,XY,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,980,Great
-DC,Supernatant,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -10mm,Medium/Stiff,499,Good
-DC,Mega,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Stiff,499,Poor
-DC,HR,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,599,Great
-DC,The 156,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Soft,499,Poor
-Salomon,Speedway,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium,599,Good
-Salomon,SickStick 151,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium,649,Good
-Rome ,Powder Division MT,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,459,Excellent
-Salomon,Super 8,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -15mm,Medium,449,Good
-Salomon,Assassin Pro,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,549,Average
-Salomon,Assassin,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
-Loaded,Algernon,All Mountain,Advanced-Expert,Directional Twin,Hybrid Camber,Setback over 20mm,Medium/Stiff,675,Good
-Rossignol,Krypto,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,499,Good
-Rossignol,Retox,Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,399,Poor
-Rossignol,Templar,All Mountain,Beginner-Intermediate,Twinish,Hybrid Camber,Setback -20mm,Medium/Soft,399,Good
-Rossignol,Angus,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Setback -15mm,Medium,449,Average
-Rossignol,One LF,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -12.5mm,Medium,499,Average
-Burton ,Trick Pilot,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium,549,Average
-Burton ,Custom X Flying V,All Mountain,Intermediate-Expert,Directional,Hybrid Rocker,Setback -12.5mm,Medium/Stiff,749,Average
-Burton ,Stun Gun,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Great
-Burton,Speed Date,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,650,Good
-Burton,Kilroy Process,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium,399,Poor
-Burton,Kilroy Custom ,All Mountain Freestyle,Advanced-Expert,Directional,Traditional Camber,Centered,Medium/Stiff,449,Poor
-Burton,Free Thinker,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Stiff,579,Poor
 Lib Tech,Skunk Ape HP,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Setback -12.5mm,Medium,559,Average
-Jones,Explorer,All Mountain,Beginner-Expert,Directional,Hybrid Camber,Setback over 20mm,Medium,449,Good
 Lib Tech,Travis Rice Pro HP,All Mountain Freestyle,Advanced-Expert,True Twin,Hybrid Rocker,Centered,Medium,599,Average
 Lib Tech,Travis Rice Climax,All Mountain,Advanced-Expert,Directional,Hybrid Rocker,Setback -20mm,Medium/Stiff,969,Average
 Lib Tech,Travis Rice Gold Member,All Mountain,Advanced-Expert,Directional,Hybrid Rocker,Setback -20mm,Medium/Stiff,749,Average
 Lib Tech,TRS Firepower,All Mountain Freestyle,Intermediate-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,749,Average
-Lib Tech,Doughboy Shredder,Freeride,Expert,Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,749,Good
 Lib Tech,Lando Phoenix,All Mountain,Beginner-Expert,Twinish,Hybrid Rocker,Setback over 20mm,Medium/Stiff,599,Average
 Lib Tech,Banana Magic,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,749,Average
 Lib Tech,Double Dip,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,519,Average
+Lib Tech,Attack Banana,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,589,Average
+Lib Tech,MC Snake Kink,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,599,Good
+Lib Tech,Short Wide,Alternative Freeride,Beginner-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,549,Good
+Lib Tech,Lost Quiver Killer,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,599,Good
+Lib Tech,Lost Rocket,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,549,Good
+Lib Tech,Swiss Knife,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium/Stiff,599,Average
+Lib Tech,Jamie Lynn Titty Fish,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Good
+Lib Tech,Dynamo,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,489,Good
+Lib Tech,Doughboy Shredder,Freeride,Expert,Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,749,Good
 Lib Tech,Ejack Knife,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Average
-Ride,Timeless,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,649,Good
-Gnu,Riders Choice,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Rocker,Centered,Medium,569,Average
-Gnu,SPASYM,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Good
-Gnu,T2B,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,479,Average
-Ride,Machete,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Stiff,429,Average
-Gnu,Hyperkyarve,Freeride,Beginner-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,519,Good
-Gnu,Super Progressive Air Machine,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,599,Good
-Gnu,Space Case,Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Rocker,Centered,Medium,579,Average
-Gnu,Money,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Setback -12.5mm,Medium,349,Average
-Gnu,Carbon Credit Asym,Freestyle,Beginner-Expert,Asymmetrical Twin,Continuous Rocker,Centered,Medium/Soft,419,Average
-Yes,Libre,All Mountain Freestyle,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -5mm,Medium,369,Average
-Never Summer , West,All Mountain,Intermediate-Expert,Directional,Hybrid Rocker,Setback -20mm,Medium,569,Average
+Lib Tech,Hot Knife,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium,499,Poor
+Lib Tech,Lost Retro Ripper,Snowsurf,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Stiff,699,Great
+Loaded,Algernon,All Mountain,Advanced-Expert,Directional Twin,Hybrid Camber,Setback over 20mm,Medium/Stiff,675,Good
+Lobster,Halldor Pro,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
+Lobster,Aaron Schwartz Artist Edition,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Soft,429,Great
+Moss,Snowstick Jellyfish,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,1080,Great
+Moss,Snowsitck Wing Smallow 49,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,1020,Great
+Moss,Snowstick 58 Swallow,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,980,Excellent
+Moss,Snowstick Wing Smallow,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,1040,Great
+Moss,Snowstick C3,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Soft,1240,Great
+Never Summer, Hammer,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,629,Good
+Never Summer, Proto Ultra,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Stiff,684,Average
+Never Summer, Snowtrooper,All Mountain,Beginner-Expert,Twinish,Hybrid Rocker,Setback -15mm,Medium/Soft,599,Good
+Never Summer, Ripper,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Setback -12.5mm,Medium,579,Average
+Never Summer, Proto Fr,Freeride,Advanced-Expert,Tapered Directional,Hybrid Rocker,Setback -20mm,Medium/Stiff,619,Good
+Never Summer, West Bound,Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,589,Good
+Never Summer, Shaper Twin,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Rocker,Centered,Medium,529,Good
+Never Summer, Proto,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium,599,Average
+Never Summer, Harpoon,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium,569,Great
+Never Summer, Proto Synthesis,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium,599,Average
+Never Summer, East,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Stiff,699,Poor
+Never Summer, Dipstick,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,539,Average
+Never Summer, Swift,Alternative Freeride,Beginner-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,619,Great
 Never Summer, Warlock,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium/Soft,519,Average
 Never Summer, Ripsaw,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium/Stiff,519,Average
 Never Summer, Proto Type,All Mountain Freestyle,Intermediate-Expert,Asymmetrical Twin,Hybrid Rocker,Centered,Medium,569,Average
@@ -370,23 +250,143 @@ Never Summer, Insta Gator,Alternative Freeride,Intermediate-Expert,Tapered Direc
 Never Summer, Funsglinder,Freestyle,Intermediate-Expert,Asymmetrical Twin,Hybrid Rocker,Centered,Medium/Soft,519,Average
 Never Summer, Chairman,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Rocker,Setback -20mm,Medium/Stiff,599,Good
 Never Summer, Big Gun,Freeride,Advanced-Expert,Tapered Directional,Hybrid Rocker,Setback over 20mm,Medium/Stiff,569,Good
-Yes,Basic Decade,All Mountain,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,649,Good
-Capita,Ultrafear,Freestyle,Intermediate-Expert,True Twin,Flat to Rocker,Centered,Soft,489,Poor
-Capita,Scott Stevens Pro,Freestyle,Intermediate-Expert,True Twin,Flat to Rocker,Centered,Soft,529,Poor
-Capita,Horroscope,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Soft,379,Poor
-Capita,Mercury,All Mountain,Intermediate-Expert,Directional,Hybrid Camber,Setback -12.5mm,Medium,549,Average
-Capita,Kazu Kokubo Pro,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -12.5mm,Medium/Stiff,559,Average
+Never Summer, West,All Mountain,Intermediate-Expert,Directional,Hybrid Rocker,Setback -20mm,Medium,569,Average
+Niche,Maelstorm,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,549,Good
+Niche,Story,All Mountain,Beginner-Expert,Directional,Hybrid Rocker,Setback -20mm,Medium/Stiff,569,Good
+Niche,Aether,All Mountain Freestyle,Beginner-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,529,Average
+Niche,Wraith,Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,449,Poor
+Niche,Crux,All Mountain Freestyle,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,499,Poor
+Niche,Pyre,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,549,Good
+Niche,Theme,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Soft,519,Poor
+Nidecker,Beta,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,479,Great
+Nidecker,Mellow,Alternative Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,499,Great
+Nidecker,The  Mosquito,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Great
+Nidecker,The Donuts,Alternative Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Stiff,649,Good
+Nidecker,Area,Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Stiff,399,Good
+Nitro,Cinema,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Setback -15mm,Medium/Soft,399,Average
+Nitro,Quiver Fusion,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,529,Good
+Nitro,Dropout,All Mountain,Advanced-Expert,Directional,Mostly Camber,Setback -15mm,Medium,499,Good
+Nitro,Quiver Cannon 173,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium/Stiff,519,Great
+Nitro,Quiver Cannon 203,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium/Stiff,519,Excellent
+Nitro,Fury Quiver,All Mountain Freestyle,Advanced-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium/Stiff,499,Poor
+Nitro,Slash,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Medium,599,Good
+Nitro,Highlander,All Mountain,Advanced-Expert,Tapered Directional,Traditional Camber,Setback -15mm,Medium/Stiff,549,Average
+Nitro,Team,All Mountain,Advanced-Expert,Directional Twin,Traditional Camber,Setback -15mm,Medium,499,Poor
+Nitro,Santoku,All Mountain Freestyle,Intermediate-Expert,True Twin,Traditional Camber,Centered,Medium,499,Average
+Osin,4807,Powder,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Excellent
+Prior,Fissle,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,649,Great
+Prior,Spearhead,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,699,Great
+Prior,Slasher,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,619,Excellent
+Prior,Legacy,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Centered,Medium/Stiff,540,Great
+Prior,Khyber,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,739,Good
+Prior,Wildcard,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Rocker,Centered,Medium,479,Average
+Ride,Peace Seeker,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,599,Good
+Ride,Mtnpig,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,599,Good
+Ride,Berzerker,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,529,Good
+Ride,Wild Life,All Mountain,Intermediate-Expert,Directional,Directional Camber,Setback -20mm,Medium,429,Good
+Ride,Timeless,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Stiff,649,Good
+Ride,Warpig,Alternative Freeride,Intermediate-Expert,Tapered Directional,Flat to Rocker,Centered,Medium,529,Good
+Ride,Psychocandy,Alternative Freeride,Beginner-Expert,Tapered Directional,Flat to Rocker,Setback -20mm,Medium,519,Great
+Ride,Shadowban,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,499,Good
+Ride,Twinpig,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Camber,Centered,Medium/Soft,499,Average
+Ride,Superpig,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium,589,Good
+Ride,Smokescreen,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Stiff,479,Good
+Ride,Commissioner,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Stiff,799,Good
+Ride,Algorhythm,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,599,Good
+Ride,Burnout,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
+Ride,Machete,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Stiff,429,Average
 Ride,Machete GT,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,579,Average
 Ride,Kink,Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Soft,429,Poor
 Ride,Helix,All Mountain Freestyle,Intermediate-Expert,Asymmetrical Twin,Mostly Camber,Centered,Medium,499,Poor
-K2,Eighty Seven,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium,549,Great
-K2,Manifest,All Mountain,Intermediate-Expert,Twinish,Hybrid Camber,Setback -20mm,Medium/Stiff,529,Good
-K2,Raygun,All Mountain,Beginner-Expert,Directional Twin,Flat to Rocker,Setback -20mm,Medium,399,Average
-K2,Party Platter,Powder,Intermediate-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,449,Great
-K2,Cool Bean,Powder,Advanced-Expert,Tapered Directional,Flat to Rocker,Setback over 20mm,Medium/Stiff,469,Excellent
-K2,Broadcast,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,449,Good
-Korua,Otto Classic,All Mountain,Advanced-Expert,Directional,Directional Camber,Setback -10mm,Medium/Stiff,499,Good
-Moss,Snowsitck Wing Smallow 49,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,1020,Great
-Lib Tech,Hot Knife,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium,499,Poor
-Lib Tech,Box Scratcher,Freestyle,Beginner-Expert,True Twin,Continuous Rocker,Centered,Medium/Soft,479,Poor
-Lib Tech,Attack Banana,All Mountain,Beginner-Expert,Directional Twin,Hybrid Rocker,Centered,Medium,589,Average
+Rome,Service Dog,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,399,Great
+Rome,Ravine,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium,529,Good
+Rome,Stale Fish,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,449,Great
+Rome,Freaker,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,459,Poor
+Rome,Warden,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,399,Average
+Rome,Stale Crewzer,All Mountain,Advanced-Expert,Directional Twin,Mostly Camber,Centered,Medium,499,Poor
+Rome,Agent,All Mountain Freestyle,Advanced-Expert,Twinish,Traditional Camber,Centered,Medium,499,Poor
+Rome ,Ravine Select,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,629,Good
+Rome ,Powder Division MT,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,459,Excellent
+Rome ,National,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,599,Average
+Rossignol,XV Sashimi,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Great
+Rossignol,XV,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,649,Great
+Rossignol,Jibsaw,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,499,Average
+Rossignol,Resurgence,All Mountain,Beginner-Expert,Twinish,Hybrid Camber,Setback -20mm,Medium,519,Good
+Rossignol,Revenant,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -12.5mm,Medium/Stiff,499,Average
+Rossignol,One,All Mountain,Beginner-Expert,Twinish,Hybrid Camber,Setback -12.5mm,Medium,549,Good
+Rossignol,XV Sushi,Snowsurf,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium,499,Good
+Rossignol,Krypto,Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,499,Good
+Rossignol,Templar,All Mountain,Beginner-Intermediate,Twinish,Hybrid Camber,Setback -20mm,Medium/Soft,399,Good
+Rossignol,Angus,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Setback -15mm,Medium,449,Average
+Rossignol,One LF,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -12.5mm,Medium,499,Average
+Rossignol,Juggernaut,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Stiff,549,Poor
+Rossignol,Retox,Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,399,Poor
+Salomon,Wolle Nyvelt Fish,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,650,Excellent
+Salomon,Taka X Wolle,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,649,Good
+Salomon,Super 8,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -15mm,Medium,449,Good
+Salomon,HPS x Asmo,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,799,Excellent
+Salomon,SickStick 151,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium,649,Good
+Salomon,Assassin Pro,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,549,Average
+Salomon,Assassin,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,499,Average
+Salomon,Dancehaul,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium,479,Great
+Salomon,Huck Knife Pro,All Mountain Freestyle,Advanced-Expert,True Twin,Mostly Camber,Centered,Medium/Soft,549,Poor
+Salomon,Speedway,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium,599,Good
+Season,Forma,Snowsurf,Advanced-Expert,Tapered Directional,Mostly Camber,Setback over 20mm,Stiff,549,Great
+Season,Aero,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -20mm,Medium,549,Good
+Sims,Tom Sims,All Mountain,Intermediate-Expert,Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,599,Good
+Sims,Terry Kidwell RT2,Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium/Stiff,509,Good
+Slash,Floater Narwal,Freeride,Advanced-Expert,Directional,Flat to Rocker,Centered,Medium/Stiff,499,Good
+Slash,Happy Place,Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,399,Average
+Slash,Straight Narwal,Freeride,Beginner-Expert,Directional,Hybrid Camber,Setback -20mm,Medium,499,Good
+Slash,Brain Storm,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -20mm,Medium,449,Average
+Slash,ATV,All Mountain,Advanced-Expert,Directional Twin,Traditional Camber,Setback -20mm,Medium/Stiff,499,Poor
+SnoPlanks,SnoBlunt,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Camber,Centered,Medium,799,Average
+SnoPlanks,Model A,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,799,Good
+SnoPlanks,Asym Fish,Snowsurf,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium/Stiff,799,Great
+Soul,Snow Wave,Powder,Advanced-Expert,Tapered Directional,Continuous Rocker,Setback over 20mm,Medium,649,Excellent
+Soul,Blowe,Powder,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,649,Excellent
+Soul,Shift,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,649,Great
+Soul,Frequent Flyer,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Good
+Soul,Scrambler,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,649,Great
+Soul,Samurai,All Mountain Freestyle,Intermediate-Expert,True Twin,Hybrid Rocker,Centered,Medium,649,Average
+Soul,Pitch Wing,Snowsurf,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium,649,Great
+Soul,Pocket Rocket,Powder,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium/Soft,649,Great
+Soul,Flashback,Alternative Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback over 20mm,Medium,649,Good
+Stone,Topo,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,329,Good
+Stone,Barrel,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium,299,Good
+Stone,Dirty Fish,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,399,Great
+Stone,Mini-Gun,Snowsurf,Intermediate-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,399,Great
+Stone,Graham,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium/Stiff,399,Poor
+Stone,Natural,Freeride,Advanced-Expert,Tapered Directional,Traditional Camber,Setback -20mm,Medium/Stiff,329,Good
+Stone,Message,All Mountain Freestyle,Advanced-Expert,True Twin,Traditional Camber,Centered,Medium,349,Poor
+Tahoe,Labs Directional,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,749,Good
+Tahoe,Labs Directional Twin,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium/Stiff,699,Good
+Telos,BackSlash,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,595,Good
+Weston,Japow,Snowsurf,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,599,Excellent
+Weston,Backwoods,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -10mm,Medium/Stiff,599,Great
+Weston,Logger,Freestyle,Beginner-Expert,True Twin,Flat to Rocker,Centered,Medium/Soft,499,Poor
+Weston,Ridgeline,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -20mm,Medium,599,Good
+Weston,Hatchet,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,649,Great
+Weston,Range,All Mountain,Advanced-Expert,Directional,Hybrid Camber,Setback -20mm,Medium/Stiff,499,Average
+Yes,PYL Uninc,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,649,Great
+Yes,The Y,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Centered,Medium/Stiff,449,Great
+Yes,Greats,All Mountain Freestyle,Beginner-Expert,Asymmetrical Twin,Hybrid Camber,Centered,Medium,549,Average
+Yes,Dicey,Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,429,Average
+Yes,Standard,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,499,Good
+Yes,Ghost,All Mountain,Advanced-Expert,Directional Twin,Hybrid Camber,Centered,Medium,549,Average
+Yes,Basic Uninc,All Mountain,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,549,Good
+Yes,Basic,All Mountain Freestyle,Beginner-Expert,True Twin,Hybrid Camber,Centered,Medium/Soft,399,Average
+Yes,2020,Powder,Advanced-Expert,True Twin,Hybrid Camber,Centered,Medium,699,Great
+Yes,Globe,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,699,Good
+Yes,Pick Your Line,Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback -10mm,Medium/Stiff,599,Good
+Yes,Hybrid,Alternative Freeride,Intermediate-Expert,Tapered Directional,Hybrid Camber,Setback over 20mm,Medium,549,Great
+Yes,PRO20,Alternative Freeride,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium/Stiff,669,Excellent
+Yes,420,Powder,Advanced-Expert,Tapered Directional,Hybrid Camber,Setback -15mm,Medium/Stiff,499,Excellent
+Yes,Typo,All Mountain,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -5mm,Medium,499,Average
+Yes,Globe NSB,All Mountain,Intermediate-Expert,Directional Twin,Hybrid Camber,Centered,Medium,679,Good
+Yes,Libre,All Mountain Freestyle,Beginner-Expert,Directional Twin,Hybrid Camber,Setback -5mm,Medium,369,Average
+Yes,Basic Decade,All Mountain,Intermediate-Expert,True Twin,Hybrid Camber,Centered,Medium,649,Good
+Yes,Warca,All Mountain,Advanced-Expert,Tapered Directional,Mostly Camber,Centered,Medium,599,Average
+Yes,Standard Uninc,All Mountain,Intermediate-Expert,Directional Twin,Mostly Camber,Centered,Medium,649,Good
+Yes,420 PH,Alternative Freeride,Advanced-Expert,Tapered Directional,Mostly Camber,Setback -15mm,Medium/Stiff,699,Excellent
+Yes,Jackpot,Freestyle,Beginner-Expert,True Twin,Traditional Camber,Centered,Medium/Soft,479,Poor

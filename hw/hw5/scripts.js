@@ -23,7 +23,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     */
     const width = document.querySelector("#chart").clientWidth;
     const height = document.querySelector("#chart").clientHeight;
-    const margin = {top: 50, left: 200, right: 150, bottom: 100};
+    const margin = {top: 100, left: 200, right: 150, bottom: 20};
 
     const svg = d3.select("#chart")
         .append("svg")
@@ -62,6 +62,8 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     const profiles = ["Continuous Rocker","Directional Camber","Flat to Rocker","Hybrid Camber","Hybrid Rocker","Mostly Camber", "Traditional Camber"];
 
+    //const performance = ["Excellent","Great","Good","Average","Poor"]
+
     /*
     CREATE SCALES
     */
@@ -71,10 +73,10 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .range([margin.left, width-margin.right]);
 
     const yScale = d3.scaleBand()
-        .domain(["Alloy","Arbor","Bataleon","Borealish","Burton","Capita","Cardiff","DC","Decathlon","Elevated","Endeavor","Gentemstick","Gilson","Gnu","Jones","K2","Korua","Lib Tech","Loaded","Moss","Never Summer","Niche","Nidecker","Nitro","Osin","Prior","Ride","Rome","Rossignol","Salomon","Season","Sims","Slash","SnoPlanks","Soul","Stone","Tahoe","Telos","Weston","Yes"])
+        .domain(["Alloy","Arbor","Bataleon","Borealish","Burton","Capita","Cardiff","DC","Decathlon","Dinosaurs","Elevated","Endeavor","Gentemstick","Gilson","Gnu","Jones","K2","Korua","Lib Tech","Loaded","Lobster","Moss","Never Summer","Niche","Nidecker","Nitro","Osin","Prior","Ride","Rome","Rossignol","Salomon","Season","Sims","Slash","SnoPlanks","Soul","Stone","Tahoe","Telos","Weston","Yes"])
         .range([margin.left, width-margin.right])
         .padding(0.5); 
-
+    console.log(93939);
     // const yScale = d3.scaleLinear()
     //     .domain([views.min, views.max])
     //     .range([height-margin.bottom, margin.top]);
@@ -82,6 +84,10 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     // const rScale = d3.scaleSqrt()
     //     .domain([comments.min, comments.max])
     //     .range([2, 10]);
+
+    // const rScale = d3.scaleBand()
+    //     .dmain("Poor","Average","Good","Great","Excellent")
+    //     .range([1,5]);
 
     const fillScale = d3.scaleOrdinal()
         .domain(profiles)
@@ -109,15 +115,15 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .enter()
         .append("circle")
             .attr("cx", function(d) { return xScale(d.price); })
-            .attr("cy", function(d) { return yScale(d.profiles); })
-            .attr("r", 10)
-            // .attr("r", function(d) { return rScale(d.comments)})
+            .attr("cy", function(d) { return yScale(d.brand); })
+            .attr("r", 5)
+            //.attr("r", function(d) { return rScale(d.powder_performance)})
             .attr("fill-opacity", 0.2)
             .attr("stroke", function(d) { return fillScale(d.profile); })
             .attr("stroke-width", 1.5)
             .attr("fill", function(d) { return fillScale(d.profile); });
 
-    
+    console.log(2222222);
     /*
     DRAW AXIS LABELS
     */
@@ -158,7 +164,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         tooltip.style("visibility", "visible")
             .style("top", `${y}px`)
             .style("left", `${x}px`)
-            .html(`<b>${d.model}</b><br>${d.riding_style}<br>${d.flex}<br>${d.stance}<br> USD ${displayValue}`);
+            .html(`<b>${d.brand}</b><br>${d.model}<br>${d.riding_style}<br>${d.flex}<br>${d.stance}<br>USD${displayValue}`);
 
         // Optionally, visually highlight the selected circle
         points.attr("opacity", 0.1);
@@ -185,13 +191,13 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         */
        
         let isChecked = d3.select(this).property("checked");
-        let thisProfile = d3.select(this).property("value");
+        let thisPerformance = d3.select(this).property("value");
 
         /*
         */
 
         let selection = points.filter(function(d) {
-            return d.profile === thisProfile;
+            return d.powder_performance === thisPerformance;
         });
 
         /*
