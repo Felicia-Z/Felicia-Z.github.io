@@ -61,12 +61,12 @@ function parseCsv(d) {
             brand: d.Brand,
             model: d.Model,
             riding_style: d.Riding_Style,
-            // channel: d.channelTitle, // We can exclude columns from the data
             shape: d.Shape,
-            camber_profile: +d.Camber_Profile, // Changing name of column/property
-            stance: d.Stance, // Changing name of column/property
-            likes: +d.likes,
-            dislikes: +d.dislikes
+            camber_profile: +d.Camber_Profile, 
+            stance: d.Stance, 
+            flex: d.Flex,
+            price: +d.Price_USD
+            powder: d.Powder
         }    
     }
 }
