@@ -1,4 +1,4 @@
-Brand,Model,Riding Style,Riding Level,Shape,Camber Profile,Stance,Flex,Price($),Powder
+Brand,Model,Riding_Style,Riding_Level,Shape,Camber_Profile,Stance,Flex,Price_USD,Powder
 Nidecker,Beta,Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback over 20mm,Medium/Stiff,479,Great
 K2,Instrument,Freeride,Intermediate-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,529,Great
 Ride,Peace Seeker,Alternative Freeride,Advanced-Expert,Tapered Directional,Directional Camber,Setback -20mm,Medium/Stiff,599,Good
