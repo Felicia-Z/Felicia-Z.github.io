@@ -5,11 +5,11 @@ function parseCsv(d) {
             model: d.Model,
             riding_style: d.Riding_Style,
             shape: d.Shape,
-            camber_profile: +d.Camber_Profile, 
+            profile: +d.Camber_Profile, 
             stance: d.Stance, 
             flex: d.Flex,
             price: +d.Price_USD,
-            powder: d.Powder
+            powder_performance: d.Powder
         }    
     }
 }
@@ -41,10 +41,10 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     console.log(price);
 
-    const brand = {
-        data,function(d){return d.brand;}
-    };
-    console.log(brand);
+    // const brand = {
+    //     data,function(d){return d.brand;}
+    // };
+    // console.log(brand);
 
     // const comments = {
     //     min: d3.min(data, function(d) { return d.comments; }),
@@ -60,7 +60,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     SIDE NOTE: Unique values for a categorical variable
     */
 
-    const categories = ["Gaming", "Entertainment", "Music"];
+    const profiles = ["Continuous Rocker","Directional Camber","Flat to Rocker","Hybrid Camber","Hybrid Rocker","Mostly Camber", "Traditional Camber"];
 
     /*
     CREATE SCALES
@@ -73,7 +73,8 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     const yScale = d3.scaleBand()
         .domain(["Alloy","Arbor","Bataleon","Borealish","Burton","Capita","Cardiff","DC","Decathlon","Elevated","Endeavor","Gentemstick","Gilson","Gnu","Jones","K2","Korua","Lib Tech","Loaded","Moss","Never Summer","Niche","Nidecker","Nitro","Osin","Prior","Ride","Rome","Rossignol","Salomon","Season","Sims","Slash","SnoPlanks","Soul","Stone","Tahoe","Telos","Weston","Yes"])
         .range([margin.left, width-margin.right])
-        .padding(0.5);        
+        .padding(0.5); 
+
     // const yScale = d3.scaleLinear()
     //     .domain([views.min, views.max])
     //     .range([height-margin.bottom, margin.top]);
@@ -83,10 +84,8 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     //     .range([2, 10]);
 
     const fillScale = d3.scaleOrdinal()
-        .domain(categories)
-        .range(['#1b9e77','#d95f02','#7570b3']);
-
-
+        .domain(profiles)
+        .range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef','#a770f6','#f9b1ff']);
 
     /*
     DRAW AXES
@@ -110,12 +109,13 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .enter()
         .append("circle")
             .attr("cx", function(d) { return xScale(d.price); })
-            .attr("cy", function(d) { return yScale(d.views); })
-            .attr("r", function(d) { return rScale(d.comments)})
+            .attr("cy", function(d) { return yScale(d.profiles); })
+            .attr("r", 10)
+            // .attr("r", function(d) { return rScale(d.comments)})
             .attr("fill-opacity", 0.2)
-            .attr("stroke", function(d) { return fillScale(d.category); })
+            .attr("stroke", function(d) { return fillScale(d.profile); })
             .attr("stroke-width", 1.5)
-            .attr("fill", function(d) { return fillScale(d.category); });
+            .attr("fill", function(d) { return fillScale(d.profile); });
 
     
     /*
@@ -132,7 +132,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .attr("transform","rotate(-90)")
         .attr("x",-height/2)
         .attr("y",margin.left/3)
-        .text("Views");
+        .text("Brand");
 
 
     /* 
@@ -158,7 +158,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         tooltip.style("visibility", "visible")
             .style("top", `${y}px`)
             .style("left", `${x}px`)
-            .html(`<b>${d.model}</b><br>${displayValue} Price`);
+            .html(`<b>${d.model}</b><br>${d.riding_style}<br>${d.flex}<br>${d.stance}<br> USD ${displayValue}`);
 
         // Optionally, visually highlight the selected circle
         points.attr("opacity", 0.1);
@@ -185,13 +185,13 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         */
        
         let isChecked = d3.select(this).property("checked");
-        let thisCategory = d3.select(this).property("value");
+        let thisProfile = d3.select(this).property("value");
 
         /*
         */
 
         let selection = points.filter(function(d) {
-            return d.category === thisCategory;
+            return d.profile === thisProfile;
         });
 
         /*
