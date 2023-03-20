@@ -170,12 +170,12 @@
       max-width: 150px;
     }
     h1 {
-      color:whitesmoke;
+      color:rgb(19, 19, 19);
       font-size: 22pt;
     }
   
     h2 {
-      color:whitesmoke;
+      color:rgb(45, 45, 45);
       font-size: 16pt;
     }
   
@@ -196,7 +196,7 @@
     }
   
     body {
-      background-color: lightblue;
+      background-color: rgb(253, 254, 255);
     }
   
     .tooltip {
