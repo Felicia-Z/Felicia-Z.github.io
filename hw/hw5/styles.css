@@ -24,21 +24,18 @@
     flex-flow:column wrap;
   }
 
-  .typecontent {
+  .content-row {
     width: 100%;
     height:100%;
     display: flex;
     flex-flow:row wrap;
   }
 
-  .profilecontent{
+  .content-column{
     width: 100%;
     height:100%;
     display: flex;
     flex-direction:column;
-  }
-  .textpart{
-    width: 50%;
   }
 
   #chart--container {
