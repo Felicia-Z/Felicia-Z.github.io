@@ -209,8 +209,10 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     d3.selectAll(".powder--performance").on("click", function() {
 
-        let isChecked = d3.select(this).property("checked");
-        let thisPerformance = d3.select(this).property("value");
+        let isChecked = d3.select("#filters").property("checked");
+        let thisPerformance = d3.select("#filters").property("value");
+        // let isChecked = d3.select(this).property("checked");
+        // let thisPerformance = d3.select(this).property("value");
 
         let selection = points.filter(function(d) {
             return d.powder_performance === thisPerformance;
