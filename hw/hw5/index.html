@@ -21,7 +21,7 @@
 
         <!-- A few tabs that lead to different snowboard elements -->
         <!-- Tab links -->
-        <div class="tab">
+        <!-- <div class="tab">
             <button class="tablinks" onclick="(event, 'SbSize')">Snowboard Size</button>          
             <button class="tablinks" onclick="(event, 'SbType')">Type of Snowboard</button>
             <button class="tablinks" onclick="(event, 'SbProfile')">Snowboard Camber and Rocker Profile</button>
@@ -29,17 +29,16 @@
             <button class="tablinks" onclick="(event, 'SbFlex')">Snowboard Flex</button>         
             <button class="tablinks" onclick="(event, 'SbStance')">Snowboard Stance</button>         
             <button class="tablinks" onclick="(event, 'SbLevel')">Riding Ability Level</button>                
-        </div>
+        </div> -->
 
-        <!-- Tab content -->
-        <div id="SbSize" class="tabcontent">
+        <!-- Tab content-->
+        <!-- <div id="SbSize" class="tab1content">
             <h2>How to pick the right snowboard size? </h2>
             <p>add info later</p>
-            <!-- insert a size chart here -->
             <img width="450" height="300" src="images/sb-size-chart.png" alt="Snowboard Sizing Chart">
-        </div>
-
-        <div id="SbType" class="tabcontent">
+        </div>  -->
+<!-- 
+        <div id="SbType" class="tab1content">
 
             <h2>What type of snowboard should I get?</h2>
             
@@ -76,8 +75,8 @@
             </div>
 
         </div>
-
-        <div id="SbProfile" class="tabcontent">
+ -->
+        <!-- <div id="SbProfile" class="tab1content">
             
             <h2>Snowboard Camber and Rocker Profile</h2>
             <p>add info later</p>
@@ -118,54 +117,17 @@
                 <img width=50% height=80% src="images\profile\directional-camber.webp" alt="Directional Camber Profile picture">           
             </div>
 
-        </div>
-
-        <div id="SbShape" class="tabcontent">
-           
-            <h2>What are the different snowboard shapes?</h2>
-            <p>add info later</p>
-
-            <h3>True Twin</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% src="images\shape\twin.webp" alt="True Twin Shape picture">           
-            </div>
-
-            <h3>Asymmetrical Twin</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% src="images\shape\asymmetrical-twin.webp" alt="Asymmetrical Twin Shape picture">           
-            </div>
-
-            <h3>Directional Twin</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% src="images\shape\directional-twin.webp" alt="Directional Twin Shape picture">           
-            </div>
-
-            <h3>Directional</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% src="images\shape\directional.webp" alt="Directional Shape picture">           
-            </div>
-
-            <h3>Tapered Directional</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% src="images\shape\tapered-directional.webp" alt="Tapered Directional Shape picture">           
-            </div>
-
-        </div>
-
-        <div id="SbFlex" class="tabcontent">
+        </div> -->
+/<!-- 
+        <div id="SbFlex" class="tab1content">
 
             <h2>What is snowboard flex rating?</h2>
             <p>add info later</p>
             <img width=50% src="images\Flex-Ratings.jpg.crdownload" alt="Flex rating picture">           
 
-        </div>
-
-        <div id="SbStance" class="tabcontent">
+        </div> -->
+<!-- 
+        <div id="SbStance" class="tab1content">
 
             <h2>Centered VS Setback</h2>
             <p>add info later</p>  
@@ -179,22 +141,21 @@
             <p>add info later</p>
 
         </div>
-
-        <div id="SbLevel" class="tabcontent">
+ -->
+        <div id="SbLevel" class="tab1content">
            
-            <h2>How is your Snowboard Riding Skill Level?</h2>
-            <p>add info later</p>  
+            <h2>How is your Snowboard Riding Skill Level?</h2> 
             
             <!-- Tab links -->
             <div class="tab">
-                <button class="tablinks" onclick="(event, 'LBeginner')">Beginner 1-4</button>          
-                <button class="tablinks" onclick="(event, 'LIntermediate')">Intermediate 5-6</button>
-                <button class="tablinks" onclick="(event, 'LAdvanced')">Advanced 7</button>
-                <button class="tablinks" onclick="(event, 'LExpert')">Expert 8+</button>                
+                <button class="tab2links" onclick="sbLevel(event, 'LBeginner')">Beginner 1-4</button>          
+                <button class="tab2links" onclick="sbLevel(event, 'LIntermediate')">Intermediate 5-6</button>
+                <button class="tab2links" onclick="sbLevel(event, 'LAdvanced')">Advanced 7</button>
+                <button class="tab2links" onclick="sbLevel(event, 'LExpert')">Expert 8+</button>                
             </div>
 
             <!-- Tab content -->
-            <div id="LBeginner" class="tabcontent">
+            <div id="LBeginner" class="tab2content">
                 <p><b>Beginner Level 1:</b>This is your first day (or first couple of days). You are brand new. You start out learning how to control your speed and get some distance down a slope without bailing! You are learning how to stop yourself without falling. </p>
                 
                 <p><b>Beginner Level 2:</b>You are now relatively comfortable snowflaking, that is guiding yourself down the slope on the same edge. You are becoming more adept at being able to stop yourself without falling. You are probably starting to try linking turns but not very successfully just yet. </p>
@@ -204,7 +165,7 @@
                 <p><b>Beginner Level 4:</b>You can now link turns in both directions (i.e. from your heel edge to your toe edge and your toe edge to your heel edge) on green (beginner) and intermediate (blue) slopes. Your turns are now becoming "S" shape turns. You can now control your speed well. </p>
             </div>
 
-            <div id="LIntermediate" class="tabcontent">
+            <div id="LIntermediate" class="tab2content">
                 <p><b>Intermediate Level 5:</b>You are now comfortable linking turns on any beginner or intermediate slope and you can do so at increasingly high speeds - and you have full control of the speed your riding (even if it means having to out on the brakes at times). You can attempt black runs - but it's not always pretty! You are getting better at navigating more uneven terrain. </p>
 
                 <p>You might be trying little natural jumps or small jumps in the park, if that interests you - and you're starting to learn how to ride switch.  </p>
@@ -220,7 +181,7 @@
                 <p>If you are leaning towards freestyle riding, then your switch riding is getting smoother. You can comfortably do ollies and are confident on small to medium jumps. You might be 50/50 or board sliding boxes, and maybe even a pipe or rail. You can do 180s confidently or are on your way to doing them and might be attempting larger rotations.  You probably have at least one grab in your repertoire. And you might be trying out the pipe. </p>
             </div>
 
-            <div id="LAdvanced" class="tabcontent">
+            <div id="LAdvanced" class="tab2content">
                 <p> <b>Advanced Level 7:</b>You are now a very confident snowboarder who can tackle almost any terrain on and off groomer (piste). You might be starting to do backcountry excursions too, if that interests you. </p>
 
                 <p> You are comfortable riding and turning at speed. You have mastered multiple turn types - including carving & down unweighted turns - and leave thin clean lines behind you. Riding switch has become second nature too. </p>
@@ -232,7 +193,7 @@
                 <p> You can, and often do, use the mountain like a park if you are so inclined.</p>
             </div>
 
-            <div id="LExpert" class="tabcontent">
+            <div id="LExpert" class="tab2content">
                 <p> <b>Expert Level 8+:</b>Depending on your chosen style:</p>
 
                 <p> <b>Freeriding:</b> You can bomb any slope, chute, bowl, you name it, and are confident on any terrain. On backcountry excursions you are finding more and more challenging terrain, hucking cliffs and you have a fluidity, flow and cleanness to your riding. All turn types are mastered and you can adapt to any situation.  </p>
@@ -259,7 +220,7 @@
                 </div>
             </div>
         </div>
-        <script src="scripts\chart-scripts.js"></script>
+        <!-- <script src="scripts\chart-scripts.js"></script> -->
     </body>
 </html>
 
