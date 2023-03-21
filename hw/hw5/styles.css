@@ -12,14 +12,20 @@
     text-align: center;
   }
   
-  .tabcont{
+  .tabcontent{
+    width: 100%;
+    display: flex;
     flex-flow: row wrap;
   }
 
-
   .typecontent {
+    width: 100%;
     display: flex;
     flex-direction: row;
+  }
+
+  .typecontent{
+    width: 50%;
   }
 
   #chart--container {
