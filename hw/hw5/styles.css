@@ -170,13 +170,13 @@
       max-width: 150px;
     }
     h1 {
-      color:rgb(22, 22, 22);
-      font-size: 22pt;
+      color:black;
+      font-size: 30pt;
     }
   
     h2 {
-      color:rgb(28, 28, 28);
-      font-size: 16pt;
+      color:black;
+      font-size: 22pt;
     }
   
     #legend {
