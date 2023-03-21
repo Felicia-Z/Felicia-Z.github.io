@@ -24,16 +24,15 @@
     flex-flow:column wrap;
   }
 
-  .typecontent {
+  .subcontent {
     width: 100%;
     height:100%
     display: flex;
-    flex-direction: row;
+    flex-flow:row wrap;
   }
 
-  .textcontent{
+  .textpart{
     width: 50%;
-    height: 100%
   }
 
   #chart--container {
