@@ -24,13 +24,19 @@
     flex-flow:column wrap;
   }
 
-  .subcontent {
+  .typecontent {
     width: 100%;
-    height:100%
+    height:100%;
     display: flex;
     flex-flow:row wrap;
   }
 
+  .profilecontent{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction:column;
+  }
   .textpart{
     width: 50%;
   }
