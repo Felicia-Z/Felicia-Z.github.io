@@ -6,14 +6,19 @@
     margin: 0px;
     padding: 0px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: white;
   }
   
   h1 {
     text-align: center;
+    color:black;
+    font-size: 30pt;
   }
 
   h2 {
     text-align: center;   
+    color:black;
+    font-size: 22pt;
   }
   
   .tab{
@@ -103,20 +108,6 @@
   */
   @media only screen and (max-width: 600px) {
   
-    h1 {
-      color:rgb(26, 26, 26);
-      font-size: 14pt;
-    }
-  
-    h2 {
-      color:rgb(26, 26, 26);
-      font-size: 10pt;
-    }
-  
-    body {
-      background-color: white;
-    }
-  
     #chart--container {
       flex-direction: column;
     }
@@ -154,20 +145,6 @@
   
   @media only screen and (width > 600px) and (width < 992px) {
   
-    /* h1 {
-      color:grey;
-      font-size: 18pt;
-    }
-    
-    h2 {
-      color:grey;
-      font-size: 12pt;
-    } */
-  
-    body {
-      background-color:white;
-    }
-  
     #legend {
       width: 100%;
       padding-left: 40px;
@@ -199,15 +176,6 @@
     #legend svg {
       max-width: 150px;
     }
-    h1 {
-      color:black;
-      font-size: 30pt;
-    }
-/*   
-    h2 {
-      color:black;
-      font-size: 22pt;
-    } */
   
     #legend {
       width: 100%;
@@ -223,10 +191,6 @@
   
     #legend h2 {
       flex: 1 0 100%;
-    }
-  
-    body {
-      background-color: white;
     }
   
     .tooltip {
