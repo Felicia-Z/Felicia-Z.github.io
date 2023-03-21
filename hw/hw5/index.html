@@ -11,33 +11,38 @@
     </head>
     <body>
         <h1>How to Select a Snowboard</h1> 
-        <div id="intro">
-            <p>The purpose of this website is to help you find the right geat for the perfect ride. </p>
-            <p>Here are some main things to consider when shopping for a snowboard:</p>
+        <div class="content-column">
+            <p>The purpose of this website is to help you find the right geat for the perfect ride. The following video gives us an quick overview on some essentials we need to consider when choosing a right snowboard. </p>
+
             <!-- a video on how to choose the right size here -->
-            <iframe width="450" height="300" src="https:/www.youtube.com/embed/0R28TlY0RZw">
-            </iframe>
-            <img width="300" height="400" src="images/sb-sizing-terms.png" alt="Snowboard Sizing Terms">
+            <iframe width="650" height="400" src="https:/www.youtube.com/embed/0R28TlY0RZw"></iframe>
+
+            <div class="content-row">
+                <p>Before we go too far. Let's learn what is the basic parts of a snowboard. </p> 
+                <img width="300" height="400" src="images/sb-sizing-terms.png" alt="Snowboard Sizing Terms"> 
+            </div>        
+
         </div>
 
         <!-- A few tabs that lead to different snowboard elements -->
         <!-- Tab links -->
         <div class="tab">
-            <button class="tablinks" onclick="(event, 'SbSize')">Snowboard Size</button>          
-            <button class="tablinks" onclick="(event, 'SbType')">Type of Snowboard</button>
-            <button class="tablinks" onclick="(event, 'SbProfile')">Snowboard Camber and Rocker Profile</button>
-            <button class="tablinks" onclick="(event, 'SbShape')">Snowboard Shape</button>   
-            <button class="tablinks" onclick="(event, 'SbFlex')">Snowboard Flex</button>         
-            <button class="tablinks" onclick="(event, 'SbStance')">Snowboard Stance</button>         
-            <button class="tablinks" onclick="(event, 'SbLevel')">Riding Ability Level</button>                
+            <p>Here are some main things to consider when shopping for a snowboard:</p>
+            <button class="tablinks" onclick="sbEssential(event, 'SbSize')">Snowboard Size</button>          
+            <button class="tablinks" onclick="sbEssential(event, 'SbType')">Type of Snowboard</button>
+            <button class="tablinks" onclick="sbEssential(event, 'SbProfile')">Snowboard Camber and Rocker Profile</button>
+            <button class="tablinks" onclick="sbEssential(event, 'SbShape')">Snowboard Shape</button>   
+            <button class="tablinks" onclick="sbEssential(event, 'SbFlex')">Snowboard Flex</button>         
+            <button class="tablinks" onclick="sbEssential(event, 'SbStance')">Snowboard Stance</button>         
+            <button class="tablinks" onclick="sbEssential(event, 'SbLevel')">Riding Ability Level</button>                
         </div>
 
         <!-- Tab content-->
-        <!-- <div id="SbSize" class="tab1content">
+        <div id="SbSize" class="tab1content">
             <h2>How to pick the right snowboard size? </h2>
             <p>add info later</p>
             <img width="450" height="300" src="images/sb-size-chart.png" alt="Snowboard Sizing Chart">
-        </div>  -->
+        </div> 
 <!-- 
         <div id="SbType" class="tab1content">
 
