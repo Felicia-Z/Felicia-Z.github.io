@@ -26,12 +26,14 @@
 
   .typecontent {
     width: 100%;
+    height:100%
     display: flex;
     flex-direction: row;
   }
 
-  .typecontent{
+  .textcontent{
     width: 50%;
+    height: 100%
   }
 
   #chart--container {
