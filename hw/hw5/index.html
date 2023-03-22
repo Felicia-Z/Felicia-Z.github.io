@@ -11,17 +11,27 @@
     </head>
     <body>
         <!-- Navigation Bar on the right side -->
-        <ul>
-            <li><a class="active" href="#SbHome">Home</a></li>
-            <li><a href="#SbSize">Snowboard Size</a></li>
-            <li><a href="#SbType">Type of Snowboard</a></li>
-            <li><a href="#SbProfile">Snowboard Camber and Rocker Profile</a></li>
-            <li><a href="#SbShape">Snowboard Shape</a></li>
-            <li><a href="#SbFlex">Snowboard Flex</a></li>
-            <li><a href="#SbStance">Snowboard Stance</a></li>
-            <li><a href="#SbLevel">Riding Ability Level</a></li>
-            <li><a href="#chart--container">Data & Chart</a></li>
-        </ul>
+        <div class="sidenav">
+            <ul>
+                <li><a class="active" href="#SbHome">Home</a></li>
+                <li><a href="#SbSize">Snowboard Size</a></li>
+                <li><a href="#SbType">Type of Snowboard</a></li>
+                <li><a href="#SbProfile">Snowboard Camber and Rocker Profile</a></li>
+                <li><a href="#SbShape">Snowboard Shape</a></li>
+                <li><a href="#SbFlex">Snowboard Flex</a></li>
+                <li><a href="#SbStance">Snowboard Stance</a></li>
+                <li><a href="#SbLevel">Riding Ability Level</a></li>
+                <li><a href="#chart--container">Data & Chart</a></li>
+                <button class="dropdown-btn">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                  <div class="dropdown-container">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+            </ul>
+        </div>
 
         <!-- Create a button that will take the user to the top of the page when clicked on -->
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
