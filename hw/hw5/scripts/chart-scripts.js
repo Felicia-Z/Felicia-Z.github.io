@@ -23,7 +23,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     */
     const width = document.querySelector("#chart").clientWidth;
     const height = document.querySelector("#chart").clientHeight;
-    const margin = {top: 100, left: 150, right: 150, bottom: 20};
+    const margin = {top: 50, left: 150, right: 150, bottom: 100};
 
     const svg = d3.select("#chart")
         .append("svg")

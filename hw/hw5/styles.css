@@ -51,7 +51,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 20%;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -111,7 +111,7 @@
 
   /* Style the tab content */
   .tab1content{
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-flow:column wrap;
     padding: 6px 12px;
@@ -122,10 +122,7 @@
 
   /* Style the tab content */
   .tab2content{
-    /* width: 100%; */
-    /* display: flex; */
     display: none;
-    /* flex-flow:column wrap; */
     padding: 6px 12px;
     border: 1px solid #41a072;
     border-top: none;
@@ -133,7 +130,7 @@
 
   /* Style the content that flex in row */
   .content-row {   
-    width: 50%;
+    width: 60%;
     display: flex;   
     flex-flow:row wrap;
     padding: 10px;
@@ -142,7 +139,7 @@
 
   /* Style the content that flex in row */
   .content-column{
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction:column;
     padding: 10px;
@@ -195,7 +192,6 @@
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  /* width: 200px; */
   position: fixed;
   z-index: 1;
   top: 0;
@@ -222,37 +218,30 @@
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  background-color: #60c8a2;
+  color: white;
 }
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: green;
+  background-color: #41a072;
   color: white;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #d8d8d8;
   padding-left: 8px;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
-  padding-right: 8px;
+  /* padding-right: 8px; */
 }
 
-
-
+/* svg */
 
   #chart--container {
     width: 50%;
