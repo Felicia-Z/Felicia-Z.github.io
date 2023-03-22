@@ -71,7 +71,7 @@
   }
   
   li a:hover:not(.active) {
-    background-color: #696969;
+    background-color: #60c8a2;
     color: white;
   }
 
@@ -115,7 +115,7 @@
 
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #57cda2;
+    background-color: #60c8a2;
   }
   
   /* Create an active/current tablink class */
@@ -202,7 +202,7 @@
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #04AA6D; /* Set a background color */
+    background-color: #41a072; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -211,7 +211,7 @@
   }
   
   #myBtn:hover {
-    background-color: #696969; /* Add a dark-grey background on hover */
+    background-color: #60c8a2; /* Add a dark-grey background on hover */
   }
 
 /* scrollbar */
@@ -227,12 +227,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #60c8a2;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #41a072;
 }
 
   #chart--container {
