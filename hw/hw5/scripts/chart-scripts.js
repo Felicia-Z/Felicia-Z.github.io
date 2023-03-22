@@ -164,6 +164,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     /* 
     ADD LEGENDS
     */
+
     // const legendWidth = document.querySelector("#legend").clientWidth;
     const legendWidth = 300;
     const legendHeight = 400;
