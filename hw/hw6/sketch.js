@@ -10,41 +10,31 @@ var shapes;
 var img;
 
 function preload() {
-//   img = loadImage('data/vector/pic.png');
   img = loadImage('data/dog/pic1_s.png');
 
   shapes = [];
-  shapes.push(loadImage('data/vector/056.svg'));
-  shapes.push(loadImage('data/vector/076.svg'));
-  shapes.push(loadImage('data/vector/082.svg'));
-  shapes.push(loadImage('data/vector/096.svg'));
-  shapes.push(loadImage('data/vector/117.svg'));
-  shapes.push(loadImage('data/vector/148.svg'));
-  shapes.push(loadImage('data/vector/152.svg'));
-  shapes.push(loadImage('data/vector/157.svg'));
-  shapes.push(loadImage('data/vector/164.svg'));
-  shapes.push(loadImage('data/vector/166.svg'));
-  shapes.push(loadImage('data/vector/186.svg'));
-  shapes.push(loadImage('data/vector/198.svg'));
-  shapes.push(loadImage('data/vector/224.svg'));
-//   shapes.push(loadImage('data/dog/001.svg'));
-//   shapes.push(loadImage('data/dog/002.svg'));
-//   shapes.push(loadImage('data/dog/003.svg'));
-//   shapes.push(loadImage('data/dog/004.svg'));
-//   shapes.push(loadImage('data/dog/005.svg'));
-//   shapes.push(loadImage('data/dog/006.svg'));
-//   shapes.push(loadImage('data/dog/009.svg'));
-//   shapes.push(loadImage('data/dog/010.svg'));
-//   shapes.push(loadImage('data/dog/017.svg'));
-//   shapes.push(loadImage('data/dog/018.svg'));
+
+  shapes.push(loadImage('data/dog/001.svg'));
+  shapes.push(loadImage('data/dog/002.svg'));
+  shapes.push(loadImage('data/dog/003.svg'));
+  shapes.push(loadImage('data/dog/004.svg'));
+  shapes.push(loadImage('data/dog/005.svg'));
+  shapes.push(loadImage('data/dog/006.svg'));
+  shapes.push(loadImage('data/dog/009.svg'));
+  shapes.push(loadImage('data/dog/010.svg'));
+  shapes.push(loadImage('data/dog/017.svg'));
+  shapes.push(loadImage('data/dog/018.svg'));
+  shapes.push(loadImage('data/dog/019.svg'));
+  shapes.push(loadImage('data/dog/020.svg'));
+  shapes.push(loadImage('data/dog/021.svg'));
   shapes.push(loadImage('data/dog/bw007.svg'));
   shapes.push(loadImage('data/dog/bw008.svg'));
-//   shapes.push(loadImage('data/dog/bw011.svg'));
-//   shapes.push(loadImage('data/dog/bw012.svg'));
-//   shapes.push(loadImage('data/dog/bw013.svg'));
-//   shapes.push(loadImage('data/dog/bw014.svg'));
-//   shapes.push(loadImage('data/dog/bw015.svg'));
-//   shapes.push(loadImage('data/dog/bw016.svg'));
+  shapes.push(loadImage('data/dog/bw011.svg'));
+  shapes.push(loadImage('data/dog/bw012.svg'));
+  shapes.push(loadImage('data/dog/bw013.svg'));
+  shapes.push(loadImage('data/dog/bw014.svg'));
+  shapes.push(loadImage('data/dog/bw015.svg'));
+  shapes.push(loadImage('data/dog/bw016.svg'));
 
 }
 
