@@ -30,22 +30,27 @@ var shapes;
 var img;
 
 function preload() {
-  img = loadImage('data/pic.png');
+  img = loadImage('data/dog/pic1.jpg');
 
   shapes = [];
-  shapes.push(loadImage('data/056.svg'));
-  shapes.push(loadImage('data/076.svg'));
-  shapes.push(loadImage('data/082.svg'));
-  shapes.push(loadImage('data/096.svg'));
-  shapes.push(loadImage('data/117.svg'));
-  shapes.push(loadImage('data/148.svg'));
-  shapes.push(loadImage('data/152.svg'));
-  shapes.push(loadImage('data/157.svg'));
-  shapes.push(loadImage('data/164.svg'));
-  shapes.push(loadImage('data/166.svg'));
-  shapes.push(loadImage('data/186.svg'));
-  shapes.push(loadImage('data/198.svg'));
-  shapes.push(loadImage('data/224.svg'));
+  shapes.push(loadImage('data/dog/001.svg'));
+  shapes.push(loadImage('data/dog/002.svg'));
+  shapes.push(loadImage('data/dog/003.svg'));
+  shapes.push(loadImage('data/dog/004.svg'));
+  shapes.push(loadImage('data/dog/005.svg'));
+  shapes.push(loadImage('data/dog/006.svg'));
+  shapes.push(loadImage('data/dog/007.svg'));
+  shapes.push(loadImage('data/dog/008.svg'));
+  shapes.push(loadImage('data/dog/009.svg'));
+  shapes.push(loadImage('data/dog/010.svg'));
+  shapes.push(loadImage('data/dog/011.svg'));
+  shapes.push(loadImage('data/dog/012.svg'));
+  shapes.push(loadImage('data/dog/013.svg'));
+  shapes.push(loadImage('data/dog/014.svg'));
+  shapes.push(loadImage('data/dog/015.svg'));
+  shapes.push(loadImage('data/dog/016.svg'));
+  shapes.push(loadImage('data/dog/017.svg'));
+  shapes.push(loadImage('data/dog/018.svg'));
 }
 
 function setup() {
