@@ -1,22 +1,3 @@
-// P_4_3_1_02
-//
-// Generative Gestaltung – Creative Coding im Web
-// ISBN: 978-3-87439-902-9, First Edition, Hermann Schmidt, Mainz, 2018
-// Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni
-// with contributions by Joey Lee and Niels Poldervaart
-// Copyright 2018
-//
-// http://www.generative-gestaltung.de
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 /**
  * pixel mapping. each pixel is translated into a new element (svg file).
  * take care to sort the svg file according to their greyscale value.
@@ -24,13 +5,12 @@
  * KEYS
  * s                   : save png
  */
-'use strict';
-
+console.log(2);
 var shapes;
 var img;
 
 function preload() {
-  img = loadImage('data/dog/pic1.jpg');
+  img = loadImage('data/dog/pic1.png');
 
   shapes = [];
   shapes.push(loadImage('data/dog/001.svg'));
@@ -43,14 +23,14 @@ function preload() {
   shapes.push(loadImage('data/dog/008.svg'));
   shapes.push(loadImage('data/dog/009.svg'));
   shapes.push(loadImage('data/dog/010.svg'));
-  shapes.push(loadImage('data/dog/011.svg'));
-  shapes.push(loadImage('data/dog/012.svg'));
-  shapes.push(loadImage('data/dog/013.svg'));
-  shapes.push(loadImage('data/dog/014.svg'));
-  shapes.push(loadImage('data/dog/015.svg'));
-  shapes.push(loadImage('data/dog/016.svg'));
-  shapes.push(loadImage('data/dog/017.svg'));
-  shapes.push(loadImage('data/dog/018.svg'));
+//   shapes.push(loadImage('data/dog/011.svg'));
+//   shapes.push(loadImage('data/dog/012.svg'));
+//   shapes.push(loadImage('data/dog/013.svg'));
+//   shapes.push(loadImage('data/dog/014.svg'));
+//   shapes.push(loadImage('data/dog/015.svg'));
+//   shapes.push(loadImage('data/dog/016.svg'));
+//   shapes.push(loadImage('data/dog/017.svg'));
+//   shapes.push(loadImage('data/dog/018.svg'));
 }
 
 function setup() {
