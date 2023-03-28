@@ -10,27 +10,42 @@ var shapes;
 var img;
 
 function preload() {
-  img = loadImage('data/dog/pic1_s.png');
+  img = loadImage('data/vector/pic.png');
+//   img = loadImage('data/dog/pic1_s.png');
 
   shapes = [];
+  shapes.push(loadImage('data/056.svg'));
+  shapes.push(loadImage('data/076.svg'));
+  shapes.push(loadImage('data/082.svg'));
+  shapes.push(loadImage('data/096.svg'));
+  shapes.push(loadImage('data/117.svg'));
+  shapes.push(loadImage('data/148.svg'));
+  shapes.push(loadImage('data/152.svg'));
+  shapes.push(loadImage('data/157.svg'));
+  shapes.push(loadImage('data/164.svg'));
+  shapes.push(loadImage('data/166.svg'));
+  shapes.push(loadImage('data/186.svg'));
+  shapes.push(loadImage('data/198.svg'));
+  shapes.push(loadImage('data/224.svg'));
 //   shapes.push(loadImage('data/dog/001.svg'));
 //   shapes.push(loadImage('data/dog/002.svg'));
 //   shapes.push(loadImage('data/dog/003.svg'));
 //   shapes.push(loadImage('data/dog/004.svg'));
 //   shapes.push(loadImage('data/dog/005.svg'));
 //   shapes.push(loadImage('data/dog/006.svg'));
-  shapes.push(loadImage('data/dog/bw007.svg'));
-  shapes.push(loadImage('data/dog/bw008.svg'));
 //   shapes.push(loadImage('data/dog/009.svg'));
 //   shapes.push(loadImage('data/dog/010.svg'));
-  shapes.push(loadImage('data/dog/bw011.svg'));
-  shapes.push(loadImage('data/dog/bw012.svg'));
-  shapes.push(loadImage('data/dog/bw013.svg'));
-  shapes.push(loadImage('data/dog/bw014.svg'));
-  shapes.push(loadImage('data/dog/bw015.svg'));
-  shapes.push(loadImage('data/dog/bw016.svg'));
 //   shapes.push(loadImage('data/dog/017.svg'));
 //   shapes.push(loadImage('data/dog/018.svg'));
+//   shapes.push(loadImage('data/dog/bw007.svg'));
+//   shapes.push(loadImage('data/dog/bw008.svg'));
+//   shapes.push(loadImage('data/dog/bw011.svg'));
+//   shapes.push(loadImage('data/dog/bw012.svg'));
+//   shapes.push(loadImage('data/dog/bw013.svg'));
+//   shapes.push(loadImage('data/dog/bw014.svg'));
+//   shapes.push(loadImage('data/dog/bw015.svg'));
+//   shapes.push(loadImage('data/dog/bw016.svg'));
+
 }
 
 function setup() {
