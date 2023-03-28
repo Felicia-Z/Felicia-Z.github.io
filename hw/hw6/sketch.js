@@ -10,7 +10,7 @@ var shapes;
 var img;
 
 function preload() {
-  img = loadImage('data/dog/pic1.png');
+  img = loadImage('data/dog/pic1_s.png');
 
   shapes = [];
   shapes.push(loadImage('data/dog/001.svg'));
