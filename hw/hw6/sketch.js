@@ -25,7 +25,7 @@ function preload() {
   shapes.push(loadImage('data/dog/017.svg'));
   shapes.push(loadImage('data/dog/018.svg'));
   shapes.push(loadImage('data/dog/019.svg'));
-  shapes.push(loadImage('data/dog/020.svg'));
+//   shapes.push(loadImage('data/dog/020.svg'));
   shapes.push(loadImage('data/dog/021.svg'));
   shapes.push(loadImage('data/dog/bw007.svg'));
   shapes.push(loadImage('data/dog/bw008.svg'));
