@@ -10,8 +10,8 @@ var shapes;
 var img;
 
 function preload() {
-  img = loadImage('data/vector/pic.png');
-//   img = loadImage('data/dog/pic1_s.png');
+//   img = loadImage('data/vector/pic.png');
+  img = loadImage('data/dog/pic1_s.png');
 
   shapes = [];
   shapes.push(loadImage('data/vector/056.svg'));
@@ -37,8 +37,8 @@ function preload() {
 //   shapes.push(loadImage('data/dog/010.svg'));
 //   shapes.push(loadImage('data/dog/017.svg'));
 //   shapes.push(loadImage('data/dog/018.svg'));
-//   shapes.push(loadImage('data/dog/bw007.svg'));
-//   shapes.push(loadImage('data/dog/bw008.svg'));
+  shapes.push(loadImage('data/dog/bw007.svg'));
+  shapes.push(loadImage('data/dog/bw008.svg'));
 //   shapes.push(loadImage('data/dog/bw011.svg'));
 //   shapes.push(loadImage('data/dog/bw012.svg'));
 //   shapes.push(loadImage('data/dog/bw013.svg'));
