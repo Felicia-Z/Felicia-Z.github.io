@@ -46,6 +46,8 @@
     margin: auto;
   }
 
+
+
 /* style vertical navigation bar */
   .sidenav ul {
     list-style-type: none;
@@ -118,6 +120,7 @@
     margin: auto;
     border: 1px solid #41a072;
     border-top: none;
+    position:relative;
   }
 
   /* Style the tab content */
@@ -144,9 +147,10 @@
     flex-direction:column;
     padding: 10px;
     margin: auto;
+    position:relative;
   }
 
-  /* Style the content in onClickTextOverImage */
+  /* Style the content in onClickTextOverImage in class SbType*/
   .onClickTextOverImage{
     width:270px;
     height: 180px;
@@ -214,7 +218,48 @@
     /* z-index:3; */
   /* } */
 
-  /* end of styling the content in onClickTextOverImage */
+  /* end of styling the content in onClickTextOverImage in class SbType */
+
+  /* ************************************* */
+
+  /* start of styling the content in class SbProfile */
+
+  #SbProfile img{
+    max-width: 100%;
+    height:auto;
+    padding: 25px;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .content-column:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .overlay-text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  /* end of styling the content in class SbProfile */
 
   /* Style the go back to top button */
   #myBtn {
