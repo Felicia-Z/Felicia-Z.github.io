@@ -13,4 +13,6 @@ for(var i=0;i<textOverImages.length;i++){
         // The classList JavaScript is a read-only property that is used to return CSS classes in the form of an array. 
         this.classList.toggle("show");
     }
-}
+};
+
+console.log("ffafde4");
