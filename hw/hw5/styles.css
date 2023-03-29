@@ -159,12 +159,12 @@
       max-width: 50%;
       height:auto;
       border-radius: 16px;
-      box-shadow: 0 0 16px rgba(0,0,0,0);
+      box-shadow: 0 0 16px rgba(0,0,0,0.1);
       cursor: pointer;
       transition: 0.3s;
       position:relative;
-      padding:10px;
-      margin:auto;
+      padding:5%;
+      margin:5%;
     }
     
     #myImg:hover {opacity: 0.7;}
@@ -188,8 +188,8 @@
     .modal-content {
       margin: auto;
       display: block;
-      width: 80%;
-      max-width: 700px;
+      max-width: 100%;
+      height:auto;
     }
     
     /* Caption of Modal Image */
@@ -207,7 +207,7 @@
     /* Add Animation */
     .modal-content, #caption {  
       animation-name: zoom;
-      animation-duration: 0.6s;
+      animation-duration: 0.3s;
     }
     
     @keyframes zoom {
