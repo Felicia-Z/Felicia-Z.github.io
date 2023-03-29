@@ -146,6 +146,76 @@
     margin: auto;
   }
 
+  /* Style the content in onClickTextOverImage */
+  .onClickTextOverImage{
+    width:270px;
+    height: 180px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    display:inline-block;
+    margin:4px;
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    position:relative;
+    cursor:pointer;
+  }
+
+  /* use js to make multiple selections*/
+  .onClickTextOverImage div{
+    position:absolute;
+    color:#f1f1f1;
+    padding:8px;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 16px;
+    padding-top:30%;
+    text-align: center;
+    opacity:0;
+    transition:0.3s;
+  }
+
+  .onClickTextOverImage div.show{
+    opacity:1;
+  }
+
+  /* this method can only select one at a time by css z-index, and it would not return to original status */
+
+  /* *select everything in this class */
+  /* .onClickTextOverImage *{ */
+    /* position:absolute; */
+    /* top:0; */
+    /* bottom:0; */
+    /* left:0; */
+    /* right:0; */
+    /* define the order of overlapping, higher index will be placed on top */
+    /* z-index:2;   */
+  /* } */
+
+  /* .onClickTextOverImage div{ */
+    /* z-index is lower, so it will be covered by the background */
+    /* z-index:1; */
+    /* color:#f1f1f1; */
+    /* text-align:center; */
+    /* padding:8px; */
+    /* padding-top: 30%; */
+    /* background-color: rgba(0,0,0,0.5); */
+    /* border-radius: 16px; */
+    /* opacity:0; */
+    /* transition:0.5s; */
+  /* } */
+
+  /* style the current active target element by target selector */
+  /* .onClickTextOverImage div:target{ */
+    /* opacity:1; */
+    /* make text selectable */
+    /* z-index:3; */
+  /* } */
+
+  /* end of styling the content in onClickTextOverImage */
+
   /* Style the go back to top button */
   #myBtn {
     display: none; /* Hidden by default */
