@@ -28,7 +28,7 @@
   }
 
   p {
-    text-align: center;   
+    /* text-align: center;    */
     color:black;
     font-size: 12pt; 
     padding: 10 px;
@@ -47,7 +47,7 @@
   }
 
 /* style vertical navigation bar */
-  ul {
+  .sidenav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -171,7 +171,7 @@
     left:0;
     background-color: rgba(0,0,0,0.5);
     border-radius: 16px;
-    padding-top:30%;
+    padding-top:10%;
     text-align: center;
     opacity:0;
     transition:0.3s;
