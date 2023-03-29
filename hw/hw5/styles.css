@@ -151,11 +151,20 @@
     position:relative;
   }
 
+/* *********************************************************** */
+
     /* start of styling the content in class SbSize */
+
     #myImg {
-      border-radius: 5px;
+      max-width: 50%;
+      height:auto;
+      border-radius: 16px;
+      box-shadow: 0 0 16px rgba(0,0,0,0);
       cursor: pointer;
       transition: 0.3s;
+      position:relative;
+      padding:10px;
+      margin:auto;
     }
     
     #myImg:hover {opacity: 0.7;}
