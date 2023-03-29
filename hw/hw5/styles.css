@@ -130,7 +130,7 @@
 
   /* Style the content that flex in row */
   .content-row {   
-    width: 60%;
+    width: 100%;
     display: flex;   
     flex-flow:row wrap;
     padding: 10px;
@@ -139,7 +139,7 @@
 
   /* Style the content that flex in row */
   .content-column{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction:column;
     padding: 10px;
