@@ -361,7 +361,21 @@
 
   /* end of styling the content in class SbProfile */
 
-/* ****************************************************** */
+/* ************************************************************************** */
+
+  /* start of styling the content in class SbShape */
+
+  #SbShape img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    position:relative;
+    padding: 25px;
+  }
+
+  /* end of styling the content in class SbShape */
+
+/* ************************************************************************ */
 
   /* Style the go back to top button */
   #myBtn {
