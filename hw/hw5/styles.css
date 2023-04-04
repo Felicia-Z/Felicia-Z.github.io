@@ -375,7 +375,45 @@
 
   /* end of styling the content in class SbShape */
 
+  /* ************************************************************************** */
+
+  /* start of styling the content in class SbStance */
+
+  #SbStance img{
+    max-width:50%;
+    height:auto;
+    display:block;
+    position:relative;
+    padding: 25px;
+    margin: 25px;
+  }
+
+  /* end of styling the content in class SbStance */
+
+
 /* ************************************************************************ */
+
+
+  /* start of styling the content in dataAndChart */
+
+  #dataSource img{
+    max-width:50%;
+    height:auto;
+    display:block;
+    object-fit: contain;
+    position:relative;
+    padding: 25px;
+    margin: 25px;
+  }
+
+  /* end of styling the content in class SbStance */
+
+
+/* ************************************************************************ */
+
+
+
+
 
   /* Style the go back to top button */
   #myBtn {

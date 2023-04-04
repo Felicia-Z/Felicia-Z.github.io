@@ -25,9 +25,9 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container">
-                    <a href="#chart--container">Data Source</a>
-                    <a href="#chart--container">Chart 1</a>
-                    <a href="#chart--container">Chart 2</a>
+                    <a href="#dataSource">Data Source</a>
+                    <a href="#chart--container1">Chart 1</a>
+                    <a href="#chart--container2">Chart 2</a>
                 </div>
             </ul>
         </div>
@@ -479,19 +479,10 @@
             </div>
 
             <div class="content-row">
-                <img max-width=50% height=auto src="images\stance\centred.jpeg" alt="Centered Stance picture">           
-                <div>
-                    <h3>Centered</h3>
-                </div>
+                <img src="images\stance\centred.jpg" alt="Centered Stance picture"> 
+                <img src="images\stance\setback.jpg" alt="Centered Stance picture">          
             </div>  
            
-            <div class="content-row">
-                <img max-width=50% height=auto src="images\stance\setback.jpeg" alt="Centered Stance picture">           
-                <div>
-                    <h3>Setback</h3>
-                </div>
-            </div>  
-
         </div>
 
         <div id="SbLevel" class="tab1content">
@@ -564,24 +555,59 @@
         </div>
         <script src="scripts\tab-scripts.js"></script>
 
+        <div id="dataAndChart" class="tab1content">
+            <h2>Snowboard Selection in Powders</h2>
 
-        <h2>Snowboard Selection in Powders</h2>
-
-        <div id="chart--container">
-            <div id="chart"></div>
-            <div id="legend">
-                <h2>Legend</h2>
-                <div id="filters">
-                    <h2>Podwer Power</h2>
-                    <input type="checkbox" class="powder--performance" value="Excellent" checked> Excellent <br>
-                    <input type="checkbox" class="powder--performance" value="Great" checked> Great <br>
-                    <input type="checkbox" class="powder--performance" value="Good" checked> Good <br>
-                    <input type="checkbox" class="powder--performance" value="Average" checked> Average <br>
-                    <input type="checkbox" class="powder--performance" value="Poor" checked> Poor <br>
+            <div id="dataSource" class="content-row">
+                <img src="images\dataSample.png" alt="Data Source picture">          
+                <div>
+                    <h3>Data Source</h3>
+                    <p>Please click <a href="https://www.kaggle.com/datasets/oznbgcvn/snowboardpowdervalue?resource=download"><b>here</b></a> to visit the original dataset. 
+                        The data set is about the snowboard performance in poweder condition. 
+                        There are altogether 10 variables and 390 unique values.<br>
+                        Variables include: 
+                        <ul>
+                            <li><b>Brand</b>: Snowboard manufacturing companies.</li>
+                            <li><b>Model</b>: Companies' snowboard models.</li>
+                            <li><b>Riding Style</b>: Where to use that snowboards.</li>
+                            <li><b>Riding Level</b>: Which level people use that snowboards.</li>
+                            <li><b>Shape</b>: Shape of snowboards.</li>
+                            <li><b>Camber Profile</b>: Camber profile of snowboards.</li>
+                            <li><b>Stance</b>: Where the foot stands on snowboards.</li>
+                            <li><b>Flex</b>: Flexibility of snowboards.</li>
+                            <li><b>Price</b>: Price of snowboards.</li>
+                            <li><b>Powder</b>: The power of snowboards in powder snow</li>
+                        </ul>  
+                    </p>
                 </div>
             </div>
-        </div> 
-        <script src="scripts\chart-scripts.js"></script>
+
+            <div id="chart--container1">
+                <div id="barChart">
+                    bar chart on performance in powder vs setback distance
+                </div>
+                <script src="scripts\chart-scripts.js"></script>
+            </div>
+
+            <div id="chart--container2">
+                sssssssss
+                <div id="chart"></div>
+                <div id="legend">
+                    <h2>Legend</h2>
+                    <div id="filters">
+                        <h2>Podwer Power</h2>
+                        <input type="checkbox" class="powder--performance" value="Excellent" checked> Excellent <br>
+                        <input type="checkbox" class="powder--performance" value="Great" checked> Great <br>
+                        <input type="checkbox" class="powder--performance" value="Good" checked> Good <br>
+                        <input type="checkbox" class="powder--performance" value="Average" checked> Average <br>
+                        <input type="checkbox" class="powder--performance" value="Poor" checked> Poor <br>
+                    </div>
+                </div>
+                <script src="scripts\chart-scripts.js"></script>
+            </div> 
+            
+
+        </div>
     </body>
 </html>
 
@@ -589,47 +615,4 @@
 dataset source
 https://www.kaggle.com/datasets/oznbgcvn/snowboardpowdervalue?resource=download
  -->
-        <!-- A few tabs that lead to different snowboard elements -->
-        <!-- Tab links -->
-        <!-- <div class="tab">
-            <p>Here are some main things to consider when shopping for a snowboard:</p>
-            <button class="tablinks" onclick="sbEssential(event, 'SbSize')"><b>Snowboard Size</b></button>          
-            <button class="tablinks" onclick="sbEssential(event, 'SbType')"><b>Type of Snowboard</b></button>
-            <button class="tablinks" onclick="sbEssential(event, 'SbProfile')"><b>Snowboard Camber and Rocker Profile</b></button>
-            <button class="tablinks" onclick="sbEssential(event, 'SbShape')"><b>Snowboard Shape</b></button>   
-            <button class="tablinks" onclick="sbEssential(event, 'SbFlex')"><b>Snowboard Flex</b></button>         
-            <button class="tablinks" onclick="sbEssential(event, 'SbStance')"><b>Snowboard Stance</b></button>         
-            <button class="tablinks" onclick="sbEssential(event, 'SbLevel')"><b>Riding Ability Level</b></button>                
-        </div> -->
 
-                    <!-- original version with text on one side and picture on the other side -->
-            <!-- <h3>All Mountain</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% height=80% src="images/type/allmountain.jpg" alt="All mountain riding style picture">
-            </div>
-
-            <h3>Freestyle</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% height=80% src="images/type/freestyle.jpg" alt="Freestyle riding style picture">
-            </div>
-
-            <h3>Freeride</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% height=80% src="images/type/Freeride.jpg" alt="Freeride riding style picture">
-            </div>
-
-            <h3>Powder</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% height=80% src="images/type/powder.jpg" alt="Powder riding style picture">
-            </div>
-
-            <h3>Splitboard</h3>
-            <div class="content-row">
-                <p>add info later</p>
-                <img width=50% height=80% src="images/type/Splitboard.jpeg" alt="Splitboard riding style picture">           
-            </div> -->
-            <!-- end of original version -->
