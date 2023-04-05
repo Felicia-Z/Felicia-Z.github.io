@@ -21,8 +21,8 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
     */
-    const width = document.querySelector("#chart").clientWidth;
-    const height = document.querySelector("#chart").clientHeight;
+    const width = document.querySelector("#barChart").clientWidth;
+    const height = document.querySelector("#barChart").clientHeight;
     const margin = {top: 50, left: 150, right: 150, bottom: 100};
 
     const svg = d3.select("#barChart")
@@ -189,7 +189,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .domain(["Centered","Setback -5mm","Setback -10mm","Setback -12.5mm","Setback -15mm","Setback -20mm","Setback over 20mm"])
         // .domain(data.map(function(d){return d.stance}))
         .range([margin.left, width-margin.right])
-        .padding(0.5);
+        .padding(20);
 
     const yScale = d3.scaleLinear()
         .domain([0,50])

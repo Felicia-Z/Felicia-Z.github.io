@@ -242,7 +242,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         svg.selectAll("circle")
             .attr("r", function(d){
                 return circleRadius/e.transform.k;
-            });```````````` 
+            });
     };
 
     let zoom = d3.zoom()
