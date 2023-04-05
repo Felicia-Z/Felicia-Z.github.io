@@ -16,7 +16,7 @@ function parseCsv(d) {
 
 d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
-    console.log(data);
+    // console.log(data);
 
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
@@ -102,7 +102,6 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
             .attr("stroke", function(d) { return fillScale(d.profile); })
             .attr("stroke-width", 1.5)
             .attr("fill", function(d) { return fillScale(d.profile); });
-
 
     /*
     DRAW AXIS LABELS
