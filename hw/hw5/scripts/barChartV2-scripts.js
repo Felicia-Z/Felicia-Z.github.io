@@ -1,5 +1,6 @@
 d3.csv("sb_stance_count.csv").then(function(data) {
     console.log(data);
+    console.log(data.keys);
 
     // List of subgroups = header of the csv files = different stance here
     var subgroups = data.columns.slice(1);
@@ -7,7 +8,7 @@ d3.csv("sb_stance_count.csv").then(function(data) {
 
     // List of groups = powder performance here = value of the first column called group -> will show them on the X axis
     var groups = d3.map(data, function(d){return(d.group)}).keys()
-    var groups = ["Centered","Setback-5mm","Setback-10mm","Setback-12.5mm","Setback-15mm","Setback-20mm","Setback-over-20mm"];
+    // var groups = ["Excellent","Great","Good","Average","Poor"];
     console.log(groups);
 
     // set the dimensions and margins of the graph
