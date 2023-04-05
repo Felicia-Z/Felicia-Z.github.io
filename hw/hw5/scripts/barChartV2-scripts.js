@@ -90,8 +90,44 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         .attr("y",-margin.left/5)
         .text("Count");   
 
-    var tooltip = d3.select("#barChart")
+
+         // ----------------
+  // Create a tooltip
+  // ----------------
+    // var tooltip = d3.select("#barChart")
+    //     .append("div")
+    //     .style("opacity", 0)
+    //     .attr("class", "tooltip")
+    //     .style("background-color", "white")
+    //     .style("border", "solid")
+    //     .style("border-width", "1px")
+    //     .style("border-radius", "5px")
+    //     .style("padding", "10px")
+
+    // // Three function that change the tooltip when user hover / move / leave a cell
+    // var mouseover = function(d) {
+    //     var subgroupName = d3.select(this.parentNode).datum().key;
+    //     var subgroupValue = d.data[subgroupName];
+    //     tooltip
+    //         .html("subgroup: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+    //         .style("opacity", 1)
+    // }
+    // var mousemove = function(d) {
+    //     tooltip
+    //     .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+    //     .style("top", (d3.mouse(this)[1]) + "px")
+    // }
+    // var mouseleave = function(d) {
+    //     tooltip
+    //     .style("opacity", 0)
+    // }
+
+
+    /*ADDING A TOOLTIP*/
+
+    const bar_tooltip = d3.select("#barChart")
         .append("div")
+        // .attr("class", "tooltip");
         .style("opacity", 0)
         .attr("class", "tooltip")
         .style("background-color", "white")
@@ -100,61 +136,47 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         .style("border-radius", "5px")
         .style("padding", "10px")
 
-    // Three function that change the tooltip when user hover / move / leave a cell
-    var mouseover = function(d) {
+
+    points.on("mouseover", function(e,d) {
+
+        // Update style and position of the tooltip div;
+        // what are the `+` symbols doing?
+        let x = +d3.select(this).attr("x") + 20;
+        let y = +d3.select(this).attr("y") - 10;
+
+        // Format the display of the numbers,
+        // using d3.format()
+        // See: https://github.com/d3/d3-format/blob/v3.1.0/README.md#format
+        let displayValue = d3.format(",")(d.value);
+        
         var subgroupName = d3.select(this.parentNode).datum().key;
         var subgroupValue = d.data[subgroupName];
-        tooltip
-            .html("subgroup: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+
+        console.log(subgroupName);
+        console.log(subgroupValue);
+
+        bar_tooltip
+            // .style("visibility", "visible")
+            // .style("top", `${y}px`)
+            // .style("left", `${x}px`)
             .style("opacity", 1)
-    }
-    var mousemove = function(d) {
-        tooltip
-        .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-        .style("top", (d3.mouse(this)[1]) + "px")
-    }
-    var mouseleave = function(d) {
-        tooltip
-        .style("opacity", 0)
-    }
+            .html("subgroup: " + subgroupName);
+            // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
+            // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
 
+        // Optionally, visually highlight the selected circle
+        points.attr("opacity", 0.1);
+        d3.select(this).attr("opacity", 1).raise();
 
-    /*ADDING A TOOLTIP*/
+    }).on("mouseout", function() {
 
-    // const tooltip = d3.select("#barChart")
-    //     .append("div")
-    //     .attr("class", "tooltip");
+        // Make the tooltip invisible when mouse leaves circle
+        bar_tooltip.style("visibility", "hidden");
 
-    // points.on("mouseover", function(e,d) {
+        // Reset the circles' appearance back to original
+        points.attr("opacity", 1);
 
-    //     // Update style and position of the tooltip div;
-    //     // what are the `+` symbols doing?
-    //     let x = +d3.select(this).attr("cx") + 20;
-    //     let y = +d3.select(this).attr("cy") - 10;
-
-    //     // Format the display of the numbers,
-    //     // using d3.format()
-    //     // See: https://github.com/d3/d3-format/blob/v3.1.0/README.md#format
-    //     let displayValue = d3.format(",")(d.value);
-        
-    //     tooltip.style("visibility", "visible")
-    //         .style("top", `${y}px`)
-    //         .style("left", `${x}px`)
-    //         .html(`<b>${d.group}</b><br>${d.value}`);
-
-    //     // Optionally, visually highlight the selected circle
-    //     points.attr("opacity", 0.1);
-    //     d3.select(this).attr("opacity", 1).raise();
-
-    // }).on("mouseout", function() {
-
-    //     // Make the tooltip invisible when mouse leaves circle
-    //     tooltip.style("visibility", "hidden");
-
-    //     // Reset the circles' appearance back to original
-    //     points.attr("opacity", 1);
-
-    // });
+    });
 
 
 
