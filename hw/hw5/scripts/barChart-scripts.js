@@ -189,7 +189,7 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
         .domain(["Centered","Setback -5mm","Setback -10mm","Setback -12.5mm","Setback -15mm","Setback -20mm","Setback over 20mm"])
         // .domain(data.map(function(d){return d.stance}))
         .range([margin.left, width-margin.right])
-        .padding(20);
+        .padding(0.5);
 
     const yScale = d3.scaleLinear()
         .domain([0,50])
