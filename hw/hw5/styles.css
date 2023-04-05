@@ -394,7 +394,7 @@
 /* ************************************************************************ */
 
 
-  /* start of styling the content in dataAndChart */
+  /* start of styling the content in data source */
 
   #dataSource img{
     max-width:50%;
@@ -406,11 +406,26 @@
     margin: 25px;
   }
 
-  /* end of styling the content in class SbStance */
+  /* end of styling the content in div data source */
 
 
 /* ************************************************************************ */
 
+  /* start of styling the content in barchart */
+
+  #chart--container1{
+    overflow: visible;
+  }
+
+  #barChart{
+    width: 100%;
+    overflow: visible;
+  }
+
+  /* end of styling the content in div barchart */
+
+
+/* ************************************************************************ */
 
 
 
