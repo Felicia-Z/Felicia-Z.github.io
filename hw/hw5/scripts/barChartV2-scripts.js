@@ -100,7 +100,23 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         .style("border-radius", "5px")
         .style("padding", "10px")
 
-
+    // Three function that change the tooltip when user hover / move / leave a cell
+    var mouseover = function(d) {
+        var subgroupName = d3.select(this.parentNode).datum().key;
+        var subgroupValue = d.data[subgroupName];
+        tooltip
+            .html("subgroup: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+            .style("opacity", 1)
+    }
+    var mousemove = function(d) {
+        tooltip
+        .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+        .style("top", (d3.mouse(this)[1]) + "px")
+    }
+    var mouseleave = function(d) {
+        tooltip
+        .style("opacity", 0)
+    }
 
 
     /*ADDING A TOOLTIP*/
