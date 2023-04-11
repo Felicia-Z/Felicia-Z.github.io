@@ -572,4 +572,17 @@
     background-color: rgba(255,255,255,0.8);
     font-size: 11pt;
   }
+
+  /* pie chart */
   
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #pieChart {
+    display: block;
+    margin: 20px auto 0;
+    height: 400px;
+    width: 400px;
+  }

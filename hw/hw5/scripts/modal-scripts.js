@@ -19,4 +19,4 @@ span.onclick = function() {
   modal.style.display = "none";
 };
 
-console.log(22229499494);
+// console.log(22229499494);

@@ -15,4 +15,4 @@ for(var i=0;i<textOverImages.length;i++){
     }
 };
 
-console.log("ffafde4");
+// console.log("ffafde4");
