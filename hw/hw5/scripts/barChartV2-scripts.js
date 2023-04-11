@@ -124,16 +124,15 @@ d3.csv("sb_stance_count.csv").then(function(data) {
 
     /*ADDING A TOOLTIP*/
 
-    const bar_tooltip = d3.select("#barChart")
+    const tooltip = d3.select("#barChart")
         .append("div")
         .attr("class", "tooltip")
-        // .attr("id","barChart-tooltip")
-        .style("opacity", 0)
-        .style("background-color", "white")
-        .style("border", "solid")
-        .style("border-width", "1px")
-        .style("border-radius", "5px")
-        .style("padding", "10px")
+        // .style("opacity", 1)
+        // .style("background-color", "white")
+        // .style("border", "solid")
+        // .style("border-width", "1px")
+        // .style("border-radius", "5px")
+        // .style("padding", "10px")
 
 
     points.on("mouseover", function(e,d) {
@@ -146,22 +145,23 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         // Format the display of the numbers,
         // using d3.format()
         // See: https://github.com/d3/d3-format/blob/v3.1.0/README.md#format
-        let displayValue = d3.format(",")(d.value);
-        console.log(displayValue);
+        // let displayValue = d3.format(",")(d.value);
+        // console.log(displayValue);
 
         var subgroupName = d3.select(this.parentNode).datum().key;
         // var subgroupValue = d.data[subgroupName];
         // var subgroupValue = d3.select(this.parentNode).datum().value;
 
-        console.log(subgroupName);
+        // console.log(subgroupName);
         // console.log(subgroupValue);
 
-        bar_tooltip
+        tooltip
             .style("visibility", "visible")
             .style("top", `${y}px`)
             .style("left", `${x}px`)
             .style("opacity", 1)
-            .html("subgroup: " + subgroupName);
+            .html("Count: " + d.value);
+            // .html("subgroup: " + subgroupName);
             // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
             // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
 
@@ -176,7 +176,7 @@ d3.csv("sb_stance_count.csv").then(function(data) {
 
         // Reset the circles' appearance back to original
         points.attr("opacity", 1);
-
+ 
     });
 
     /* 
@@ -184,6 +184,30 @@ d3.csv("sb_stance_count.csv").then(function(data) {
     */
 
 
+    const legendWidth = 300;
+    const legendHeight = 400;
+    const legendMargin = 25;
+    const legendSpacing = 50;
 
+    const colorLegend = d3.select("#barLegend")
+        .append("svg")
+        .attr("height", legendHeight)
+        .attr("width", legendWidth);
+
+    const setbackLegend = ["Centered","Setback-5mm","Setback-10mm","Setback-12.5mm","Setback-15mm","Setback-20mm","Setback-over-20mm"];
+
+    setbackLegend.forEach(function(setbackLegend,i){
+        colorLegend.append("circle")
+            .attr("cx", legendMargin)
+            .attr("cy", legendMargin + i*legendSpacing)
+            .attr("r", 10)
+            .attr("fill", color(setbackLegend));
+
+        colorLegend.append("text")
+            .attr("class", "legend--label")
+            .attr("x", legendMargin + 25)
+            .attr("y", legendMargin + i*legendSpacing)
+            .text(setbackLegend);  
+    });  
 
 })
