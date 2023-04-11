@@ -1,6 +1,5 @@
 d3.csv("sb_stance_count.csv").then(function(data) {
     console.log(data);
-    console.log(data.keys);
 
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 20, left: 50},
@@ -74,7 +73,7 @@ d3.csv("sb_stance_count.csv").then(function(data) {
             .attr("y", function(d) { return y(d.value); })
             .attr("width", xSubgroup.bandwidth())
             .attr("height", function(d) { return height - y(d.value); })
-            .attr("fill", function(d) { return color(d.key); });
+            .attr("fill", function(d) { return color(d.key); })
 
     /*DRAW AXIS LABELS*/
     const xAxisLabel = svg.append("text")
@@ -127,9 +126,9 @@ d3.csv("sb_stance_count.csv").then(function(data) {
 
     const bar_tooltip = d3.select("#barChart")
         .append("div")
-        // .attr("class", "tooltip");
-        .style("opacity", 0)
         .attr("class", "tooltip")
+        .attr("id","barChart-tooltip")
+        .style("opacity", 0)
         .style("background-color", "white")
         .style("border", "solid")
         .style("border-width", "1px")
@@ -141,24 +140,26 @@ d3.csv("sb_stance_count.csv").then(function(data) {
 
         // Update style and position of the tooltip div;
         // what are the `+` symbols doing?
-        let x = +d3.select(this).attr("x") + 20;
-        let y = +d3.select(this).attr("y") - 10;
+        let xt = +d3.select(this).attr("x") + 20;
+        let yt = +d3.select(this).attr("y") - 10;
 
         // Format the display of the numbers,
         // using d3.format()
         // See: https://github.com/d3/d3-format/blob/v3.1.0/README.md#format
         let displayValue = d3.format(",")(d.value);
-        
+        console.log(displayValue);
+
         var subgroupName = d3.select(this.parentNode).datum().key;
-        var subgroupValue = d.data[subgroupName];
+        // var subgroupValue = d.data[subgroupName];
+        // var subgroupValue = d3.select(this.parentNode).datum().value;
 
         console.log(subgroupName);
-        console.log(subgroupValue);
+        // console.log(subgroupValue);
 
         bar_tooltip
-            // .style("visibility", "visible")
-            // .style("top", `${y}px`)
-            // .style("left", `${x}px`)
+            .style("visibility", "visible")
+            .style("top", `${yt}px`)
+            .style("left", `${xt}px`)
             .style("opacity", 1)
             .html("subgroup: " + subgroupName);
             // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
