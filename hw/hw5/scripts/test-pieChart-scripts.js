@@ -1,5 +1,9 @@
 let data = [48, 21, 65, 30, 16, 2];
-let colors = colorbrewer.Spectral[data.length];
+// let colors = colorbrewer.Spectral[data.length];
+var colors = d3.scaleOrdinal()
+.domain(data)
+.range(['#ff998d','#ffb43d','#efff54','#66f036','#36f0d8','#5092ef'])
+
 
 let sizes = {
   innerRadius: 50,
