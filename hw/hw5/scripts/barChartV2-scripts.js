@@ -73,7 +73,7 @@ d3.csv("sb_stance_count.csv").then(function(data) {
             .attr("y", function(d) { return y(d.value); })
             .attr("width", xSubgroup.bandwidth())
             .attr("height", function(d) { return height - y(d.value); })
-            .attr("fill", function(d) { return color(d.key); })
+            .attr("fill", function(d) { return color(d.key); })    
 
     /*DRAW AXIS LABELS*/
     const xAxisLabel = svg.append("text")
@@ -90,9 +90,9 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         .text("Count");   
 
 
-         // ----------------
-  // Create a tooltip
-  // ----------------
+    // ----------------
+    // Create a tooltip
+    // ----------------
     // var tooltip = d3.select("#barChart")
     //     .append("div")
     //     .style("opacity", 0)
@@ -127,7 +127,7 @@ d3.csv("sb_stance_count.csv").then(function(data) {
     const bar_tooltip = d3.select("#barChart")
         .append("div")
         .attr("class", "tooltip")
-        .attr("id","barChart-tooltip")
+        // .attr("id","barChart-tooltip")
         .style("opacity", 0)
         .style("background-color", "white")
         .style("border", "solid")
@@ -140,8 +140,8 @@ d3.csv("sb_stance_count.csv").then(function(data) {
 
         // Update style and position of the tooltip div;
         // what are the `+` symbols doing?
-        let xt = +d3.select(this).attr("x") + 20;
-        let yt = +d3.select(this).attr("y") - 10;
+        let x = +d3.select(this).attr("x") + 20;
+        let y = +d3.select(this).attr("y") - 10;
 
         // Format the display of the numbers,
         // using d3.format()
@@ -158,8 +158,8 @@ d3.csv("sb_stance_count.csv").then(function(data) {
 
         bar_tooltip
             .style("visibility", "visible")
-            .style("top", `${yt}px`)
-            .style("left", `${xt}px`)
+            .style("top", `${y}px`)
+            .style("left", `${x}px`)
             .style("opacity", 1)
             .html("subgroup: " + subgroupName);
             // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
@@ -178,6 +178,11 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         points.attr("opacity", 1);
 
     });
+
+    /* 
+    ADDING LEGENDS
+    */
+
 
 
 
