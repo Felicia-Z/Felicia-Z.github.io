@@ -21,9 +21,14 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     /*
     DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
     */
-    const width = document.querySelector("#chart").clientWidth;
-    const height = document.querySelector("#chart").clientHeight;
-    const margin = {top: 50, left: 150, right: 150, bottom: 100};
+    const margin = {top: 20, left: 100, right: 50, bottom: 50};
+    // const width = document.querySelector("#chart").clientWidth;
+    // const height = document.querySelector("#chart").clientHeight;
+    const width = 1000;
+    const height = 1000;
+    // const width = 1000-margin.left-margin.right;
+    // const height = 800-margin.top-margin.bottom;
+
 
     const svg = d3.select("#chart")
         .append("svg")
@@ -79,13 +84,14 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
     const xAxis = svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(0,${height-margin.bottom})`)
-        .call(d3.axisBottom().scale(xScale));
+        // .call(d3.axisBottom().scale(xScale));
+        .call(d3.axisBottom().scale(xScale).ticks(5).tickFormat(d3.format("~s")));
+
 
     const yAxis = svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft().scale(yScale));
-
 
     /*
     DRAW POINTS
@@ -209,10 +215,10 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
 
     d3.selectAll(".powder--performance").on("click", function() {
 
-        let isChecked = d3.select("#filters").property("checked");
-        let thisPerformance = d3.select("#filters").property("value");
-        // let isChecked = d3.select(this).property("checked");
-        // let thisPerformance = d3.select(this).property("value");
+        // let isChecked = d3.select("#filters").property("checked");
+        // let thisPerformance = d3.select("#filters").property("value");
+        let isChecked = d3.select(this).property("checked");
+        let thisPerformance = d3.select(this).property("value");
 
         let selection = points.filter(function(d) {
             return d.powder_performance === thisPerformance;
