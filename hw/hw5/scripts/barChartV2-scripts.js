@@ -6,11 +6,6 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         width = 787 - margin.left - margin.right,
         height = 443 - margin.top - margin.bottom;
 
-    // const width = document.querySelector("#barChart").clientWidth;
-    // const height = document.querySelector("#barChart").clientHeight;
-    // const margin = {top: 50, left: 150, right: 150, bottom: 100};
-    
-
     // append the svg object to the body of the page
     var svg = d3.select("#barChart")
         .append("svg")
@@ -89,71 +84,17 @@ d3.csv("sb_stance_count.csv").then(function(data) {
         .attr("y",-margin.left/5)
         .text("Count");   
 
-
-    // ----------------
-    // Create a tooltip
-    // ----------------
-    // var tooltip = d3.select("#barChart")
-    //     .append("div")
-    //     .style("opacity", 0)
-    //     .attr("class", "tooltip")
-    //     .style("background-color", "white")
-    //     .style("border", "solid")
-    //     .style("border-width", "1px")
-    //     .style("border-radius", "5px")
-    //     .style("padding", "10px")
-
-    // // Three function that change the tooltip when user hover / move / leave a cell
-    // var mouseover = function(d) {
-    //     var subgroupName = d3.select(this.parentNode).datum().key;
-    //     var subgroupValue = d.data[subgroupName];
-    //     tooltip
-    //         .html("subgroup: " + subgroupName + "<br>" + "Value: " + subgroupValue)
-    //         .style("opacity", 1)
-    // }
-    // var mousemove = function(d) {
-    //     tooltip
-    //     .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-    //     .style("top", (d3.mouse(this)[1]) + "px")
-    // }
-    // var mouseleave = function(d) {
-    //     tooltip
-    //     .style("opacity", 0)
-    // }
-
-
     /*ADDING A TOOLTIP*/
 
     const tooltip = d3.select("#barChart")
         .append("div")
         .attr("class", "tooltip")
-        // .style("opacity", 1)
-        // .style("background-color", "white")
-        // .style("border", "solid")
-        // .style("border-width", "1px")
-        // .style("border-radius", "5px")
-        // .style("padding", "10px")
-
 
     points.on("mouseover", function(e,d) {
 
         // Update style and position of the tooltip div;
-        // what are the `+` symbols doing?
         let x = +d3.select(this).attr("x") + 20;
         let y = +d3.select(this).attr("y") - 10;
-
-        // Format the display of the numbers,
-        // using d3.format()
-        // See: https://github.com/d3/d3-format/blob/v3.1.0/README.md#format
-        // let displayValue = d3.format(",")(d.value);
-        // console.log(displayValue);
-
-        var subgroupName = d3.select(this.parentNode).datum().key;
-        // var subgroupValue = d.data[subgroupName];
-        // var subgroupValue = d3.select(this.parentNode).datum().value;
-
-        // console.log(subgroupName);
-        // console.log(subgroupValue);
 
         tooltip
             .style("visibility", "visible")
@@ -161,9 +102,6 @@ d3.csv("sb_stance_count.csv").then(function(data) {
             .style("left", `${x}px`)
             .style("opacity", 1)
             .html("Count: " + d.value);
-            // .html("subgroup: " + subgroupName);
-            // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
-            // .html("subgroup: " + subgroupName + "<br>" + "Count: " + subgroupValue);
 
         // Optionally, visually highlight the selected circle
         points.attr("opacity", 0.1);
@@ -182,7 +120,6 @@ d3.csv("sb_stance_count.csv").then(function(data) {
     /* 
     ADDING LEGENDS
     */
-
 
     const legendWidth = 300;
     const legendHeight = 400;
