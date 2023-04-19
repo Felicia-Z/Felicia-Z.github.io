@@ -86,3 +86,14 @@ img {
     margin: auto;
     position:relative;
   }
+
+  #con1-1-2 img {
+    max-width: 80%;
+    position: relative;
+    padding: 25px;
+  }
+
+  #con1-2-1 {
+    width:50%;
+    position:relative;
+  }

@@ -251,10 +251,12 @@ d3.csv("Snowboard2.csv", parseCsv).then(function(data) {
             });
     };
 
+
     let zoom = d3.zoom()
-        .translateExtent([[0, 0], [width, height]])
-        .scaleExtent([1, 15])
+        // .translateExtent([[0, 0], [width, height]])
+        .scaleExtent([1, 5])
         .on("zoom", zoomed);
+
 
     svg.call(zoom);
 
